@@ -141,14 +141,8 @@ ul{padding:0;list-style:none}
 .chip:hover{background:var(--soft2);border-color:var(--cyan);color:var(--navy)}
 
 /* ---------- Service cards ---------- */
-.cards{display:grid;grid-template-columns:repeat(6,1fr);gap:24px}
-.cards>.svc,.cards>.stack{grid-column:span 2}
-.cards>.svc:nth-last-child(2):nth-child(3n+1),.cards>.svc:last-child:nth-child(3n+2){grid-column:span 3}
-.cards>.svc:last-child:nth-child(3n+1){grid-column:1/-1;flex-direction:row}
-.cards>.svc:nth-last-child(2):nth-child(3n+1) .svc-list,.cards>.svc:last-child:nth-child(3n+2) .svc-list{columns:2;column-gap:32px}
-.cards>.svc:last-child:nth-child(3n+1) .svc-head{flex:0 0 34%;display:flex;flex-direction:column;justify-content:center}
-.cards>.svc:last-child:nth-child(3n+1) .svc-list{columns:2;column-gap:32px;margin-top:0}
-.cards>.svc:last-child:nth-child(3n+1) .svc-body{display:flex;flex-direction:column;justify-content:center;gap:16px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+.cards>.svc,.cards>.stack{grid-column:auto;height:100%}
 .cards .svc-list li{break-inside:avoid}
 .cards.tall .svc-head h3{min-height:2.45em}
 .stack{display:grid;gap:24px;grid-template-rows:1fr 1fr}
@@ -156,7 +150,7 @@ ul{padding:0;list-style:none}
 .stack .svc-head h3{margin-top:14px;min-height:0!important}
 .stack .svc-head::after{width:140px;height:140px;top:-60px}
 .cards>.svc:last-child:nth-child(3n+1) .svc-head h3{min-height:0!important}
-.svc{display:flex;flex-direction:column;border-radius:24px;background:#fff;border:1px solid var(--line);overflow:hidden;box-shadow:0 12px 30px rgba(17,54,87,.05);transition:transform .25s,box-shadow .25s}
+.svc{display:flex;flex-direction:column;height:100%;border-radius:24px;background:#fff;border:1px solid var(--line);overflow:hidden;box-shadow:0 12px 30px rgba(17,54,87,.05);transition:transform .25s,box-shadow .25s}
 .svc:hover{transform:translateY(-5px);box-shadow:var(--shadow2)}
 .svc.v1{--g:linear-gradient(135deg,var(--navy2) 0%,var(--navy2) 38%,var(--teal) 135%)}
 .svc.v2{--g:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 120%)}
@@ -306,9 +300,9 @@ table.ds td:first-child{font-weight:700;color:var(--navy2);font-variant-numeric:
 .legend span+span::before{background:var(--teal2)}
 
 /* ---------- FAQ ---------- */
-.faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
-.faq-wrap .section-head{margin-bottom:0;position:sticky;top:120px}
-.faq-list{display:grid;gap:12px}
+.faq-wrap{display:flex;flex-direction:column;align-items:center;max-width:860px;margin:0 auto}
+.faq-wrap .section-head{text-align:center;margin-bottom:40px;position:static}
+.faq-list{display:grid;gap:12px;width:100%}
 .faq{border:1px solid var(--line);border-radius:18px;background:#fff;transition:.2s}
 .faq[open]{box-shadow:var(--shadow);border-color:#BFD4E3}
 .faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 24px;font-weight:700;color:var(--navy);font-size:1.02rem;line-height:1.4}
@@ -318,8 +312,8 @@ table.ds td:first-child{font-weight:700;color:var(--navy2);font-variant-numeric:
 .faq p{padding:0 24px 22px;color:var(--muted);line-height:1.75;font-size:.98rem;max-width:70ch}
 
 /* ---------- Home solution cards ---------- */
-.sol-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-.sol{position:relative;display:flex;flex-direction:column;min-height:330px;border-radius:26px;border:1px solid var(--line);background:#fff;padding:30px;overflow:hidden;box-shadow:0 12px 30px rgba(17,54,87,.04);transition:transform .25s,box-shadow .25s}
+.sol-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;align-items:stretch}
+.sol{position:relative;display:flex;flex-direction:column;height:100%;min-height:280px;border-radius:26px;border:1px solid var(--line);background:#fff;padding:30px;overflow:hidden;box-shadow:0 12px 30px rgba(17,54,87,.04);transition:transform .25s,box-shadow .25s}
 .sol:hover{transform:translateY(-6px);box-shadow:var(--shadow2)}
 .sol::after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-70px;top:-65px;background:radial-gradient(circle,rgba(43,197,158,.14),transparent 68%)}
 .sol-ico{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(145deg,#EFF6FB,#EAF8F5);color:var(--navy2)}
@@ -345,11 +339,6 @@ table.ds td:first-child{font-weight:700;color:var(--navy2);font-variant-numeric:
 /* ---------- Responsive ---------- */
 @media(max-width:1100px){
   .cards{grid-template-columns:repeat(2,1fr)}
-  .cards>.svc,.cards>.stack,.cards>.svc:nth-last-child(2):nth-child(3n+1),.cards>.svc:last-child:nth-child(3n+2){grid-column:auto}
-  .cards>.svc:last-child:nth-child(3n+1){grid-column:auto;flex-direction:column}
-  .cards>.svc:last-child:nth-child(3n+1) .svc-head{flex:none;display:block}
-  .cards .svc-list,.cards>.svc:last-child:nth-child(3n+1) .svc-list{columns:1!important}
-  .cards>.svc:last-child:nth-child(odd),.cards>.stack:last-child:nth-child(odd){grid-column:1/-1}
   .sol-grid{grid-template-columns:repeat(2,1fr)}
   .row{gap:48px}
 }
@@ -374,8 +363,7 @@ table.ds td:first-child{font-weight:700;color:var(--navy2);font-variant-numeric:
 }
 @media(max-width:640px){
   .container,.navbar{padding-left:20px;padding-right:20px}
-  .cards,.sol-grid{grid-template-columns:1fr}
-  .cards>.svc:last-child:nth-child(odd){grid-column:auto}
+  .cards,.sol-grid,.industry-grid{grid-template-columns:1fr}
   .cards.tall .svc-head h3{min-height:0}
   .hero-actions .btn{flex:1}
   .life{grid-template-columns:repeat(2,1fr)}
@@ -464,6 +452,7 @@ table.ds td:first-child{font-weight:700;color:var(--navy2);font-variant-numeric:
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
+  align-items: stretch;
 }
 .premium-card {
   background: #fff;
@@ -472,6 +461,9 @@ table.ds td:first-child{font-weight:700;color:var(--navy2);font-variant-numeric:
   box-shadow: 0 10px 30px rgba(18, 60, 100, 0.05);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .premium-card:hover {
   transform: translateY(-8px);
@@ -680,10 +672,12 @@ table.ds td:first-child{font-weight:700;color:var(--navy2);font-variant-numeric:
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   margin-top: 40px;
+  align-items: stretch;
 }
 .industry-card {
   display: flex;
   flex-direction: column;
+  height: 100%;
   padding: 32px;
   border-radius: 20px;
   background: #ffffff;
@@ -1050,4 +1044,132 @@ table.ds td:first-child{font-weight:700;color:var(--navy2);font-variant-numeric:
   .cta-box-card {
     padding: 40px 24px;
   }
+}
+
+/* =====================================================
+   SCROLL ANIMATIONS
+   All animated elements start hidden and reveal on
+   scroll via the .in-view class added by JS observer.
+   ===================================================== */
+
+/* --- Keyframes --- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(-28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes popIn {
+  0%   { opacity: 0; transform: translateY(24px) scale(0.96); }
+  70%  { transform: translateY(-4px) scale(1.01); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* --- Base hidden state (before they come into view) --- */
+.section-head,
+.hero-pill,
+.hero-content h1,
+.hero-content p,
+.hero-actions,
+.sol,
+.industry-card,
+.use-case-card,
+.step,
+.feature-item,
+.stat-item,
+.team-card,
+.timeline-item,
+.why-item,
+.cta-box-card,
+.cta-section .section-head,
+.detail-hero-body,
+[data-animate] {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+/* Respect reduced-motion: skip animations entirely */
+@media (prefers-reduced-motion: reduce) {
+  .section-head,
+  .hero-pill,
+  .hero-content h1,
+  .hero-content p,
+  .hero-actions,
+  .sol,
+  .industry-card,
+  .use-case-card,
+  .step,
+  .feature-item,
+  .stat-item,
+  .team-card,
+  .timeline-item,
+  .why-item,
+  .cta-box-card,
+  .cta-section .section-head,
+  .detail-hero-body,
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
+
+/* --- .in-view triggers the animation --- */
+.section-head.in-view {
+  animation: fadeUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.hero-pill.in-view {
+  animation: fadeIn 0.5s ease both;
+}
+.hero-content h1.in-view {
+  animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.08s both;
+}
+.hero-content p.in-view {
+  animation: fadeUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.18s both;
+}
+.hero-actions.in-view {
+  animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.28s both;
+}
+.sol.in-view,
+.industry-card.in-view {
+  animation: popIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.use-case-card.in-view,
+.step.in-view,
+.feature-item.in-view,
+.stat-item.in-view,
+.team-card.in-view {
+  animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.timeline-item.in-view {
+  animation: slideRight 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.why-item.in-view {
+  animation: scaleUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.cta-box-card.in-view,
+.cta-section .section-head.in-view {
+  animation: scaleUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.detail-hero-body.in-view {
+  animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+[data-animate].in-view {
+  animation: fadeUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* --- Smooth header on scroll (JS-driven) --- */
+.header.scrolled {
+  box-shadow: 0 4px 24px rgba(18,60,100,.09);
+  border-bottom-color: rgba(222,232,240,1);
 }

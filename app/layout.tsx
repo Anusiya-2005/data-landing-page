@@ -5,6 +5,7 @@ import Icons from '@/components/Icons';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import DatasetModal from '@/components/DatasetModal';
+import ScrollAnimations from '@/components/ScrollAnimations';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -31,6 +32,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <DatasetModal />
+        <ScrollAnimations />
       </body>
     </html>
   );
