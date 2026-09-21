@@ -150,8 +150,8 @@ export default function Page() {
             <h3>
               Let&apos;s discuss your AI initiative and build the right data foundation for success.
             </h3>
-            <button 
-              type="button" 
+            <button
+              type="button"
               className="btn primary cta-modal-btn"
               onClick={openDatasetModal}
             >

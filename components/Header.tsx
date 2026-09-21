@@ -8,10 +8,12 @@ export default function Header() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
+  const [industriesOpen, setIndustriesOpen] = useState(false);
 
   useEffect(() => {
     setMenuOpen(false);
     setSolutionsOpen(false);
+    setIndustriesOpen(false);
   }, [pathname]);
 
   return (
@@ -67,13 +69,47 @@ export default function Header() {
               </Link>
             </div>
           </div>
-          <Link href="/industries" className={pathname === '/industries' ? 'active' : ''}>Industries</Link>
+          <div className={`has-menu ${industriesOpen ? 'open' : ''}`}>
+            <button
+              aria-expanded={industriesOpen}
+              aria-haspopup="true"
+              onClick={() => setIndustriesOpen(!industriesOpen)}
+            >
+              Industries <svg className="icon chev" aria-hidden="true"><use href="#i-chev" /></svg>
+            </button>
+            <div className="menu">
+              <Link href="/industries/autonomous-vehicles" className={pathname.startsWith('/industries/autonomous-vehicles') ? 'active' : ''}>
+                <span className="m-ico">
+                  <svg className="icon" aria-hidden="true"><use href="#i-route"/></svg>
+                </span>
+                <span>Autonomous Vehicles<small>3D sensor, LiDAR &amp; bounding boxes</small></span>
+              </Link>
+              <Link href="/industries/healthcare" className={pathname.startsWith('/industries/healthcare') ? 'active' : ''}>
+                <span className="m-ico">
+                  <svg className="icon" aria-hidden="true"><use href="#i-health"/></svg>
+                </span>
+                <span>Healthcare<small>Medical imaging &amp; clinical NLP</small></span>
+              </Link>
+              <Link href="/industries/finance" className={pathname.startsWith('/industries/finance') ? 'active' : ''}>
+                <span className="m-ico">
+                  <svg className="icon" aria-hidden="true"><use href="#i-bank"/></svg>
+                </span>
+                <span>Finance<small>KYC, document digitization &amp; sentiment</small></span>
+              </Link>
+              <Link href="/industries/retail" className={pathname.startsWith('/industries/retail') ? 'active' : ''}>
+                <span className="m-ico">
+                  <svg className="icon" aria-hidden="true"><use href="#i-tag"/></svg>
+                </span>
+                <span>Retail &amp; E-commerce<small>Product categorization &amp; visual search</small></span>
+              </Link>
+            </div>
+          </div>
           <Link href="/use-cases" className={pathname === '/use-cases' ? 'active' : ''}>Use Cases</Link>
           <Link href="/company" className={pathname === '/company' ? 'active' : ''}>Company</Link>
         </nav>
         <div className="nav-actions">
-          <button 
-            type="button" 
+          <button
+            type="button"
             className="nav-cta"
             onClick={openDatasetModal}
           >
