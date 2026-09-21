@@ -3,9 +3,9 @@ import Image from 'next/image';
 export default function SentimentAnalysisPage() {
   return (
     <main>
-      <section className="premium-hero" style={{ background: "#fff", paddingBottom: "0" }}>
+      <section style={{ padding: "60px 0 40px", textAlign: "center", position: "relative" }}>
         <div className="container">
-          <h1>Sentiment Analysis</h1>
+          <h1 style={{ fontSize: "clamp(2.5rem, 4.5vw, 3.5rem)", color: "var(--navy)", fontWeight: 800, letterSpacing: "-0.04em", maxWidth: "900px", margin: "0 auto" }}>Sentiment Analysis</h1>
           <div className="premium-image-wrapper" style={{ marginTop: '2rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(18,60,100,0.12)' }}>
             <video src="/sentiment analysis.mp4" style={{ width: '100%', height: 'auto', display: 'block' }} controls autoPlay muted loop title="Sentiment Analysis Overview Video"></video>
           </div>
