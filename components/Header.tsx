@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
+import { openDatasetModal } from '@/components/DatasetModal';
 
 export default function Header() {
   const pathname = usePathname();
@@ -18,11 +19,10 @@ export default function Header() {
       <div className="navbar">
         <Link href="/" className="brand" aria-label="PI-BI Technologies home">
           <img src="/images/pibi_logo.png" alt="Pibi Tech" />
-          <span className="ai-badge">AI</span>
         </Link>
-        <button 
-          className="menu-btn" 
-          aria-label="Open menu" 
+        <button
+          className="menu-btn"
+          aria-label="Open menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen(!menuOpen)}
         >
@@ -33,8 +33,8 @@ export default function Header() {
             Home
           </Link>
           <div className={`has-menu ${solutionsOpen ? 'open' : ''}`} data-sol>
-            <button 
-              aria-expanded={solutionsOpen} 
+            <button
+              aria-expanded={solutionsOpen}
               aria-haspopup="true"
               onClick={() => setSolutionsOpen(!solutionsOpen)}
             >
@@ -72,10 +72,14 @@ export default function Header() {
           <Link href="/company" className={pathname === '/company' ? 'active' : ''}>Company</Link>
         </nav>
         <div className="nav-actions">
-          <Link href="/company" className="nav-cta">
+          <button 
+            type="button" 
+            className="nav-cta"
+            onClick={openDatasetModal}
+          >
             <svg className="icon" aria-hidden="true" style={{ width: 14, height: 14 }}><use href="#i-arrow" /></svg>
             <span>Talk to Our AI Team</span>
-          </Link>
+          </button>
         </div>
       </div>
     </header>

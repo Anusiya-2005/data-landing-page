@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import { openDatasetModal } from '@/components/DatasetModal';
 
 export default function Page() {
   return (
@@ -128,6 +131,32 @@ export default function Page() {
                 Learn more <svg className="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
               </span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Get in Touch CTA Section (matching Screenshot 1) */}
+      <section className="section cta-section" id="contact">
+        <div className="container">
+          <div className="section-head center">
+            <span className="section-kicker">GET IN TOUCH</span>
+            <h2>Ready to Build AI You Can Trust?</h2>
+            <p>
+              Create AI-ready data with enterprise dataset creation, Human-in-the-Loop validation, AI evaluation, and governance built for production-scale AI.
+            </p>
+          </div>
+
+          <div className="cta-box-card">
+            <h3>
+              Let&apos;s discuss your AI initiative and build the right data foundation for success.
+            </h3>
+            <button 
+              type="button" 
+              className="btn primary cta-modal-btn"
+              onClick={openDatasetModal}
+            >
+              Talk to an AI Data Expert
+            </button>
           </div>
         </div>
       </section>

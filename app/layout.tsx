@@ -4,6 +4,7 @@ import './globals.css';
 import Icons from '@/components/Icons';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import DatasetModal from '@/components/DatasetModal';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <DatasetModal />
       </body>
     </html>
   );
