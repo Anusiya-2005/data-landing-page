@@ -7,7 +7,7 @@ export default function IndustriesPage() {
       <section className="hero center">
         <div className="container hero-grid">
           <div>
-            <h1>Industries We Serve</h1>
+            <h1>Industries We <span className="gradient-text">Serve</span></h1>
             <p className="hero-lead">Tailored AI data solutions for domain-specific challenges — from autonomous vehicles to clinical AI.</p>
           </div>
         </div>
@@ -18,7 +18,7 @@ export default function IndustriesPage() {
         <div className="container">
           <div className="section-head center">
             <span className="section-kicker">SECTORS</span>
-            <h2>Powering AI Across Industries</h2>
+            <h2>Powering AI <span className="gradient-text">Across Industries</span></h2>
             <p>We bring deep domain expertise to every dataset we build, ensuring your models perform reliably in the real world.</p>
           </div>
           <div className="industry-grid">
