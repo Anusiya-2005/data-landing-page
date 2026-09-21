@@ -21,6 +21,30 @@ export default function TextAnnotationPage() {
         </div>
       </section>
 
+      <section className="video-section" style={{ padding: '4rem 0', backgroundColor: '#f8fafc', textAlign: 'center' }}>
+        <div className="container">
+          <h2>Service Overview Video</h2>
+          <p style={{ marginBottom: '2rem', color: '#64748b' }}>Learn more about our text annotation approach and methodologies.</p>
+          <div className="video-wrapper" style={{ maxWidth: '800px', margin: '0 auto', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+            <video 
+              src="/annotation.mp4" 
+              style={{ width: '100%', height: 'auto', display: 'block' }}
+              controls
+              title="Text Annotation Overview Video"
+            ></video>
+          </div>
+          <div className="detailed-explanation" style={{ marginTop: '3rem', textAlign: 'left', maxWidth: '800px', margin: '3rem auto 0', lineHeight: '1.8', fontSize: '1.1rem', color: '#334155' }}>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#0f172a' }}>Why Text Annotation Matters</h3>
+            <p style={{ marginBottom: '1rem' }}>
+              Text annotation is the foundational step in building powerful Natural Language Processing (NLP) models. By accurately labeling words, phrases, and semantic structures, we transform unstructured text into high-quality, structured training data. This enables algorithms to comprehend context, intent, and nuance—bridging the gap between human communication and machine understanding.
+            </p>
+            <p>
+              Our meticulous annotation process ensures that every dataset is handled with precision. Whether it's tagging parts of speech, categorizing entire documents, or identifying complex entity relationships, our expert team provides the reliable ground truth your AI models need to perform in real-world scenarios with exceptional accuracy.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="premium-content">
         <div className="container">
           <div className="section-head center">

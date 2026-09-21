@@ -21,6 +21,30 @@ export default function TextClassificationPage() {
         </div>
       </section>
 
+      <section className="video-section" style={{ padding: '4rem 0', backgroundColor: '#f8fafc', textAlign: 'center' }}>
+        <div className="container">
+          <h2>Service Overview Video</h2>
+          <p style={{ marginBottom: '2rem', color: '#64748b' }}>Learn more about our text classification approach and methodologies.</p>
+          <div className="video-wrapper" style={{ maxWidth: '800px', margin: '0 auto', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+            <video 
+              src="/text classification.mp4" 
+              style={{ width: '100%', height: 'auto', display: 'block' }}
+              controls
+              title="Text Classification Overview Video"
+            ></video>
+          </div>
+          <div className="detailed-explanation" style={{ marginTop: '3rem', textAlign: 'left', maxWidth: '800px', margin: '3rem auto 0', lineHeight: '1.8', fontSize: '1.1rem', color: '#334155' }}>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#0f172a' }}>Why Text Classification Matters</h3>
+            <p style={{ marginBottom: '1rem' }}>
+              Text classification is vital for managing the immense flow of unstructured data in modern digital ecosystems. By intelligently categorizing text into predefined topics, intents, and sentiments, businesses can automate complex routing and prioritization tasks, significantly reducing manual effort and speeding up response times.
+            </p>
+            <p>
+              Our expert labeling team builds comprehensive training sets that teach models to categorize texts with high accuracy. Whether it's sorting millions of product reviews, filtering spam, routing customer support tickets, or detecting specific themes across social media, our reliable annotations give your classification algorithms the precision they need to scale seamlessly.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="premium-content">
         <div className="container">
           <div className="section-head center">
