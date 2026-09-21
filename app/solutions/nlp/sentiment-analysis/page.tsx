@@ -3,37 +3,20 @@ import Image from 'next/image';
 export default function SentimentAnalysisPage() {
   return (
     <main>
-      <section className="premium-hero">
+      <section className="premium-hero" style={{ background: "#fff", paddingBottom: "0" }}>
         <div className="container">
           <h1>Sentiment Analysis</h1>
-          <div className="premium-image-wrapper" style={{ marginTop: '3rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', background: '#000' }}>
+          <div className="premium-image-wrapper" style={{ marginTop: '2rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(18,60,100,0.12)' }}>
             <video src="/sentiment analysis.mp4" style={{ width: '100%', height: 'auto', display: 'block' }} controls autoPlay muted loop title="Sentiment Analysis Overview Video"></video>
           </div>
         </div>
       </section>
 
-      <section className="section alt">
+      <section className="section">
         <div className="container">
-          <div style={{ maxWidth: '860px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '2rem', fontWeight: 800, marginBottom: '2rem', letterSpacing: '-0.03em' }}>What we cover</h2>
-            <ul className="svc-list">
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Data Labeling</strong> — Applies fine-grained sentiment tags across reviews, tickets, and social posts at scale.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Expressive-subjective Tagging</strong> — Tags language that conveys emotions indirectly through irony, word choice, or tone.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Direct-subjective Tagging</strong> — Marks explicit first-person opinion statements for clear sentiment signal extraction.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Objective-speech-event Tagging</strong> — Labels neutral factual reporting to separate it from genuine opinion in model training.</span>
-              </li>
-            </ul>
+          <div style={{ maxWidth: '780px', margin: '0 auto' }}>
+            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is Sentiment Analysis?</h2>
+            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Sentiment analysis is the NLP task of automatically identifying and categorizing the opinions, emotions, and attitudes expressed in text. It goes far beyond binary positive or negative classification — nuanced sentiment labeling distinguishes between a writer directly expressing a personal opinion, language that conveys emotion indirectly through word choice and tone, and neutral factual reporting of what someone else said. This level of precision is essential for building models that accurately understand customer feedback, monitor brand perception, analyze survey responses, and power recommendation systems. At PIBI Solutions, we provide fine-grained sentiment annotation services covering expressive-subjective tagging, direct-subjective tagging, and objective-speech-event tagging — giving your models the richly detailed ground truth they need to understand not just what people say, but how they truly feel.</p>
           </div>
         </div>
       </section>

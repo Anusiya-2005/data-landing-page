@@ -3,37 +3,20 @@ import Image from 'next/image';
 export default function VideoTranscriptionPage() {
   return (
     <main>
-      <section className="premium-hero">
+      <section className="premium-hero" style={{ background: "#fff", paddingBottom: "0" }}>
         <div className="container">
           <h1>Video Transcription</h1>
-          <div className="premium-image-wrapper" style={{ marginTop: '3rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', background: '#000' }}>
+          <div className="premium-image-wrapper" style={{ marginTop: '2rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(18,60,100,0.12)' }}>
             <video src="/video transcription.mp4" style={{ width: '100%', height: 'auto', display: 'block' }} controls autoPlay muted loop title="Video Transcription Overview Video"></video>
           </div>
         </div>
       </section>
 
-      <section className="section alt">
+      <section className="section">
         <div className="container">
-          <div style={{ maxWidth: '860px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '2rem', fontWeight: 800, marginBottom: '2rem', letterSpacing: '-0.03em' }}>What we cover</h2>
-            <ul className="svc-list">
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Video-to-Text &amp; Text-to-Video Transcription</strong> — Converts multi-speaker video audio into clean, timestamped text for model training.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Video-to-Text &amp; Text-to-Video Translation</strong> — Translates transcripts across languages while preserving context, timing, and speaker intent.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Video Transcripts Formatting</strong> — Structures transcripts with speaker labels, timestamps, and metadata to fit your pipeline schema.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Video Transcripts Customization</strong> — Adapts terminology, redaction, and format to match your project's style guide and domain.</span>
-              </li>
-            </ul>
+          <div style={{ maxWidth: '780px', margin: '0 auto' }}>
+            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is Video Transcription?</h2>
+            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Video transcription is the process of converting the spoken audio within video content into accurate, well-structured written text that is temporally aligned with the footage. As video has become the dominant format for corporate training, medical documentation, legal proceedings, and consumer media, the ability to transform that audio content into machine-readable text is critical for search, accessibility, and AI model training. At PIBI Solutions, we handle the full transcription pipeline — from processing multi-speaker conversations with overlapping dialogue and domain-specific jargon, to formatting the resulting transcripts with speaker diarization, precise timestamps, and custom metadata tags. We also support translation across multiple languages, ensuring that meaning, tone, and timing are preserved across every target locale, not just words swapped out literally.</p>
           </div>
         </div>
       </section>

@@ -3,37 +3,20 @@ import Image from 'next/image';
 export default function FeatureClassificationPage() {
   return (
     <main>
-      <section className="premium-hero">
+      <section className="premium-hero" style={{ background: "#fff", paddingBottom: "0" }}>
         <div className="container">
           <h1>Feature Classification</h1>
-          <div className="premium-image-wrapper" style={{ marginTop: '3rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', background: '#000' }}>
+          <div className="premium-image-wrapper" style={{ marginTop: '2rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(18,60,100,0.12)' }}>
             <video src="/feature classification.mp4" style={{ width: '100%', height: 'auto', display: 'block' }} controls autoPlay muted loop title="Feature Classification Overview Video"></video>
           </div>
         </div>
       </section>
 
-      <section className="section alt">
+      <section className="section">
         <div className="container">
-          <div style={{ maxWidth: '860px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '2rem', fontWeight: 800, marginBottom: '2rem', letterSpacing: '-0.03em' }}>What we cover</h2>
-            <ul className="svc-list">
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Export Training Samples</strong> — Delivers formatted, feature-labeled batches ready for direct pipeline ingestion.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Expressive-subjective Tagging</strong> — Tags implicit emotional language to separate expressive text from neutral descriptions.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Direct-subjective Tagging</strong> — Labels opinion-bearing segments to isolate user views from factual product content.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Objective-speech-event Tagging</strong> — Marks neutral reportorial segments to keep feature signals clean and unambiguous.</span>
-              </li>
-            </ul>
+          <div style={{ maxWidth: '780px', margin: '0 auto' }}>
+            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is Feature Classification?</h2>
+            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Feature classification is the process of labeling text samples with the specific linguistic or content features they exhibit — such as whether the text expresses a subjective opinion, reports a neutral fact, or carries implicit emotional content. These feature labels are used to train models that can intelligently route, analyze, and extract value from large volumes of diverse text. Feature classification is especially important in domains like product review mining, customer feedback analysis, and content moderation, where the distinction between an objective statement and a personal opinion fundamentally changes how the text should be processed. At PIBI Solutions, we prepare labeled training samples that describe the key features of each text unit — covering expressive-subjective, direct-subjective, and objective-speech-event categories — delivered in a format ready for direct ingestion into your training pipeline.</p>
           </div>
         </div>
       </section>

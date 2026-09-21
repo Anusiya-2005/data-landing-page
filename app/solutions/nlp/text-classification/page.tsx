@@ -3,37 +3,20 @@ import Image from 'next/image';
 export default function TextClassificationPage() {
   return (
     <main>
-      <section className="premium-hero">
+      <section className="premium-hero" style={{ background: "#fff", paddingBottom: "0" }}>
         <div className="container">
           <h1>Text Classification</h1>
-          <div className="premium-image-wrapper" style={{ marginTop: '3rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', background: '#000' }}>
+          <div className="premium-image-wrapper" style={{ marginTop: '2rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(18,60,100,0.12)' }}>
             <video src="/text classification.mp4" style={{ width: '100%', height: 'auto', display: 'block' }} controls autoPlay muted loop title="Text Classification Overview Video"></video>
           </div>
         </div>
       </section>
 
-      <section className="section alt">
+      <section className="section">
         <div className="container">
-          <div style={{ maxWidth: '860px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '2rem', fontWeight: 800, marginBottom: '2rem', letterSpacing: '-0.03em' }}>What we cover</h2>
-            <ul className="svc-list">
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Product Categorization</strong> — Labels product titles and attributes to power accurate e-commerce search and discovery.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Language Identification</strong> — Detects the language of text streams to route content to the right regional pipeline.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Sentiment Analysis</strong> — Categorizes emotional tone across reviews and feedback with nuanced, fine-grained labels.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Theme Detection</strong> — Identifies recurring topics across content to power summarization and recommendation engines.</span>
-              </li>
-            </ul>
+          <div style={{ maxWidth: '780px', margin: '0 auto' }}>
+            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is Text Classification?</h2>
+            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Text classification is the task of automatically assigning one or more predefined labels to a piece of text, enabling machines to sort, route, and understand content at a scale no human team could match. From deciding which department should handle a support ticket, to detecting the language of an incoming message, to categorizing thousands of product listings in an e-commerce catalog, text classification is the engine behind countless intelligent automation workflows. At PIBI Solutions, we prepare the high-quality labeled datasets that train these classifiers. Our annotators apply taxonomy-aligned labels across product descriptions, reviews, articles, and conversation threads — covering product categorization, language identification, sentiment analysis, and theme detection. Each dataset is built to the precision your model needs to generalize confidently to real-world, unseen text.</p>
           </div>
         </div>
       </section>

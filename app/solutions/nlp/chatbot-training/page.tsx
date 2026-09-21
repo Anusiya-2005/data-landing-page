@@ -3,33 +3,20 @@ import Image from 'next/image';
 export default function ChatbotTrainingPage() {
   return (
     <main>
-      <section className="premium-hero">
+      <section className="premium-hero" style={{ background: "#fff", paddingBottom: "0" }}>
         <div className="container">
           <h1>Chatbot Training</h1>
-          <div className="premium-image-wrapper" style={{ marginTop: '3rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', background: '#000' }}>
+          <div className="premium-image-wrapper" style={{ marginTop: '2rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(18,60,100,0.12)' }}>
             <video src="/chatbot training.mp4" style={{ width: '100%', height: 'auto', display: 'block' }} controls autoPlay muted loop title="Chatbot Training Overview Video"></video>
           </div>
         </div>
       </section>
 
-      <section className="section alt">
+      <section className="section">
         <div className="container">
-          <div style={{ maxWidth: '860px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '2rem', fontWeight: 800, marginBottom: '2rem', letterSpacing: '-0.03em' }}>What we cover</h2>
-            <ul className="svc-list">
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Text/Voice Message Recognition Training Data</strong> — Annotates diverse inputs — slang, typos, regional phrasing — across text and voice modalities.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Training Data for Chatbots to Accurately Respond</strong> — Pairs user queries with ideal responses aligned to your brand voice and business rules.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Chatbot Training to Maintain Conversational Protocols</strong> — Labels greetings, escalations, and hand-offs so assistants follow correct conversational flows.</span>
-              </li>
-            </ul>
+          <div style={{ maxWidth: '780px', margin: '0 auto' }}>
+            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is Chatbot Training Data?</h2>
+            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>A chatbot or conversational AI model is only as good as the data it was trained on. Chatbot training requires carefully curated datasets of real-world messages paired with ideal responses, intent labels, entity tags, and conversation flow annotations — across both text and voice modalities. The data must reflect the full diversity of how real users communicate: different phrasings of the same intent, regional slang, typos, multi-turn context, and ambiguous requests that require a clarifying question. At PIBI Solutions, we build these conversational training datasets from the ground up. Our teams annotate message recognition data, create ideal response pairs aligned to your brand voice and business rules, and label the conversational protocols — greetings, escalations, and hand-offs — that ensure your assistant behaves professionally and consistently across every interaction type.</p>
           </div>
         </div>
       </section>

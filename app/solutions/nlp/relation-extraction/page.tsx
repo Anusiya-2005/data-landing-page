@@ -3,41 +3,20 @@ import Image from 'next/image';
 export default function RelationExtractionPage() {
   return (
     <main>
-      <section className="premium-hero">
+      <section className="premium-hero" style={{ background: "#fff", paddingBottom: "0" }}>
         <div className="container">
           <h1>Relation Extraction</h1>
-          <div className="premium-image-wrapper" style={{ marginTop: '3rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', background: '#000' }}>
+          <div className="premium-image-wrapper" style={{ marginTop: '2rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(18,60,100,0.12)' }}>
             <video src="/relation extraction.mp4" style={{ width: '100%', height: 'auto', display: 'block' }} controls autoPlay muted loop title="Relation Extraction Overview Video"></video>
           </div>
         </div>
       </section>
 
-      <section className="section alt">
+      <section className="section">
         <div className="container">
-          <div style={{ maxWidth: '860px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '2rem', fontWeight: 800, marginBottom: '2rem', letterSpacing: '-0.03em' }}>What we cover</h2>
-            <ul className="svc-list">
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Text Annotation</strong> — Marks entity spans in text as the foundation for downstream relation labeling.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Open Relationship Extraction</strong> — Discovers all relationships in text without a fixed schema, ideal for broad knowledge discovery.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Supervised Relation Extraction</strong> — Annotates predefined relation types for high-accuracy domain-specific model training.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Targeted Relationship Extraction</strong> — Focuses annotation on the high-value entity pairs most relevant to your use case.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Entity Relationship Extraction for NLP</strong> — Builds end-to-end annotated datasets mapping entity pairs to semantic relationships.</span>
-              </li>
-            </ul>
+          <div style={{ maxWidth: '780px', margin: '0 auto' }}>
+            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is Relation Extraction?</h2>
+            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Relation extraction is the NLP task of identifying and labeling the semantic connections between entities mentioned in text — for example, recognizing that a person works at an organization, that a chemical compound causes a specific disease, or that a company acquired another company on a given date. This structured knowledge, derived from raw unstructured text, is the backbone of knowledge graphs, intelligent question-answering systems, and automated research tools. At PIBI Solutions, we build the annotated training datasets that power relation extraction models at scale. Whether your project requires open extraction to discover any relationships that appear in a corpus, supervised extraction using a predefined schema, or targeted extraction focused only on the entity pairs that matter to your domain, our annotation team delivers precise, consistent, and comprehensive labeled data ready for your pipeline.</p>
           </div>
         </div>
       </section>

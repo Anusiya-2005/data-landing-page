@@ -3,37 +3,20 @@ import Image from 'next/image';
 export default function TextAnnotationPage() {
   return (
     <main>
-      <section className="premium-hero">
+      <section className="premium-hero" style={{ background: "#fff", paddingBottom: "0" }}>
         <div className="container">
           <h1>Text Annotation</h1>
-          <div className="premium-image-wrapper" style={{ marginTop: '3rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', background: '#000' }}>
+          <div className="premium-image-wrapper" style={{ marginTop: '2rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(18,60,100,0.12)' }}>
             <video src="/annotation.mp4" style={{ width: '100%', height: 'auto', display: 'block' }} controls autoPlay muted loop title="Text Annotation Overview Video"></video>
           </div>
         </div>
       </section>
 
-      <section className="section alt">
+      <section className="section">
         <div className="container">
-          <div style={{ maxWidth: '860px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '2rem', fontWeight: 800, marginBottom: '2rem', letterSpacing: '-0.03em' }}>What we cover</h2>
-            <ul className="svc-list">
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Text Categorization</strong> — Assigns labels to documents and sentences so models can sort and route text at scale.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Semantic Annotation</strong> — Labels the semantic roles of words and phrases to capture intent beyond keywords.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Phrase Chunking</strong> — Groups sentences into noun and verb phrases for structural language understanding.</span>
-              </li>
-              <li>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Entity Linking</strong> — Connects named entities to knowledge bases like Wikidata to resolve ambiguity.</span>
-              </li>
-            </ul>
+          <div style={{ maxWidth: '780px', margin: '0 auto' }}>
+            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is Text Annotation?</h2>
+            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Text annotation is the foundational step in building any powerful Natural Language Processing system. It is the process of labeling raw text — words, phrases, sentences, and entire documents — with structured metadata that machine learning models can learn from. Without annotation, a model sees nothing more than a sequence of characters. With annotation, it understands meaning: who is mentioned, what category a document belongs to, how words relate syntactically, and what a writer intends. At PIBI Solutions, our annotation pipeline covers everything from basic text categorization and phrase chunking to advanced semantic labeling and entity linking against external knowledge bases. Every label is applied following strict guidelines, reviewed for consistency, and delivered in your required format — giving your models the reliable ground truth they need to perform with exceptional accuracy in production.</p>
           </div>
         </div>
       </section>
