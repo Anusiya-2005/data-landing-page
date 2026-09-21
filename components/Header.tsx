@@ -18,6 +18,7 @@ export default function Header() {
       <div className="navbar">
         <Link href="/" className="brand" aria-label="PI-BI Technologies home">
           <img src="/images/pibi_logo.png" alt="Pibi Tech" />
+          <span className="ai-badge">AI</span>
         </Link>
         <button 
           className="menu-btn" 
@@ -70,6 +71,12 @@ export default function Header() {
           <Link href="/use-cases" className={pathname === '/use-cases' ? 'active' : ''}>Use Cases</Link>
           <Link href="/company" className={pathname === '/company' ? 'active' : ''}>Company</Link>
         </nav>
+        <div className="nav-actions">
+          <Link href="/company" className="nav-cta">
+            <svg className="icon" aria-hidden="true" style={{ width: 14, height: 14 }}><use href="#i-arrow" /></svg>
+            <span>Talk to Our AI Team</span>
+          </Link>
+        </div>
       </div>
     </header>
   );
