@@ -191,7 +191,7 @@ export default function ContactUsPage() {
       <section className="offices-section">
         <div className="container">
           <h2 className="offices-heading">
-            Global <span className="gradient-text">Offices</span>
+            Global Offices
           </h2>
 
           <div className="offices-grid">
@@ -226,7 +226,7 @@ export default function ContactUsPage() {
           </div>
 
           <h2 className="offices-heading" style={{ marginTop: '64px' }}>
-            India <span className="gradient-text">Offices</span>
+            India Offices
           </h2>
 
           <div className="offices-grid offices-grid-3">

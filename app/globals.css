@@ -3562,10 +3562,17 @@ table.ds td:first-child {
 .offices-heading {
   font-size: 2.25rem;
   font-weight: 800;
-  color: #ffffff;
+  color: #ffffff !important;
   text-align: center;
   margin-bottom: 48px;
   letter-spacing: -0.02em;
+}
+
+.offices-heading span,
+.offices-heading .gradient-text {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: none !important;
 }
 
 .offices-grid {
@@ -3630,7 +3637,7 @@ table.ds td:first-child {
 }
 
 .office-address {
-  color: #cbd5e1;
+  color: #e2e8f0;
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 0;
