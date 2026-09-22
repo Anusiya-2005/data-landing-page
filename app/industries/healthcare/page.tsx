@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import WhatWeCoverList from '@/components/WhatWeCoverList';
 
 export default function HealthcarePage() {
   return (
@@ -45,32 +46,8 @@ export default function HealthcarePage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div style={{ maxWidth: '780px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '0.5rem', letterSpacing: '-0.03em' }}>What we <span className="gradient-text">cover</span></h2>
-            <p style={{ color: 'var(--muted)', marginBottom: '2rem' }}>End-to-end healthcare data annotation from raw medical imaging to complex clinical text, built for compliant AI development.</p>
-            <ul className="svc-list">
-              <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Medical Image Annotation</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Precise labeling of X-Rays, MRI, CT Scans, PET scans, ultrasound, and digital pathology slides. Our annotators apply region-of-interest masks, organ segmentations, lesion bounding boxes, and anatomical landmark annotations, validated by clinical experts to meet diagnostic-grade accuracy standards.</span></span>
-              </li>
-              <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Clinical NLP</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Extracting and structuring patient conditions, medications, dosages, procedures, lab results, and treatment plans from unstructured clinical notes, discharge summaries, and electronic health records, enabling your models to reason over free-text medical documentation with high precision.</span></span>
-              </li>
-              <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Genomics Data Labeling</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Annotating complex genomic sequences, variant call files, and biological pathway data to support AI models in precision medicine, drug target identification, and next-generation sequencing analysis pipelines.</span></span>
-              </li>
-              <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Patient Data De-identification</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Detecting and redacting all 18 HIPAA Safe Harbor identifiers (names, dates, geographic data, phone numbers, and more) from medical records, imaging metadata, and clinical notes, ensuring your AI training data is fully compliant for use.</span></span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      {/* What we cover - Pop-out interactive list */}
+      <WhatWeCoverList industry="healthcare" />
 
       <section className="section alt">
         <div className="container">

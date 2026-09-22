@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import WhatWeCoverList from '@/components/WhatWeCoverList';
 
 export default function AutonomousVehiclesPage() {
   return (
@@ -48,33 +49,8 @@ export default function AutonomousVehiclesPage() {
         </div>
       </section>
 
-      {/* What we cover */}
-      <section className="section">
-        <div className="container">
-          <div style={{ maxWidth: '780px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '0.5rem', letterSpacing: '-0.03em' }}>What we <span className="gradient-text">cover</span></h2>
-            <p style={{ color: 'var(--muted)', marginBottom: '2rem' }}>Our AV annotation pipeline supports all major sensor modalities and annotation types required by Tier 1 autonomous vehicle programs.</p>
-            <ul className="svc-list">
-              <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Bounding Boxes &amp; Cuboids</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Precise 2D and 3D tracking of vehicles, pedestrians, cyclists, motorcyclists, and moving obstacles across diverse road environments, intersections, and challenging weather. Supports KITTI, nuScenes, Waymo, and custom formats.</span></span>
-              </li>
-              <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Semantic &amp; Instance Segmentation</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Pixel-perfect labeling of roads, lane markings, crosswalks, traffic signs, traffic lights, sidewalks, vegetation, and sky, delivering full scene understanding at every frame across day, night, and adverse weather conditions.</span></span>
-              </li>
-              <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>LiDAR &amp; 3D Point Cloud Annotation</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Fusing camera and LiDAR sensor data to build a precise spatial map of the 3D driving environment. We annotate 3D cuboids, ground plane segmentation, and drivable surface labels that power accurate depth perception and object localization.</span></span>
-              </li>
-              <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Video Tracking &amp; Trajectory Annotation</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Annotating object trajectories, motion vectors, and behavioral event sequences across video frame sequences, providing the temporal ground truth your perception and prediction models need to anticipate what other road users will do next.</span></span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      {/* What we cover - Pop-out interactive list */}
+      <WhatWeCoverList industry="autonomous-vehicles" />
 
       {/* Why PIBI */}
       <section className="section alt">

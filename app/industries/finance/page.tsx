@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import WhatWeCoverList from '@/components/WhatWeCoverList';
 
 export default function FinancePage() {
   return (
@@ -45,32 +46,8 @@ export default function FinancePage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div style={{ maxWidth: '780px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '0.5rem', letterSpacing: '-0.03em' }}>What we <span className="gradient-text">cover</span></h2>
-            <p style={{ color: 'var(--muted)', marginBottom: '2rem' }}>Specialized financial data annotation from document extraction to fraud signals, covering every AI use case in modern banking and FinTech.</p>
-            <ul className="svc-list">
-              <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Document Digitization</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Extracting precise structured data from invoices, purchase orders, contracts, bank statements, tax forms, and financial reports. Our annotators identify key fields, table structures, and entity relationships, producing clean, structured output ready for downstream AI processing and ERP integration.</span></span>
-              </li>
-              <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>KYC &amp; Identity Verification Data</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Annotating passports, national IDs, driver licenses, utility bills, and selfie-liveness pairs to train identity document classifiers, OCR extraction models, and biometric verification systems that power compliant digital onboarding and AML screening.</span></span>
-              </li>
-              <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Financial Sentiment Analysis</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Tagging earnings call transcripts, analyst research notes, market news articles, regulatory filings, and financial social media with fine-grained directional and aspect-level sentiment signals that power alpha generation, risk monitoring, and investor intelligence platforms.</span></span>
-              </li>
-              <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
-                <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Fraud Detection Data Labeling</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Categorizing transactional anomalies, account takeover behavioral patterns, synthetic identity signals, and card-not-present fraud indicators, building the richly labeled ground truth datasets that train real-time fraud detection and risk scoring models.</span></span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      {/* What we cover - Pop-out interactive list */}
+      <WhatWeCoverList industry="finance" />
 
       <section className="section alt">
         <div className="container">
