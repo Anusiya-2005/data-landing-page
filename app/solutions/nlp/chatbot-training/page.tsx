@@ -26,14 +26,19 @@ export default function ChatbotTrainingPage() {
           <div className="section-head center"><h2>Detailed Offerings</h2><p>Empowering conversational AI with context and intelligence.</p></div>
           <div className="premium-grid">
             <div className="premium-card">
-              <div className="premium-card-img"><Image src="/images/language_id.jpg" alt="Message Recognition Training" width={600} height={338} /></div>
-              <h3>Message Recognition Training</h3>
-              <p>Annotate text and voice inputs to help models accurately recognize slang, typos, and nuanced user phrasing across all channels.</p>
+              <div className="premium-card-img"><Image src="/images/language_id.jpg" alt="Text/Voice Message Recognition Training Data" width={600} height={338} /></div>
+              <h3>Text/Voice Message Recognition Training Data</h3>
+              <p>Annotate text and voice inputs to help models accurately recognize slang, typos, regional phrasings, and nuanced user intent across all channels and languages.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-img"><Image src="/images/text_categorization.jpg" alt="Conversational Protocols" width={600} height={338} /></div>
-              <h3>Conversational Protocols</h3>
-              <p>Train chatbots to follow specific business logic, maintain a polite tone, and seamlessly hand off to human agents when needed.</p>
+              <div className="premium-card-img"><Image src="/images/text_categorization.jpg" alt="Training Data for Accurate Responses" width={600} height={338} /></div>
+              <h3>Training Data for Accurate Responses</h3>
+              <p>Curate high-quality prompt-response pairs aligned to your brand voice and business rules, giving your model the reliable ground truth it needs to answer user queries correctly and consistently.</p>
+            </div>
+            <div className="premium-card">
+              <div className="premium-card-img"><Image src="/images/semantic_annotation.jpg" alt="Chatbot Training for Conversational Protocols" width={600} height={338} /></div>
+              <h3>Chatbot Training for Conversational Protocols</h3>
+              <p>Label greetings, escalations, clarifying questions, and agent hand-offs so your assistant follows the exact conversational flow your business requires — professionally and consistently across every interaction.</p>
             </div>
           </div>
         </div>

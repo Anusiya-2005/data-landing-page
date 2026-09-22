@@ -52,11 +52,18 @@ export default function DataLabelingForLLMsPage() {
               <p>We produce labeled datasets for code generation, completion, debugging, and explanation tasks across Python, JavaScript, SQL, and other languages. Human reviewers check correctness, efficiency, and documentation quality so your coding model learns from genuinely good examples.</p>
             </div>
             <div className="premium-card">
+              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#27ae60,#1e8449)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 014-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
+              </div>
+              <h3>Data Conversion</h3>
+              <p>We transform content from PDFs, scanned documents, tables, audio transcripts, and legacy formats into clean, structured training-ready datasets — with full provenance tracking, schema mapping, and quality validation at every conversion step.</p>
+            </div>
+            <div className="premium-card">
               <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#8e44ad,#6c3483)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
               </div>
-              <h3>Translation &amp; Data Conversion</h3>
-              <p>Our multilingual teams produce high-quality translated training pairs that preserve meaning, register, and cultural nuance. Data conversion transforms content from PDFs, tables, and legacy formats into clean, structured training-ready datasets with full provenance tracking.</p>
+              <h3>Translation</h3>
+              <p>Our multilingual teams produce high-quality translated training pairs that preserve meaning, register, tone, and cultural nuance across languages — giving your multilingual model the accurate parallel data it needs to learn genuine cross-language understanding.</p>
             </div>
           </div>
         </div>

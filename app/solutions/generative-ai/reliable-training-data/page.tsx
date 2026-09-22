@@ -58,6 +58,13 @@ export default function ReliableTrainingDataPage() {
               <h3>Continual Assessment</h3>
               <p>Data quality degrades as guidelines evolve and annotators change. We schedule systematic re-reviews at agreed intervals and apply updated guidelines retroactively where needed, ensuring the dataset you built on a year ago still meets your current quality standard.</p>
             </div>
+            <div className="premium-card">
+              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#27ae60,#1e8449)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+              </div>
+              <h3>Trustworthiness</h3>
+              <p>Every dataset we deliver requires domain expert sign-off before handover. Trustworthiness is not a self-certification — it is verified through independent review, documented evidence of quality checks, and a delivery report your team can audit at any point.</p>
+            </div>
           </div>
         </div>
       </section>

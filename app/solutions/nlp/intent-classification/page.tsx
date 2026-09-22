@@ -26,14 +26,19 @@ export default function IntentClassificationPage() {
           <div className="section-head center"><h2>Detailed Offerings</h2><p>Decoding user goals to drive automated actions.</p></div>
           <div className="premium-grid">
             <div className="premium-card">
+              <div className="premium-card-img"><Image src="/images/text_annotation_bg.jpg" alt="Importing Datasets" width={600} height={338} /></div>
+              <h3>Importing Datasets</h3>
+              <p>We ingest your existing message logs, conversation histories, and query datasets in any format — CSV, JSON, database exports — and prepare them for annotation with deduplication, language filtering, and quality checks.</p>
+            </div>
+            <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/semantic_annotation.jpg" alt="Analyzing Datasets" width={600} height={338} /></div>
               <h3>Analyzing Datasets</h3>
-              <p>We audit existing query logs to define a robust, non-overlapping intent taxonomy tailored to your users&apos; actual behaviors and goals.</p>
+              <p>We audit your data to define a robust, non-overlapping intent taxonomy tailored to your users&apos; actual behaviors and goals — identifying the intents that matter, removing duplicates, and resolving ambiguous edge cases before labeling begins.</p>
             </div>
             <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/language_id.jpg" alt="Tagging Texts" width={600} height={338} /></div>
               <h3>Tagging Texts</h3>
-              <p>Applying intent labels across thousands of utterances, encompassing edge cases, ambiguities, and multi-intent messages for robust model coverage.</p>
+              <p>Apply intent labels at scale across thousands of utterances, encompassing edge cases, ambiguous phrasings, and multi-intent messages — giving your model comprehensive ground truth coverage for production deployment.</p>
             </div>
           </div>
         </div>

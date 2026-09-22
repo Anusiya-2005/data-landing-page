@@ -26,14 +26,29 @@ export default function RelationExtractionPage() {
           <div className="section-head center"><h2>Detailed Offerings</h2><p>Mapping the complex web of relationships within your text.</p></div>
           <div className="premium-grid">
             <div className="premium-card">
+              <div className="premium-card-img"><Image src="/images/text_categorization.jpg" alt="Text Annotation" width={600} height={338} /></div>
+              <h3>Text Annotation</h3>
+              <p>We apply structured labels to raw text to mark entity mentions, coreferences, and contextual clues — the foundational layer that makes relation extraction possible at scale.</p>
+            </div>
+            <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/semantic_annotation.jpg" alt="Open Relationship Extraction" width={600} height={338} /></div>
               <h3>Open Relationship Extraction</h3>
-              <p>Discover and label diverse relationships as they naturally appear in text, ideal for broad knowledge discovery without predefined schemas.</p>
+              <p>Discover and label diverse relationships as they naturally appear in text, ideal for broad knowledge discovery without predefined schemas or a fixed relation type inventory.</p>
             </div>
             <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/theme_detection.jpg" alt="Supervised Relation Extraction" width={600} height={338} /></div>
               <h3>Supervised Relation Extraction</h3>
-              <p>Train models using carefully annotated examples of predefined relations, ensuring high accuracy for specific domain applications like knowledge graphs.</p>
+              <p>Train models using carefully annotated examples of predefined relations, ensuring high accuracy for specific domain applications like knowledge graphs, compliance pipelines, and document intelligence.</p>
+            </div>
+            <div className="premium-card">
+              <div className="premium-card-img"><Image src="/images/entity_linking.jpg" alt="Targeted Relationship Extraction" width={600} height={338} /></div>
+              <h3>Targeted Relationship Extraction</h3>
+              <p>Focus annotation effort exclusively on the entity pairs and relation types that matter to your use case, reducing labeling cost while maximizing precision on the relations your model actually needs.</p>
+            </div>
+            <div className="premium-card">
+              <div className="premium-card-img"><Image src="/images/phrase_chunking.jpg" alt="Entity Relationship Extraction for NLP" width={600} height={338} /></div>
+              <h3>Entity Relationship Extraction for NLP</h3>
+              <p>End-to-end pipeline support from entity detection through relation labeling, delivered in CoNLL, JSON, or custom formats ready for direct ingestion into your NLP training pipeline.</p>
             </div>
           </div>
         </div>
