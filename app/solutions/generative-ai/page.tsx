@@ -1,6 +1,217 @@
-﻿export default function Page() {
+import Link from 'next/link';
+
+export default function Page() {
   return (
-    <main className="page" data-route="/solutions/generative-ai"><section className="hero"><div className="container hero-grid"><div><h1>Human expertise behind every <span className="gradient-text">generative AI model</span></h1><p className="hero-lead">We provide the feedback, training data, and testing that help large language models become accurate, safe, and consistent.</p><div className="hero-actions"><button className="btn primary" data-scroll="services">Explore services <svg className="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><button className="btn secondary" data-scroll="faq">Read the FAQ</button></div></div><div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Response ranking</span></div><div className="win-body"><div className="pref-q">Explain compound interest to a teenager.</div><div className="pref"><div><div className="who"><span>Response A</span></div>Compound interest is when interest is added to your balance, which then earns more interest.</div><div className="win-r"><div className="who"><span>Response B</span><span className="pill t"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg> Preferred</span></div>Say you save 100 and earn 10 percent. Next year you earn 10 percent on 110, not on 100. Time does the rest.</div></div><div className="tagrow"><span className="pill g">Reviewer note</span><span className="pill c">Clearer, uses an example</span></div></div></div></div></div></div></section><section className="section alt"><div className="container overview"><div><h2>Data and feedback for <span className="gradient-text">generative AI</span></h2><p>Generative AI models need more than large volumes of text. They need well-designed prompts, high-quality responses, human feedback on what is helpful, and thorough testing for risks. Our generative AI services support each stage, from training data through to evaluation.</p></div><div className="jump"><h3>Jump to a <span className="gradient-text">service</span></h3><div className="chips"><button className="chip" data-scroll="rlhf">RLHF</button><button className="chip" data-scroll="stress-testing-your-ai-models">Stress Testing Your AI Models</button><button className="chip" data-scroll="reliable-generative-ai-training-data">Reliable Generative AI Training Data</button><button className="chip" data-scroll="data-labeling-for-large-language-models">Data Labeling for Large Language Models</button><button className="chip" data-scroll="prompt-and-response-generation">Prompt and Response Generation</button><button className="chip" data-scroll="generative-ai-driven-research-ops">Generative AI-Driven Research Ops</button></div></div></div></section><section className="section" data-anchor="services"><div className="container"><div className="section-head"><h2>Generative AI <span className="gradient-text">services</span></h2><p>Six service areas for building, aligning, and testing large language models.</p></div><div className="cards tall"><article className="svc v1" data-anchor="rlhf"><div className="svc-head"><span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-usercheck"/></svg></span><h3>RLHF Alignment</h3></div><div className="svc-body"><p>Use human preferences to guide a model toward helpful, consistent answers.</p><ul className="svc-list"><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Pre-Training Model</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Supervised Fine-Tuning</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Reward Model Training</span></li></ul></div></article><article className="svc v2" data-anchor="stress-testing-your-ai-models"><div className="svc-head"><span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-shield"/></svg></span><h3>Stress Testing Your AI Models</h3></div><div className="svc-body"><p>Probe a model for weaknesses before it reaches users.</p><ul className="svc-list"><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Adversarial Testing</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Vulnerability Analysis</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Report and Feedback</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Bias Auditing</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Response Refinement</span></li></ul></div></article><article className="svc v3" data-anchor="reliable-generative-ai-training-data"><div className="svc-head"><span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-lock"/></svg></span><h3>Reliable Generative AI Training Data</h3></div><div className="svc-body"><p>Build training data on principles that make it safe to depend on.</p><ul className="svc-list"><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Unmatched Compliance</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Fairness &amp; Inclusivity</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Transparent Governance</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Continual Assessment</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Trustworthiness</span></li></ul></div></article><article className="svc v1" data-anchor="data-labeling-for-large-language-models"><div className="svc-head"><span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-tag"/></svg></span><h3>Data Labeling for Large Language Models</h3></div><div className="svc-body"><p>Prepare labeled examples for each stage of LLM development.</p><ul className="svc-list"><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Pre-training</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Supervised Fine-tuning</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Data Conversion</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Code Generation</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Translation</span></li></ul></div></article><article className="svc v2" data-anchor="prompt-and-response-generation"><div className="svc-head"><span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-chat"/></svg></span><h3>Prompt &amp; Response Generation</h3></div><div className="svc-body"><p>Design the prompts and reference responses that teach a model how to behave.</p><ul className="svc-list"><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>AI Prompt Design &amp; Generation</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Prompts and Responses for LLMs</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Prompt Optimization</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>NLP Prompt Engineering</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>STEM Writing Prompt Design</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Multimodal Prompt Engineering</span></li></ul></div></article><article className="svc v3" data-anchor="generative-ai-driven-research-ops"><div className="svc-head"><span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-book"/></svg></span><h3>Generative AI-Driven Research Ops</h3></div><div className="svc-body"><p>Apply generative AI to research work, with domain experts guiding the results.</p><ul className="svc-list"><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>High-Context Prompting</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Domain Expert Oversight</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Quality Anchoring</span></li><li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Mass Literature Synthesis</span></li></ul></div></article></div></div></section><section className="section alt"><div className="container"><div className="rows"><div className="row"><div className="row-text"><h3>Aligning models with <span className="gradient-text">human preference</span></h3><p>Reinforcement learning from human feedback starts with a pre-trained model. It is refined on curated examples through supervised fine-tuning, and then a reward model is trained from human rankings of its outputs.</p><p>The reward model gives the base model a signal for which responses people prefer, helping it become more helpful and more consistent.</p><div className="row-tags"><span>Pre-training</span><span>Fine-tuning</span><span>Reward model</span></div></div><div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>RLHF process</span></div><div className="win-body"><div className="stages"><div className="stage"><span className="n">1</span><div><b>Pre-training model</b><span>Start from a base model with broad language ability.</span></div></div><div className="stage"><span className="n">2</span><div><b>Supervised fine-tuning</b><span>Teach it from curated prompts and ideal responses.</span></div></div><div className="stage"><span className="n">3</span><div><b>Reward model training</b><span>Learn which responses people rank higher.</span></div></div></div></div></div></div></div></div><div className="row flip"><div className="row-text"><h3>Finding weak points <span className="gradient-text">before users do</span></h3><p>Stress testing challenges a model with adversarial prompts and unusual inputs. Findings from vulnerability analysis and bias auditing are written up in clear reports, and response refinement uses that feedback to close the gaps.</p><p>Testing is repeated after each fix, so improvements can be checked against the same scenarios.</p><div className="row-tags"><span>Adversarial testing</span><span>Vulnerability analysis</span><span>Bias auditing</span><span>Response refinement</span></div></div><div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Stress test report</span></div><div className="win-body"><div className="srow"><span><b style={{color: 'var(--navy)'}}>Adversarial testing</b><br /><span style={{color: 'var(--muted)', fontSize: '.92em'}}>Prompt injection and jailbreak attempts</span></span><span className="pill c">In progress</span></div><div className="srow"><span><b style={{color: 'var(--navy)'}}>Vulnerability analysis</b><br /><span style={{color: 'var(--muted)', fontSize: '.92em'}}>Unsafe or restricted outputs</span></span><span className="pill b">Needs review</span></div><div className="srow"><span><b style={{color: 'var(--navy)'}}>Bias auditing</b><br /><span style={{color: 'var(--muted)', fontSize: '.92em'}}>Consistency across groups</span></span><span className="pill t">Passed</span></div><div className="srow"><span><b style={{color: 'var(--navy)'}}>Response refinement</b><br /><span style={{color: 'var(--muted)', fontSize: '.92em'}}>Fixes retested on the same prompts</span></span><span className="pill n">Fixed</span></div></div></div></div></div></div><div className="row"><div className="row-text"><h3>Prompts and responses that <span className="gradient-text">teach the right behavior</span></h3><p>Language models learn from well-designed prompts and high-quality responses. Data labeling covers pre-training, supervised fine-tuning, data conversion, code generation, and translation tasks.</p><p>Prompt design spans NLP, STEM writing, and multimodal use cases, with optimization passes that improve clarity and coverage.</p><div className="row-tags"><span>Prompt design</span><span>Prompt optimization</span><span>STEM writing</span><span>Multimodal</span></div></div><div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Prompt and response design</span></div><div className="win-body"><div className="lbl">PROMPT</div><div className="qa-item" style={{margin: '.4em 0 1em'}}>Write a short explanation of why the sky is blue, suitable for a high school physics class.</div><div className="lbl">REFERENCE RESPONSE</div><div className="qa-item" style={{margin: '.4em 0 0', fontWeight: '500', color: '#253B58'}}>Sunlight contains every color. As it passes through the atmosphere, air molecules scatter short blue wavelengths far more than long red ones, so blue light reaches your eyes from every direction.</div><div className="tagrow"><span className="pill b">STEM writing</span><span className="pill t">Optimized</span><span className="pill c">Reviewed</span></div></div></div></div></div></div><div className="row flip"><div className="row-text"><h3>Training data you can <span className="gradient-text">trust</span></h3><p>Reliable training data is compliant, fair, transparent, continually assessed, and trustworthy. Those qualities are built into how the data is collected, labeled, and reviewed.</p><p>Research operations add domain expert oversight and high-context prompting, so large volumes of literature can be synthesized with quality anchoring.</p><div className="row-tags"><span>Compliance</span><span>Fairness</span><span>Governance</span><span>Expert oversight</span></div></div><div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Data review checklist</span></div><div className="win-body"><div className="cl"><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Compliance<em>Permissions checked</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Fairness & inclusivity<em>Coverage reviewed</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Transparent governance<em>Sources documented</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Continual assessment<em>Re-reviewed each release</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Trustworthiness<em>Expert sign-off</em></div></div></div></div></div></div></div></div></div></section><section className="section" data-anchor="faq"><div className="container faq-wrap"><div className="section-head"><h2>Generative AI <span className="gradient-text">FAQ</span></h2><p>Short answers to common questions about Generative AI data services.</p></div><div className="faq-list"><details className="faq"><summary>What is RLHF?</summary><p>Reinforcement learning from human feedback is a training method. People rank a model's responses, a reward model learns those preferences, and the language model is then tuned to produce responses people prefer.</p></details><details className="faq"><summary>What is supervised fine-tuning?</summary><p>It means training a pre-trained model further on curated pairs of prompts and ideal responses, so that it follows instructions and matches a particular style or domain.</p></details><details className="faq"><summary>Why stress test a generative AI model?</summary><p>To find failures before users do, such as unsafe or biased outputs, prompt injection, factual errors, and inconsistent behavior. The findings are documented and used to refine the model's responses.</p></details><details className="faq"><summary>What makes generative AI training data reliable?</summary><p>Data collected with the right permissions, representing different groups fairly, with documented origins, reviewed continually, and accurate for its purpose.</p></details></div></div></section></main>
+    <main className="page" data-route="/solutions/generative-ai">
+      <section className="hero">
+        <div className="container hero-grid">
+          <div>
+            <h1>Human expertise behind every generative AI model</h1>
+            <p className="hero-lead">We provide the feedback, training data, and testing that help large language models become accurate, safe, and consistent.</p>
+            <div className="hero-actions">
+              <button className="btn primary" data-scroll="services">Explore services <svg className="icon" aria-hidden="true"><use href="#i-arrow" /></svg></button>
+              <button className="btn secondary" data-scroll="faq">Read the FAQ</button>
+            </div>
+          </div>
+          <div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Response ranking</span></div><div className="win-body"><div className="pref-q">Explain compound interest to a teenager.</div><div className="pref"><div><div className="who"><span>Response A</span></div>Compound interest is when interest is added to your balance, which then earns more interest.</div><div className="win-r"><div className="who"><span>Response B</span><span className="pill t"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg> Preferred</span></div>Say you save 100 and earn 10 percent. Next year you earn 10 percent on 110, not on 100. Time does the rest.</div></div><div className="tagrow"><span className="pill g">Reviewer note</span><span className="pill c">Clearer, uses an example</span></div></div></div></div></div>
+        </div>
+      </section>
+
+      <section className="section alt">
+        <div className="container overview">
+          <div>
+            <h2>Data and feedback for generative AI</h2>
+            <p>Generative AI models need more than large volumes of text. They need well-designed prompts, high-quality responses, human feedback on what is helpful, and thorough testing for risks. Our generative AI services support each stage, from training data through to evaluation.</p>
+          </div>
+          <div className="jump">
+            <h3>Jump to a service</h3>
+            <div className="chips">
+              <button className="chip" data-scroll="rlhf">RLHF</button>
+              <button className="chip" data-scroll="stress-testing">Stress Testing</button>
+              <button className="chip" data-scroll="reliable-training-data">Reliable Training Data</button>
+              <button className="chip" data-scroll="data-labeling-for-llms">Data Labeling for LLMs</button>
+              <button className="chip" data-scroll="prompt-and-response-generation">Prompt &amp; Response Generation</button>
+              <button className="chip" data-scroll="generative-ai-research-ops">Generative AI Research Ops</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section" data-anchor="services">
+        <div className="container">
+          <div className="section-head">
+            <h2>Generative AI services</h2>
+            <p>Six service areas for building, aligning, and testing large language models.</p>
+          </div>
+          <div className="cards">
+
+            {/* RLHF */}
+            <Link href="/solutions/generative-ai/rlhf" className="svc v1" data-anchor="rlhf">
+              <div className="svc-head">
+                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-usercheck" /></svg></span>
+                <h3>RLHF</h3>
+              </div>
+              <div className="svc-body">
+                <p>Use human preferences to guide a model toward helpful, consistent answers.</p>
+                <ul className="svc-list">
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Pre-Training Model</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Supervised Fine-Tuning</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Reward Model Training</span></li>
+                </ul>
+              </div>
+            </Link>
+
+            {/* Stress Testing */}
+            <Link href="/solutions/generative-ai/stress-testing" className="svc v2" data-anchor="stress-testing">
+              <div className="svc-head">
+                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-shield" /></svg></span>
+                <h3>Stress Testing Your AI Models</h3>
+              </div>
+              <div className="svc-body">
+                <p>Probe a model for weaknesses before it reaches users.</p>
+                <ul className="svc-list">
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Adversarial Testing</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Vulnerability Analysis</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Report and Feedback</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Bias Auditing</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Response Refinement</span></li>
+                </ul>
+              </div>
+            </Link>
+
+            {/* Reliable Training Data */}
+            <Link href="/solutions/generative-ai/reliable-training-data" className="svc v3" data-anchor="reliable-training-data">
+              <div className="svc-head">
+                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-lock" /></svg></span>
+                <h3>Reliable Generative AI Training Data</h3>
+              </div>
+              <div className="svc-body">
+                <p>Build training data on principles that make it safe to depend on.</p>
+                <ul className="svc-list">
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Unmatched Compliance</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Fairness &amp; Inclusivity</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Transparent Governance</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Continual Assessment</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Trustworthiness</span></li>
+                </ul>
+              </div>
+            </Link>
+
+            {/* Data Labeling for LLMs */}
+            <Link href="/solutions/generative-ai/data-labeling-for-llms" className="svc v1" data-anchor="data-labeling-for-llms">
+              <div className="svc-head">
+                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-tag" /></svg></span>
+                <h3>Data Labeling for Large Language Models</h3>
+              </div>
+              <div className="svc-body">
+                <p>Prepare labeled examples for each stage of LLM development.</p>
+                <ul className="svc-list">
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Pre-training</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Supervised Fine-tuning</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Data Conversion</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Code Generation</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Translation</span></li>
+                </ul>
+              </div>
+            </Link>
+
+            {/* Prompt and Response Generation */}
+            <Link href="/solutions/generative-ai/prompt-and-response-generation" className="svc v2" data-anchor="prompt-and-response-generation">
+              <div className="svc-head">
+                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-chat" /></svg></span>
+                <h3>Prompt and Response Generation</h3>
+              </div>
+              <div className="svc-body">
+                <p>Design the prompts and reference responses that teach a model how to behave.</p>
+                <ul className="svc-list">
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>AI Prompt Design &amp; Generation</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Prompts and Responses for LLMs</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Prompt Optimization</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>NLP Prompt Engineering</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>STEM Writing Prompt Design</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Multimodal Prompt Engineering</span></li>
+                </ul>
+              </div>
+            </Link>
+
+            {/* Generative AI Research Ops */}
+            <Link href="/solutions/generative-ai/generative-ai-research-ops" className="svc v3" data-anchor="generative-ai-research-ops">
+              <div className="svc-head">
+                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-book" /></svg></span>
+                <h3>Generative AI-Driven Research Ops</h3>
+              </div>
+              <div className="svc-body">
+                <p>Apply generative AI to research work, with domain experts guiding the results.</p>
+                <ul className="svc-list">
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>High-Context Prompting</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Domain Expert Oversight</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Quality Anchoring</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Mass Literature Synthesis</span></li>
+                </ul>
+              </div>
+            </Link>
+
+          </div>
+        </div>
+      </section>
+
+      <section className="section alt">
+        <div className="container">
+          <div className="rows">
+            <div className="row">
+              <div className="row-text">
+                <h3>Aligning models with human preference</h3>
+                <p>Reinforcement learning from human feedback starts with a pre-trained model. It is refined on curated examples through supervised fine-tuning, and then a reward model is trained from human rankings of its outputs.</p>
+                <p>The reward model gives the base model a signal for which responses people prefer, helping it become more helpful and more consistent.</p>
+                <div className="row-tags"><span>Pre-training</span><span>Fine-tuning</span><span>Reward model</span></div>
+              </div>
+              <div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>RLHF process</span></div><div className="win-body"><div className="stages"><div className="stage"><span className="n">1</span><div><b>Pre-training model</b><span>Start from a base model with broad language ability.</span></div></div><div className="stage"><span className="n">2</span><div><b>Supervised fine-tuning</b><span>Teach it from curated prompts and ideal responses.</span></div></div><div className="stage"><span className="n">3</span><div><b>Reward model training</b><span>Learn which responses people rank higher.</span></div></div></div></div></div></div></div>
+            </div>
+            <div className="row flip">
+              <div className="row-text">
+                <h3>Finding weak points before users do</h3>
+                <p>Stress testing challenges a model with adversarial prompts and unusual inputs. Findings from vulnerability analysis and bias auditing are written up in clear reports, and response refinement uses that feedback to close the gaps.</p>
+                <p>Testing is repeated after each fix, so improvements can be checked against the same scenarios.</p>
+                <div className="row-tags"><span>Adversarial testing</span><span>Vulnerability analysis</span><span>Bias auditing</span><span>Response refinement</span></div>
+              </div>
+              <div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Stress test report</span></div><div className="win-body"><div className="srow"><span><b style={{ color: 'var(--navy)' }}>Adversarial testing</b><br /><span style={{ color: 'var(--muted)', fontSize: '.92em' }}>Prompt injection and jailbreak attempts</span></span><span className="pill c">In progress</span></div><div className="srow"><span><b style={{ color: 'var(--navy)' }}>Vulnerability analysis</b><br /><span style={{ color: 'var(--muted)', fontSize: '.92em' }}>Unsafe or restricted outputs</span></span><span className="pill b">Needs review</span></div><div className="srow"><span><b style={{ color: 'var(--navy)' }}>Bias auditing</b><br /><span style={{ color: 'var(--muted)', fontSize: '.92em' }}>Consistency across groups</span></span><span className="pill t">Passed</span></div><div className="srow"><span><b style={{ color: 'var(--navy)' }}>Response refinement</b><br /><span style={{ color: 'var(--muted)', fontSize: '.92em' }}>Fixes retested on the same prompts</span></span><span className="pill n">Fixed</span></div></div></div></div></div>
+            </div>
+            <div className="row">
+              <div className="row-text">
+                <h3>Prompts and responses that teach the right behavior</h3>
+                <p>Language models learn from well-designed prompts and high-quality responses. Data labeling covers pre-training, supervised fine-tuning, data conversion, code generation, and translation tasks.</p>
+                <p>Prompt design spans NLP, STEM writing, and multimodal use cases, with optimization passes that improve clarity and coverage.</p>
+                <div className="row-tags"><span>Prompt design</span><span>Prompt optimization</span><span>STEM writing</span><span>Multimodal</span></div>
+              </div>
+              <div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Prompt and response design</span></div><div className="win-body"><div className="lbl">PROMPT</div><div className="qa-item" style={{ margin: '.4em 0 1em' }}>Write a short explanation of why the sky is blue, suitable for a high school physics class.</div><div className="lbl">REFERENCE RESPONSE</div><div className="qa-item" style={{ margin: '.4em 0 0', fontWeight: '500', color: '#253B58' }}>Sunlight contains every color. As it passes through the atmosphere, air molecules scatter short blue wavelengths far more than long red ones, so blue light reaches your eyes from every direction.</div><div className="tagrow"><span className="pill b">STEM writing</span><span className="pill t">Optimized</span><span className="pill c">Reviewed</span></div></div></div></div></div>
+            </div>
+            <div className="row flip">
+              <div className="row-text">
+                <h3>Training data you can trust</h3>
+                <p>Reliable training data is compliant, fair, transparent, continually assessed, and trustworthy. Those qualities are built into how the data is collected, labeled, and reviewed.</p>
+                <p>Research operations add domain expert oversight and high-context prompting, so large volumes of literature can be synthesized with quality anchoring.</p>
+                <div className="row-tags"><span>Compliance</span><span>Fairness</span><span>Governance</span><span>Expert oversight</span></div>
+              </div>
+              <div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Data review checklist</span></div><div className="win-body"><div className="cl"><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span>Compliance<em>Permissions checked</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span>Fairness &amp; inclusivity<em>Coverage reviewed</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span>Transparent governance<em>Sources documented</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span>Continual assessment<em>Re-reviewed each release</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span>Trustworthiness<em>Expert sign-off</em></div></div></div></div></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section" data-anchor="faq">
+        <div className="container faq-wrap">
+          <div className="section-head">
+            <h2>Generative AI FAQ</h2>
+            <p>Short answers to common questions about Generative AI data services.</p>
+          </div>
+          <div className="faq-list">
+            <details className="faq"><summary>What is RLHF?</summary><p>Reinforcement learning from human feedback is a training method. People rank a model&apos;s responses, a reward model learns those preferences, and the language model is then tuned to produce responses people prefer.</p></details>
+            <details className="faq"><summary>What is supervised fine-tuning?</summary><p>It means training a pre-trained model further on curated pairs of prompts and ideal responses, so that it follows instructions and matches a particular style or domain.</p></details>
+            <details className="faq"><summary>Why stress test a generative AI model?</summary><p>To find failures before users do, such as unsafe or biased outputs, prompt injection, factual errors, and inconsistent behavior. The findings are documented and used to refine the model&apos;s responses.</p></details>
+            <details className="faq"><summary>What makes generative AI training data reliable?</summary><p>Data collected with the right permissions, representing different groups fairly, with documented origins, reviewed continually, and accurate for its purpose.</p></details>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
-

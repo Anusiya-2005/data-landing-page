@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function TextAnnotationPage() {
   return (
-    <main className="page">
-      <section className="hero center">
-        <div className="container hero-content">
-          <h1>Text <span className="gradient-text">Annotation</span></h1>
+    <main>
+      <section style={{ padding: "60px 0 40px", textAlign: "center", position: "relative" }}>
+        <div className="container">
+          <h1 style={{ fontSize: "clamp(2.5rem, 4.5vw, 3.5rem)", color: "var(--navy)", fontWeight: 800, letterSpacing: "-0.04em", maxWidth: "900px", margin: "0 auto" }}><span className="gradient-text">Text Annotation</span></h1>
           <div className="premium-image-wrapper" style={{ marginTop: '2rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(18,60,100,0.12)' }}>
             <video src="/annotation.mp4" style={{ width: '100%', height: 'auto', display: 'block' }} controls autoPlay muted loop title="Text Annotation Overview Video"></video>
           </div>
