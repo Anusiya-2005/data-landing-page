@@ -9,11 +9,11 @@ export default function Page() {
             <h1>Human expertise behind every generative AI model</h1>
             <p className="hero-lead">We provide the feedback, training data, and testing that help large language models become accurate, safe, and consistent.</p>
             <div className="hero-actions">
-              <button className="btn primary" data-scroll="services">Explore services <svg className="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              <button className="btn primary" data-scroll="services">Explore services <svg className="icon" aria-hidden="true"><use href="#i-arrow" /></svg></button>
               <button className="btn secondary" data-scroll="faq">Read the FAQ</button>
             </div>
           </div>
-          <div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Response ranking</span></div><div className="win-body"><div className="pref-q">Explain compound interest to a teenager.</div><div className="pref"><div><div className="who"><span>Response A</span></div>Compound interest is when interest is added to your balance, which then earns more interest.</div><div className="win-r"><div className="who"><span>Response B</span><span className="pill t"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg> Preferred</span></div>Say you save 100 and earn 10 percent. Next year you earn 10 percent on 110, not on 100. Time does the rest.</div></div><div className="tagrow"><span className="pill g">Reviewer note</span><span className="pill c">Clearer, uses an example</span></div></div></div></div></div>
+          <div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Response ranking</span></div><div className="win-body"><div className="pref-q">Explain compound interest to a teenager.</div><div className="pref"><div><div className="who"><span>Response A</span></div>Compound interest is when interest is added to your balance, which then earns more interest.</div><div className="win-r"><div className="who"><span>Response B</span><span className="pill t"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg> Preferred</span></div>Say you save 100 and earn 10 percent. Next year you earn 10 percent on 110, not on 100. Time does the rest.</div></div><div className="tagrow"><span className="pill g">Reviewer note</span><span className="pill c">Clearer, uses an example</span></div></div></div></div></div>
         </div>
       </section>
 
@@ -48,15 +48,15 @@ export default function Page() {
             {/* RLHF */}
             <Link href="/solutions/generative-ai/rlhf" className="svc v1" data-anchor="rlhf">
               <div className="svc-head">
-                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-usercheck"/></svg></span>
+                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-usercheck" /></svg></span>
                 <h3>RLHF</h3>
               </div>
               <div className="svc-body">
                 <p>Use human preferences to guide a model toward helpful, consistent answers.</p>
                 <ul className="svc-list">
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Pre-Training Model</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Supervised Fine-Tuning</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Reward Model Training</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Pre-Training Model</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Supervised Fine-Tuning</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Reward Model Training</span></li>
                 </ul>
               </div>
             </Link>
@@ -64,17 +64,17 @@ export default function Page() {
             {/* Stress Testing */}
             <Link href="/solutions/generative-ai/stress-testing" className="svc v2" data-anchor="stress-testing">
               <div className="svc-head">
-                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-shield" /></svg></span>
                 <h3>Stress Testing Your AI Models</h3>
               </div>
               <div className="svc-body">
                 <p>Probe a model for weaknesses before it reaches users.</p>
                 <ul className="svc-list">
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Adversarial Testing</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Vulnerability Analysis</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Report and Feedback</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Bias Auditing</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Response Refinement</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Adversarial Testing</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Vulnerability Analysis</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Report and Feedback</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Bias Auditing</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Response Refinement</span></li>
                 </ul>
               </div>
             </Link>
@@ -82,17 +82,17 @@ export default function Page() {
             {/* Reliable Training Data */}
             <Link href="/solutions/generative-ai/reliable-training-data" className="svc v3" data-anchor="reliable-training-data">
               <div className="svc-head">
-                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-lock"/></svg></span>
+                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-lock" /></svg></span>
                 <h3>Reliable Generative AI Training Data</h3>
               </div>
               <div className="svc-body">
                 <p>Build training data on principles that make it safe to depend on.</p>
                 <ul className="svc-list">
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Unmatched Compliance</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Fairness &amp; Inclusivity</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Transparent Governance</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Continual Assessment</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Trustworthiness</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Unmatched Compliance</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Fairness &amp; Inclusivity</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Transparent Governance</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Continual Assessment</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Trustworthiness</span></li>
                 </ul>
               </div>
             </Link>
@@ -100,17 +100,17 @@ export default function Page() {
             {/* Data Labeling for LLMs */}
             <Link href="/solutions/generative-ai/data-labeling-for-llms" className="svc v1" data-anchor="data-labeling-for-llms">
               <div className="svc-head">
-                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-tag"/></svg></span>
+                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-tag" /></svg></span>
                 <h3>Data Labeling for Large Language Models</h3>
               </div>
               <div className="svc-body">
                 <p>Prepare labeled examples for each stage of LLM development.</p>
                 <ul className="svc-list">
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Pre-training</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Supervised Fine-tuning</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Data Conversion</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Code Generation</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Translation</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Pre-training</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Supervised Fine-tuning</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Data Conversion</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Code Generation</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Translation</span></li>
                 </ul>
               </div>
             </Link>
@@ -118,18 +118,18 @@ export default function Page() {
             {/* Prompt and Response Generation */}
             <Link href="/solutions/generative-ai/prompt-and-response-generation" className="svc v2" data-anchor="prompt-and-response-generation">
               <div className="svc-head">
-                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
+                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-chat" /></svg></span>
                 <h3>Prompt and Response Generation</h3>
               </div>
               <div className="svc-body">
                 <p>Design the prompts and reference responses that teach a model how to behave.</p>
                 <ul className="svc-list">
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>AI Prompt Design &amp; Generation</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Prompts and Responses for LLMs</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Prompt Optimization</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>NLP Prompt Engineering</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>STEM Writing Prompt Design</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Multimodal Prompt Engineering</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>AI Prompt Design &amp; Generation</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Prompts and Responses for LLMs</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Prompt Optimization</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>NLP Prompt Engineering</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>STEM Writing Prompt Design</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Multimodal Prompt Engineering</span></li>
                 </ul>
               </div>
             </Link>
@@ -137,16 +137,16 @@ export default function Page() {
             {/* Generative AI Research Ops */}
             <Link href="/solutions/generative-ai/generative-ai-research-ops" className="svc v3" data-anchor="generative-ai-research-ops">
               <div className="svc-head">
-                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-book"/></svg></span>
+                <span className="svc-ico"><svg className="icon" aria-hidden="true"><use href="#i-book" /></svg></span>
                 <h3>Generative AI-Driven Research Ops</h3>
               </div>
               <div className="svc-body">
                 <p>Apply generative AI to research work, with domain experts guiding the results.</p>
                 <ul className="svc-list">
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>High-Context Prompting</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Domain Expert Oversight</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Quality Anchoring</span></li>
-                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span>Mass Literature Synthesis</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>High-Context Prompting</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Domain Expert Oversight</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Quality Anchoring</span></li>
+                  <li><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span><span>Mass Literature Synthesis</span></li>
                 </ul>
               </div>
             </Link>
@@ -174,7 +174,7 @@ export default function Page() {
                 <p>Testing is repeated after each fix, so improvements can be checked against the same scenarios.</p>
                 <div className="row-tags"><span>Adversarial testing</span><span>Vulnerability analysis</span><span>Bias auditing</span><span>Response refinement</span></div>
               </div>
-              <div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Stress test report</span></div><div className="win-body"><div className="srow"><span><b style={{color: 'var(--navy)'}}>Adversarial testing</b><br /><span style={{color: 'var(--muted)', fontSize: '.92em'}}>Prompt injection and jailbreak attempts</span></span><span className="pill c">In progress</span></div><div className="srow"><span><b style={{color: 'var(--navy)'}}>Vulnerability analysis</b><br /><span style={{color: 'var(--muted)', fontSize: '.92em'}}>Unsafe or restricted outputs</span></span><span className="pill b">Needs review</span></div><div className="srow"><span><b style={{color: 'var(--navy)'}}>Bias auditing</b><br /><span style={{color: 'var(--muted)', fontSize: '.92em'}}>Consistency across groups</span></span><span className="pill t">Passed</span></div><div className="srow"><span><b style={{color: 'var(--navy)'}}>Response refinement</b><br /><span style={{color: 'var(--muted)', fontSize: '.92em'}}>Fixes retested on the same prompts</span></span><span className="pill n">Fixed</span></div></div></div></div></div>
+              <div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Stress test report</span></div><div className="win-body"><div className="srow"><span><b style={{ color: 'var(--navy)' }}>Adversarial testing</b><br /><span style={{ color: 'var(--muted)', fontSize: '.92em' }}>Prompt injection and jailbreak attempts</span></span><span className="pill c">In progress</span></div><div className="srow"><span><b style={{ color: 'var(--navy)' }}>Vulnerability analysis</b><br /><span style={{ color: 'var(--muted)', fontSize: '.92em' }}>Unsafe or restricted outputs</span></span><span className="pill b">Needs review</span></div><div className="srow"><span><b style={{ color: 'var(--navy)' }}>Bias auditing</b><br /><span style={{ color: 'var(--muted)', fontSize: '.92em' }}>Consistency across groups</span></span><span className="pill t">Passed</span></div><div className="srow"><span><b style={{ color: 'var(--navy)' }}>Response refinement</b><br /><span style={{ color: 'var(--muted)', fontSize: '.92em' }}>Fixes retested on the same prompts</span></span><span className="pill n">Fixed</span></div></div></div></div></div>
             </div>
             <div className="row">
               <div className="row-text">
@@ -183,7 +183,7 @@ export default function Page() {
                 <p>Prompt design spans NLP, STEM writing, and multimodal use cases, with optimization passes that improve clarity and coverage.</p>
                 <div className="row-tags"><span>Prompt design</span><span>Prompt optimization</span><span>STEM writing</span><span>Multimodal</span></div>
               </div>
-              <div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Prompt and response design</span></div><div className="win-body"><div className="lbl">PROMPT</div><div className="qa-item" style={{margin: '.4em 0 1em'}}>Write a short explanation of why the sky is blue, suitable for a high school physics class.</div><div className="lbl">REFERENCE RESPONSE</div><div className="qa-item" style={{margin: '.4em 0 0', fontWeight: '500', color: '#253B58'}}>Sunlight contains every color. As it passes through the atmosphere, air molecules scatter short blue wavelengths far more than long red ones, so blue light reaches your eyes from every direction.</div><div className="tagrow"><span className="pill b">STEM writing</span><span className="pill t">Optimized</span><span className="pill c">Reviewed</span></div></div></div></div></div>
+              <div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Prompt and response design</span></div><div className="win-body"><div className="lbl">PROMPT</div><div className="qa-item" style={{ margin: '.4em 0 1em' }}>Write a short explanation of why the sky is blue, suitable for a high school physics class.</div><div className="lbl">REFERENCE RESPONSE</div><div className="qa-item" style={{ margin: '.4em 0 0', fontWeight: '500', color: '#253B58' }}>Sunlight contains every color. As it passes through the atmosphere, air molecules scatter short blue wavelengths far more than long red ones, so blue light reaches your eyes from every direction.</div><div className="tagrow"><span className="pill b">STEM writing</span><span className="pill t">Optimized</span><span className="pill c">Reviewed</span></div></div></div></div></div>
             </div>
             <div className="row flip">
               <div className="row-text">
@@ -192,7 +192,7 @@ export default function Page() {
                 <p>Research operations add domain expert oversight and high-context prompting, so large volumes of literature can be synthesized with quality anchoring.</p>
                 <div className="row-tags"><span>Compliance</span><span>Fairness</span><span>Governance</span><span>Expert oversight</span></div>
               </div>
-              <div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Data review checklist</span></div><div className="win-body"><div className="cl"><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Compliance<em>Permissions checked</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Fairness &amp; inclusivity<em>Coverage reviewed</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Transparent governance<em>Sources documented</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Continual assessment<em>Re-reviewed each release</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Trustworthiness<em>Expert sign-off</em></div></div></div></div></div></div>
+              <div className="media"><div className="mock"><div className="win"><div className="win-bar"><i></i><i></i><i></i><span>Data review checklist</span></div><div className="win-body"><div className="cl"><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span>Compliance<em>Permissions checked</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span>Fairness &amp; inclusivity<em>Coverage reviewed</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span>Transparent governance<em>Sources documented</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span>Continual assessment<em>Re-reviewed each release</em></div><div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span>Trustworthiness<em>Expert sign-off</em></div></div></div></div></div></div>
             </div>
           </div>
         </div>

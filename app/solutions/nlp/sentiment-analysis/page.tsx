@@ -23,7 +23,7 @@ export default function SentimentAnalysisPage() {
 
       <section className="premium-content">
         <div className="container">
-          <div className="section-head center"><h2>Detailed Offerings</h2><p>Capturing the full spectrum of human emotion in text.</p></div>
+          <div className="section-head center"><h2>Detailed <span className="gradient-text">Offerings</span></h2><p>Capturing the full spectrum of human emotion in text.</p></div>
           <div className="premium-grid">
             <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/text_categorization.jpg" alt="Data Labeling" width={600} height={338} /></div>

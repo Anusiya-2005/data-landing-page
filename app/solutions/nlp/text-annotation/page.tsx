@@ -15,8 +15,8 @@ export default function TextAnnotationPage() {
       <section className="section">
         <div className="container">
           <div style={{ maxWidth: '780px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is Text Annotation?</h2>
-            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Text annotation is the foundational step in building any powerful Natural Language Processing system. It is the process of labeling raw text — words, phrases, sentences, and entire documents — with structured metadata that machine learning models can learn from. Without annotation, a model sees nothing more than a sequence of characters. With annotation, it understands meaning: who is mentioned, what category a document belongs to, how words relate syntactically, and what a writer intends. At PIBI Solutions, our annotation pipeline covers everything from basic text categorization and phrase chunking to advanced semantic labeling and entity linking against external knowledge bases. Every label is applied following strict guidelines, reviewed for consistency, and delivered in your required format — giving your models the reliable ground truth they need to perform with exceptional accuracy in production.</p>
+            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is <span className="gradient-text">Text Annotation?</span></h2>
+            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Text annotation is the foundational step in building any powerful Natural Language Processing system. It is the process of labeling raw text, words, phrases, sentences, and entire documents, with structured metadata that machine learning models can learn from. Without annotation, a model sees nothing more than a sequence of characters. With annotation, it understands meaning: who is mentioned, what category a document belongs to, how words relate syntactically, and what a writer intends. At PIBI Solutions, our annotation pipeline covers everything from basic text categorization and phrase chunking to advanced semantic labeling and entity linking against external knowledge bases. Every label is applied following strict guidelines, reviewed for consistency, and delivered in your required format, giving your models the reliable ground truth they need to perform with exceptional accuracy in production.</p>
           </div>
         </div>
       </section>
@@ -24,7 +24,7 @@ export default function TextAnnotationPage() {
       <section className="premium-content">
         <div className="container">
           <div className="section-head center">
-            <h2>Detailed Offerings</h2>
+            <h2>Detailed <span className="gradient-text">Offerings</span></h2>
             <p>Our text annotation pipelines are designed for precision at scale.</p>
           </div>
           <div className="premium-grid">

@@ -11,7 +11,7 @@ export default function UseCasesDirectory() {
             <span className="dot"></span> Production AI in Action
           </div>
           <h1 className="hero-title">
-            Real-World Deployments<br/>
+            Real-World Deployments<br />
             Powered by <span>Precision Data</span>
           </h1>
           <p className="hero-description">
@@ -30,7 +30,7 @@ export default function UseCasesDirectory() {
           <div>
             <h2>Data Solutions Across Every Domain</h2>
             <p>
-              Whether you are training LLMs, fine-tuning computer vision algorithms, or deploying predictive machine learning models, your success depends on high-quality, domain-specific data. 
+              Whether you are training LLMs, fine-tuning computer vision algorithms, or deploying predictive machine learning models, your success depends on high-quality, domain-specific data.
               Our specialized teams provide targeted annotation, extraction, and validation services tailored to your exact industry requirements.
             </p>
           </div>
@@ -53,7 +53,7 @@ export default function UseCasesDirectory() {
             <h2>Explore by Technology</h2>
             <p>Deep dive into industry-specific applications across our four core technology domains.</p>
           </div>
-          
+
           <div className="rows">
             {/* AI/ML Row */}
             <div className="row" data-anchor="ai-ml">
@@ -69,7 +69,7 @@ export default function UseCasesDirectory() {
                   <span>Sensor Fusion</span>
                 </div>
                 <Link href="/use-cases/ai-ml" className="btn primary" style={{ marginTop: '24px' }}>
-                  View AI/ML Cases <svg className="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                  View AI/ML Cases <svg className="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
                 </Link>
               </div>
               <div className="media">
@@ -83,7 +83,7 @@ export default function UseCasesDirectory() {
                         <div className="st"><span className="n" style={{ background: '#3b82f6' }}>3</span><b>Train</b><span>Detect fraud patterns</span></div>
                       </div>
                       <div className="life-loop">
-                        <svg className="icon" aria-hidden="true"><use href="#i-shield"/></svg> 96% Fraud Detection Accuracy Reached
+                        <svg className="icon" aria-hidden="true"><use href="#i-shield" /></svg> 96% Fraud Detection Accuracy Reached
                       </div>
                     </div>
                   </div>
@@ -105,7 +105,7 @@ export default function UseCasesDirectory() {
                   <span>Driver Monitoring</span>
                 </div>
                 <Link href="/use-cases/nlp" className="btn primary" style={{ marginTop: '24px' }}>
-                  View NLP Cases <svg className="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                  View NLP Cases <svg className="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
                 </Link>
               </div>
               <div className="media">
@@ -120,7 +120,7 @@ export default function UseCasesDirectory() {
                         <div><small>Code mapped</small><span className="pill b">ICD-10: G43.9</span></div>
                       </div>
                       <div className="cl">
-                        <div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Clinical review passed</div>
+                        <div className="li"><span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check" /></svg></span>Clinical review passed</div>
                       </div>
                     </div>
                   </div>
@@ -142,7 +142,7 @@ export default function UseCasesDirectory() {
                   <span>Edge-Case Simulation</span>
                 </div>
                 <Link href="/use-cases/generative-ai" className="btn primary" style={{ marginTop: '24px' }}>
-                  View Gen AI Cases <svg className="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                  View Gen AI Cases <svg className="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
                 </Link>
               </div>
               <div className="media">
@@ -183,7 +183,7 @@ export default function UseCasesDirectory() {
                   <span>LiDAR Annotation</span>
                 </div>
                 <Link href="/use-cases/computer-vision" className="btn primary" style={{ marginTop: '24px' }}>
-                  View Vision Cases <svg className="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                  View Vision Cases <svg className="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
                 </Link>
               </div>
               <div className="media">
@@ -195,10 +195,10 @@ export default function UseCasesDirectory() {
                       <svg viewBox="0 0 400 200" style={{ width: '100%', height: '100%' }}>
                         <rect x="50" y="80" width="80" height="60" fill="none" stroke="#10b981" strokeWidth="2" strokeDasharray="4" />
                         <text x="50" y="72" fill="#10b981" fontSize="12" fontFamily="monospace">Vehicle: 98%</text>
-                        
+
                         <rect x="220" y="100" width="40" height="90" fill="none" stroke="#3b82f6" strokeWidth="2" strokeDasharray="4" />
                         <text x="220" y="92" fill="#3b82f6" fontSize="12" fontFamily="monospace">Pedestrian: 95%</text>
-                        
+
                         <polygon points="320,120 380,120 370,180 330,180" fill="none" stroke="#f59e0b" strokeWidth="2" strokeDasharray="4" />
                         <text x="320" y="112" fill="#f59e0b" fontSize="12" fontFamily="monospace">Obstacle</text>
                       </svg>

@@ -15,8 +15,8 @@ export default function VideoTranscriptionPage() {
       <section className="section">
         <div className="container">
           <div style={{ maxWidth: '780px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is Video Transcription?</h2>
-            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Video transcription is the process of converting the spoken audio within video content into accurate, well-structured written text that is temporally aligned with the footage. As video has become the dominant format for corporate training, medical documentation, legal proceedings, and consumer media, the ability to transform that audio content into machine-readable text is critical for search, accessibility, and AI model training. At PIBI Solutions, we handle the full transcription pipeline — from processing multi-speaker conversations with overlapping dialogue and domain-specific jargon, to formatting the resulting transcripts with speaker diarization, precise timestamps, and custom metadata tags. We also support translation across multiple languages, ensuring that meaning, tone, and timing are preserved across every target locale, not just words swapped out literally.</p>
+            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is <span className="gradient-text">Video Transcription?</span></h2>
+            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Video transcription is the process of converting the spoken audio within video content into accurate, well-structured written text that is temporally aligned with the footage. As video has become the dominant format for corporate training, medical documentation, legal proceedings, and consumer media, the ability to transform that audio content into machine-readable text is critical for search, accessibility, and AI model training. At PIBI Solutions, we handle the full transcription pipeline, from processing multi-speaker conversations with overlapping dialogue and domain-specific jargon, to formatting the resulting transcripts with speaker diarization, precise timestamps, and custom metadata tags. We also support translation across multiple languages, ensuring that meaning, tone, and timing are preserved across every target locale, not just words swapped out literally.</p>
           </div>
         </div>
       </section>
@@ -24,7 +24,7 @@ export default function VideoTranscriptionPage() {
       <section className="premium-content">
         <div className="container">
           <div className="section-head center">
-            <h2>Detailed Offerings</h2>
+            <h2>Detailed <span className="gradient-text">Offerings</span></h2>
             <p>High-fidelity audio-visual transcription and alignment for multimodal AI.</p>
           </div>
           <div className="premium-grid">

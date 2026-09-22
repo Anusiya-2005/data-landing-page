@@ -15,8 +15,8 @@ export default function TextClassificationPage() {
       <section className="section">
         <div className="container">
           <div style={{ maxWidth: '780px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is Text Classification?</h2>
-            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Text classification is the task of automatically assigning one or more predefined labels to a piece of text, enabling machines to sort, route, and understand content at a scale no human team could match. From deciding which department should handle a support ticket, to detecting the language of an incoming message, to categorizing thousands of product listings in an e-commerce catalog, text classification is the engine behind countless intelligent automation workflows. At PIBI Solutions, we prepare the high-quality labeled datasets that train these classifiers. Our annotators apply taxonomy-aligned labels across product descriptions, reviews, articles, and conversation threads — covering product categorization, language identification, sentiment analysis, and theme detection. Each dataset is built to the precision your model needs to generalize confidently to real-world, unseen text.</p>
+            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is <span className="gradient-text">Text Classification?</span></h2>
+            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Text classification is the task of automatically assigning one or more predefined labels to a piece of text, enabling machines to sort, route, and understand content at a scale no human team could match. From deciding which department should handle a support ticket, to detecting the language of an incoming message, to categorizing thousands of product listings in an e-commerce catalog, text classification is the engine behind countless intelligent automation workflows. At PIBI Solutions, we prepare the high-quality labeled datasets that train these classifiers. Our annotators apply taxonomy-aligned labels across product descriptions, reviews, articles, and conversation threads, covering product categorization, language identification, sentiment analysis, and theme detection. Each dataset is built to the precision your model needs to generalize confidently to real-world, unseen text.</p>
           </div>
         </div>
       </section>
@@ -24,7 +24,7 @@ export default function TextClassificationPage() {
       <section className="premium-content">
         <div className="container">
           <div className="section-head center">
-            <h2>Detailed Offerings</h2>
+            <h2>Detailed <span className="gradient-text">Offerings</span></h2>
             <p>Our text classification services are built for enterprise-scale sorting and routing.</p>
           </div>
           <div className="premium-grid">

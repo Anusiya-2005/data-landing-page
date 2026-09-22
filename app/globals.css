@@ -2248,10 +2248,10 @@ table.ds td:first-child {
 
 /* Premium Footer */
 .premium-footer {
-  background: linear-gradient(180deg, #0d2642 0%, #081729 100%);
+  background: linear-gradient(180deg, #06101e 0%, #020c18 100%);
   color: #9cb4cc;
   padding: 80px 20px 30px;
-  border-top: 1px solid rgba(222, 232, 240, 0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .premium-footer .container {
@@ -2994,6 +2994,7 @@ table.ds td:first-child {
 [data-animate].in-view {
   animation: fadeUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
+
 
 /* --- Smooth header on scroll (JS-driven) --- */
 .header.scrolled {

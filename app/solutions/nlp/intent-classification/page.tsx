@@ -15,15 +15,15 @@ export default function IntentClassificationPage() {
       <section className="section">
         <div className="container">
           <div style={{ maxWidth: '780px', margin: '0 auto' }}>
-            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is Intent Classification?</h2>
-            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Intent classification is the NLP task of identifying what a user wants to accomplish with a given message or query, so that a system can route it, respond to it, or trigger the correct action. It is the core mechanism that allows conversational AI systems, voice assistants, and automated support platforms to understand user goals — distinguishing between a customer wanting to track an order, change a delivery address, or speak to a human agent, even when each of those requests is phrased differently across thousands of interactions. At PIBI Solutions, we build the intent-labeled datasets that make this possible. Our process begins with ingesting and auditing your existing message logs to define a clean, non-overlapping intent taxonomy, and culminates in applying those labels at scale across thousands of utterances — including edge cases, ambiguous phrasings, and multi-intent messages — to give your model the comprehensive ground truth it needs.</p>
+            <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em', lineHeight: 1.15 }}>What is <span className="gradient-text">Intent Classification?</span></h2>
+            <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>Intent classification is the NLP task of identifying what a user wants to accomplish with a given message or query, so that a system can route it, respond to it, or trigger the correct action. It is the core mechanism that allows conversational AI systems, voice assistants, and automated support platforms to understand user goals, distinguishing between a customer wanting to track an order, change a delivery address, or speak to a human agent, even when each of those requests is phrased differently across thousands of interactions. At PIBI Solutions, we build the intent-labeled datasets that make this possible. Our process begins with ingesting and auditing your existing message logs to define a clean, non-overlapping intent taxonomy, and culminates in applying those labels at scale across thousands of utterances, including edge cases, ambiguous phrasings, and multi-intent messages, to give your model the comprehensive ground truth it needs.</p>
           </div>
         </div>
       </section>
 
       <section className="premium-content">
         <div className="container">
-          <div className="section-head center"><h2>Detailed Offerings</h2><p>Decoding user goals to drive automated actions.</p></div>
+          <div className="section-head center"><h2>Detailed <span className="gradient-text">Offerings</span></h2><p>Decoding user goals to drive automated actions.</p></div>
           <div className="premium-grid">
             <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/text_annotation_bg.jpg" alt="Importing Datasets" width={600} height={338} /></div>

@@ -3,16 +3,18 @@ import Link from 'next/link';
 
 export default function AutonomousVehiclesPage() {
   return (
-    <main>
-      {/* Hero — white background */}
-      <section style={{ padding: '80px 0 0', textAlign: 'center' }}>
-        <div className="container">
+    <main className="page">
+      {/* Hero */}
+      <section className="hero center">
+        <div className="container hero-content">
           <span className="section-kicker">INDUSTRY</span>
-          <h1 style={{ fontSize: 'clamp(2.4rem, 4.5vw, 3.5rem)', color: 'var(--navy)', fontWeight: 800, letterSpacing: '-0.04em', maxWidth: '860px', margin: '1rem auto 0' }}>AI Data Annotation for <span className="gradient-text">Autonomous Vehicles</span></h1>
-          <p style={{ color: 'var(--muted)', fontSize: '1.18rem', lineHeight: 1.7, maxWidth: '720px', margin: '1.5rem auto 2.5rem' }}>
+          <h1>AI Data Annotation for <span className="gradient-text">Autonomous Vehicles</span></h1>
+          <p className="hero-lead">
             High-quality data annotation and labeling services for self-driving cars, drones, and autonomous robotics. We deliver pixel-perfect accuracy for the perception and prediction models that make autonomous systems safe and reliable on public roads.
           </p>
-          <Link href="/#contact" className="btn primary">Get a Custom Dataset Quote</Link>
+          <div className="hero-actions">
+            <Link href="/#contact" className="btn primary">Get a Custom Dataset Quote</Link>
+          </div>
           <div style={{ marginTop: '3rem', borderRadius: '16px', overflow: 'hidden', maxWidth: '1000px', margin: '3rem auto 0', boxShadow: '0 8px 40px rgba(18,60,100,0.12)' }}>
             <Image src="/images/industry_autonomous.jpg" alt="Autonomous Vehicle AI Annotation" width={1000} height={563} style={{ width: '100%', height: 'auto', display: 'block' }} />
           </div>
@@ -37,10 +39,10 @@ export default function AutonomousVehiclesPage() {
           <div style={{ maxWidth: '780px', margin: '0 auto' }}>
             <h2 style={{ color: 'var(--navy)', fontSize: '1.9rem', fontWeight: 800, marginBottom: '1rem', letterSpacing: '-0.03em' }}>The data challenge in <span className="gradient-text">autonomous driving</span></h2>
             <p style={{ color: 'var(--muted)', fontSize: '1.05rem', lineHeight: 1.9 }}>
-              Autonomous vehicles operate in an incredibly complex world — dynamic road conditions, unpredictable pedestrian behavior, varying lighting, weather, and sensor noise. Every edge case a self-driving system encounters must be represented in its training data. This requires not just large volumes of labeled data, but annotated data of exceptional quality and diversity. A single misclassified object or poorly drawn bounding box can propagate errors that compromise safety-critical decisions downstream.
+              Autonomous vehicles operate in an incredibly complex world with dynamic road conditions, unpredictable pedestrian behavior, varying lighting, weather, and sensor noise. Every edge case a self-driving system encounters must be represented in its training data. This requires not just large volumes of labeled data, but annotated data of exceptional quality and diversity. A single misclassified object or poorly drawn bounding box can propagate errors that compromise safety-critical decisions downstream.
             </p>
             <p style={{ color: 'var(--muted)', fontSize: '1.05rem', lineHeight: 1.9, marginTop: '1.25rem' }}>
-              At PIBI Solutions, we build the training datasets that AV programs trust. Our annotation pipelines cover every modality — 2D camera, LiDAR, RADAR, and sensor-fused multi-modal datasets — with rigorous quality assurance processes that ensure every label meets the precision standards required for safety-critical AI deployment.
+              At PIBI Solutions, we build the training datasets that AV programs trust. Our annotation pipelines cover every modality (including 2D camera, LiDAR, RADAR, and sensor-fused multi-modal datasets), with rigorous quality assurance processes that ensure every label meets the precision standards required for safety-critical AI deployment.
             </p>
           </div>
         </div>
@@ -59,7 +61,7 @@ export default function AutonomousVehiclesPage() {
               </li>
               <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
                 <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Semantic &amp; Instance Segmentation</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Pixel-perfect labeling of roads, lane markings, crosswalks, traffic signs, traffic lights, sidewalks, vegetation, and sky — delivering full scene understanding at every frame across day, night, and adverse weather conditions.</span></span>
+                <span><strong>Semantic &amp; Instance Segmentation</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Pixel-perfect labeling of roads, lane markings, crosswalks, traffic signs, traffic lights, sidewalks, vegetation, and sky, delivering full scene understanding at every frame across day, night, and adverse weather conditions.</span></span>
               </li>
               <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
                 <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
@@ -67,7 +69,7 @@ export default function AutonomousVehiclesPage() {
               </li>
               <li style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}>
                 <span className="tick"><svg className="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-                <span><strong>Video Tracking &amp; Trajectory Annotation</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Annotating object trajectories, motion vectors, and behavioral event sequences across video frame sequences — providing the temporal ground truth your perception and prediction models need to anticipate what other road users will do next.</span></span>
+                <span><strong>Video Tracking &amp; Trajectory Annotation</strong><br/><span style={{ color: 'var(--muted)', fontWeight: 400, fontSize: '0.95rem' }}>Annotating object trajectories, motion vectors, and behavioral event sequences across video frame sequences, providing the temporal ground truth your perception and prediction models need to anticipate what other road users will do next.</span></span>
               </li>
             </ul>
           </div>
@@ -79,12 +81,12 @@ export default function AutonomousVehiclesPage() {
         <div className="container">
           <div className="section-head center">
             <h2>Why AV teams <span className="gradient-text">choose PIBI</span></h2>
-            <p>We operate at the precision and scale that safety-critical autonomous systems demand — with no compromise on quality.</p>
+            <p>We operate at the precision and scale that safety-critical autonomous systems demand, with no compromise on quality.</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', marginTop: '2.5rem' }}>
             {[
               { title: 'Safety-critical precision', desc: 'Every label undergoes a mandatory second-annotator review. Our multi-pass QA process ensures zero-compromise accuracy for applications where errors have real-world safety consequences.' },
-              { title: 'Full sensor modality coverage', desc: 'We work across camera, LiDAR, RADAR, and ultrasonic data — fusing multiple sensor streams for the complete spatial understanding modern AV stacks require.' },
+              { title: 'Full sensor modality coverage', desc: 'We work across camera, LiDAR, RADAR, and ultrasonic data, fusing multiple sensor streams for the complete spatial understanding modern AV stacks require.' },
               { title: 'Scalable global workforce', desc: 'From a 10,000-frame pilot to a 10-million-frame production run, our distributed annotation workforce scales instantly to meet your project timeline without quality tradeoffs.' },
             ].map((item, i) => (
               <div key={i} style={{ padding: '2rem', borderRadius: '16px', border: '1px solid var(--line)', background: '#fff', boxShadow: '0 2px 12px rgba(18,60,100,0.05)' }}>

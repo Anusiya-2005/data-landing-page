@@ -8,12 +8,12 @@ export default function IndustriesPage() {
         <div className="container hero-grid">
           <div>
             <h1>Industries We <span className="gradient-text">Serve</span></h1>
-            <p className="hero-lead">Tailored AI data solutions for domain-specific challenges — from autonomous vehicles to clinical AI.</p>
+            <p className="hero-lead">Tailored AI data solutions for domain-specific challenges, from autonomous vehicles to clinical AI.</p>
           </div>
         </div>
       </section>
 
-      {/* Industry Cards — same layout as homepage */}
+      {/* Industry Cards */}
       <section className="section" id="industries">
         <div className="container">
           <div className="section-head center">

@@ -35,7 +35,7 @@ export default function Page() {
       <section className="section alt" id="solutions" data-anchor="solutions">
         <div className="container">
           <div className="section-head center">
-            <h2>Our solutions</h2>
+            <h2>Our <span className="gradient-text">Solutions</span></h2>
             <p>Four areas of AI data work, each with its own page.</p>
           </div>
           <div className="sol-grid">
@@ -87,7 +87,7 @@ export default function Page() {
       <section className="section" data-anchor="industries">
         <div className="container">
           <div className="section-head center">
-            <h2>Industries We Serve</h2>
+            <h2>Industries We <span className="gradient-text">Serve</span></h2>
             <p>Tailored AI data solutions for domain-specific challenges.</p>
           </div>
           <div className="industry-grid">
@@ -140,7 +140,7 @@ export default function Page() {
         <div className="container">
           <div className="section-head center">
             <span className="section-kicker">GET IN TOUCH</span>
-            <h2>Ready to Build AI You Can Trust?</h2>
+            <h2>Ready to Build AI <span className="gradient-text">You Can Trust?</span></h2>
             <p>
               Create AI-ready data with enterprise dataset creation, Human-in-the-Loop validation, AI evaluation, and governance built for production-scale AI.
             </p>
