@@ -22,14 +22,31 @@ export default function AutonomousVehiclesPage() {
         </div>
       </section>
 
-      {/* Stats */}
+      {/* Stats - Continuous Running Ticker */}
       <section className="section" style={{ paddingTop: '3rem', paddingBottom: '3rem' }}>
         <div className="container">
-          <div className="hero-stats" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', borderRadius: '16px', border: '1px solid var(--line)', overflow: 'hidden' }}>
-            <div className="hero-stat"><strong>100M+</strong><span>Objects labeled for AV models</span></div>
-            <div className="hero-stat"><strong>99.4%</strong><span>Bounding box accuracy</span></div>
-            <div className="hero-stat"><strong>30+</strong><span>Sensor data formats supported</span></div>
-            <div className="hero-stat"><strong>48hr</strong><span>Turnaround for pilot batches</span></div>
+          <div className="stats-ticker-wrapper">
+            <div className="stats-ticker-track">
+              {/* Set 1 */}
+              <div className="stats-ticker-item"><strong>100M+</strong><span>Objects labeled for AV models</span></div>
+              <div className="stats-ticker-item"><strong>99.4%</strong><span>Bounding box accuracy</span></div>
+              <div className="stats-ticker-item"><strong>30+</strong><span>Sensor data formats supported</span></div>
+              <div className="stats-ticker-item"><strong>48hr</strong><span>Turnaround for pilot batches</span></div>
+              <div className="stats-ticker-item"><strong>100M+</strong><span>Objects labeled for AV models</span></div>
+              <div className="stats-ticker-item"><strong>99.4%</strong><span>Bounding box accuracy</span></div>
+              <div className="stats-ticker-item"><strong>30+</strong><span>Sensor data formats supported</span></div>
+              <div className="stats-ticker-item"><strong>48hr</strong><span>Turnaround for pilot batches</span></div>
+
+              {/* Set 2 (Duplicate for seamless continuous loop) */}
+              <div className="stats-ticker-item"><strong>100M+</strong><span>Objects labeled for AV models</span></div>
+              <div className="stats-ticker-item"><strong>99.4%</strong><span>Bounding box accuracy</span></div>
+              <div className="stats-ticker-item"><strong>30+</strong><span>Sensor data formats supported</span></div>
+              <div className="stats-ticker-item"><strong>48hr</strong><span>Turnaround for pilot batches</span></div>
+              <div className="stats-ticker-item"><strong>100M+</strong><span>Objects labeled for AV models</span></div>
+              <div className="stats-ticker-item"><strong>99.4%</strong><span>Bounding box accuracy</span></div>
+              <div className="stats-ticker-item"><strong>30+</strong><span>Sensor data formats supported</span></div>
+              <div className="stats-ticker-item"><strong>48hr</strong><span>Turnaround for pilot batches</span></div>
+            </div>
           </div>
         </div>
       </section>

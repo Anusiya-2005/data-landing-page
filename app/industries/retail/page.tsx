@@ -21,13 +21,31 @@ export default function RetailPage() {
         </div>
       </section>
 
+      {/* Stats - Continuous Running Ticker */}
       <section className="section" style={{ paddingTop: '3rem', paddingBottom: '3rem' }}>
         <div className="container">
-          <div className="hero-stats" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', borderRadius: '16px', border: '1px solid var(--line)', overflow: 'hidden' }}>
-            <div className="hero-stat"><strong>250M+</strong><span>Products categorized &amp; enriched</span></div>
-            <div className="hero-stat"><strong>99.2%</strong><span>Taxonomy mapping accuracy</span></div>
-            <div className="hero-stat"><strong>40+</strong><span>Retail verticals supported</span></div>
-            <div className="hero-stat"><strong>3x</strong><span>Faster catalog onboarding</span></div>
+          <div className="stats-ticker-wrapper">
+            <div className="stats-ticker-track">
+              {/* Set 1 */}
+              <div className="stats-ticker-item"><strong>250M+</strong><span>Products categorized &amp; enriched</span></div>
+              <div className="stats-ticker-item"><strong>99.2%</strong><span>Taxonomy mapping accuracy</span></div>
+              <div className="stats-ticker-item"><strong>40+</strong><span>Retail verticals supported</span></div>
+              <div className="stats-ticker-item"><strong>3x</strong><span>Faster catalog onboarding</span></div>
+              <div className="stats-ticker-item"><strong>250M+</strong><span>Products categorized &amp; enriched</span></div>
+              <div className="stats-ticker-item"><strong>99.2%</strong><span>Taxonomy mapping accuracy</span></div>
+              <div className="stats-ticker-item"><strong>40+</strong><span>Retail verticals supported</span></div>
+              <div className="stats-ticker-item"><strong>3x</strong><span>Faster catalog onboarding</span></div>
+
+              {/* Set 2 (Duplicate for seamless continuous loop) */}
+              <div className="stats-ticker-item"><strong>250M+</strong><span>Products categorized &amp; enriched</span></div>
+              <div className="stats-ticker-item"><strong>99.2%</strong><span>Taxonomy mapping accuracy</span></div>
+              <div className="stats-ticker-item"><strong>40+</strong><span>Retail verticals supported</span></div>
+              <div className="stats-ticker-item"><strong>3x</strong><span>Faster catalog onboarding</span></div>
+              <div className="stats-ticker-item"><strong>250M+</strong><span>Products categorized &amp; enriched</span></div>
+              <div className="stats-ticker-item"><strong>99.2%</strong><span>Taxonomy mapping accuracy</span></div>
+              <div className="stats-ticker-item"><strong>40+</strong><span>Retail verticals supported</span></div>
+              <div className="stats-ticker-item"><strong>3x</strong><span>Faster catalog onboarding</span></div>
+            </div>
           </div>
         </div>
       </section>
