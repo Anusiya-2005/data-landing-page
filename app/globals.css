@@ -4205,3 +4205,67 @@ table.ds td:first-child {
     padding: 1.25rem 1rem;
   }
 }
+
+/* ---------- Continuous Running Stats Ticker ---------- */
+.stats-ticker-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 24px rgba(18, 60, 100, 0.05);
+  mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);
+}
+
+.stats-ticker-track {
+  display: flex;
+  width: max-content;
+  animation: statsContinuousScroll 25s linear infinite;
+  will-change: transform;
+}
+
+.stats-ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.stats-ticker-item {
+  flex: 0 0 280px;
+  padding: 22px 26px;
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.stats-ticker-item:hover {
+  background: rgba(34, 184, 176, 0.04);
+}
+
+.stats-ticker-item strong {
+  display: block;
+  color: var(--navy);
+  font-size: 1.18rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.stats-ticker-item span {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+@keyframes statsContinuousScroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}

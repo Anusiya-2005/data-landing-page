@@ -21,13 +21,31 @@ export default function HealthcarePage() {
         </div>
       </section>
 
+      {/* Stats - Continuous Running Ticker */}
       <section className="section" style={{ paddingTop: '3rem', paddingBottom: '3rem' }}>
         <div className="container">
-          <div className="hero-stats" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', borderRadius: '16px', border: '1px solid var(--line)', overflow: 'hidden' }}>
-            <div className="hero-stat"><strong>50M+</strong><span>Medical images annotated</span></div>
-            <div className="hero-stat"><strong>100%</strong><span>HIPAA-compliant workflows</span></div>
-            <div className="hero-stat"><strong>15+</strong><span>Imaging modalities covered</span></div>
-            <div className="hero-stat"><strong>Expert</strong><span>Clinician-reviewed labels</span></div>
+          <div className="stats-ticker-wrapper">
+            <div className="stats-ticker-track">
+              {/* Set 1 */}
+              <div className="stats-ticker-item"><strong>50M+</strong><span>Medical images annotated</span></div>
+              <div className="stats-ticker-item"><strong>100%</strong><span>HIPAA-compliant workflows</span></div>
+              <div className="stats-ticker-item"><strong>15+</strong><span>Imaging modalities covered</span></div>
+              <div className="stats-ticker-item"><strong>Expert</strong><span>Clinician-reviewed labels</span></div>
+              <div className="stats-ticker-item"><strong>50M+</strong><span>Medical images annotated</span></div>
+              <div className="stats-ticker-item"><strong>100%</strong><span>HIPAA-compliant workflows</span></div>
+              <div className="stats-ticker-item"><strong>15+</strong><span>Imaging modalities covered</span></div>
+              <div className="stats-ticker-item"><strong>Expert</strong><span>Clinician-reviewed labels</span></div>
+
+              {/* Set 2 (Duplicate for seamless continuous loop) */}
+              <div className="stats-ticker-item"><strong>50M+</strong><span>Medical images annotated</span></div>
+              <div className="stats-ticker-item"><strong>100%</strong><span>HIPAA-compliant workflows</span></div>
+              <div className="stats-ticker-item"><strong>15+</strong><span>Imaging modalities covered</span></div>
+              <div className="stats-ticker-item"><strong>Expert</strong><span>Clinician-reviewed labels</span></div>
+              <div className="stats-ticker-item"><strong>50M+</strong><span>Medical images annotated</span></div>
+              <div className="stats-ticker-item"><strong>100%</strong><span>HIPAA-compliant workflows</span></div>
+              <div className="stats-ticker-item"><strong>15+</strong><span>Imaging modalities covered</span></div>
+              <div className="stats-ticker-item"><strong>Expert</strong><span>Clinician-reviewed labels</span></div>
+            </div>
           </div>
         </div>
       </section>
