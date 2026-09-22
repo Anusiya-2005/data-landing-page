@@ -20,9 +20,16 @@ export default function Page() {
             PI-BI Technologies is a global data engineering and annotation partner powering artificial intelligence at scale. We combine specialized domain expertise, rigorous human-in-the-loop workflows, and secure infrastructure to help enterprise teams build models the world can rely on.
           </p>
           <div className="hero-actions">
-            <button className="btn primary" onClick={openDatasetModal}>
+            <a
+              href="#leadership"
+              className="btn primary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('leadership')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Talk to Our Leadership <svg className="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
-            </button>
+            </a>
             <Link className="btn secondary" href="/solutions/ai-ml">
               Explore Our Solutions
             </Link>
@@ -108,7 +115,7 @@ export default function Page() {
       </section>
 
       {/* Leadership Team Section */}
-      <section className="section">
+      <section className="section" id="leadership">
         <div className="container">
           <div className="section-head center">
             <h2>
