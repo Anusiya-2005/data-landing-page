@@ -2221,6 +2221,17 @@ table.ds td:first-child {
   transform: scale(1.03);
 }
 
+.premium-card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  flex-shrink: 0;
+}
+
 /* Video Section */
 .video-section {
   padding: 5rem 0 !important;
