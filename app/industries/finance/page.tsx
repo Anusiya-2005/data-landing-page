@@ -21,13 +21,31 @@ export default function FinancePage() {
         </div>
       </section>
 
+      {/* Stats - Continuous Running Ticker */}
       <section className="section" style={{ paddingTop: '3rem', paddingBottom: '3rem' }}>
         <div className="container">
-          <div className="hero-stats" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', borderRadius: '16px', border: '1px solid var(--line)', overflow: 'hidden' }}>
-            <div className="hero-stat"><strong>200M+</strong><span>Financial documents processed</span></div>
-            <div className="hero-stat"><strong>99.1%</strong><span>Document extraction accuracy</span></div>
-            <div className="hero-stat"><strong>40+</strong><span>Languages supported</span></div>
-            <div className="hero-stat"><strong>SOC2</strong><span>Compliant data handling</span></div>
+          <div className="stats-ticker-wrapper">
+            <div className="stats-ticker-track">
+              {/* Set 1 */}
+              <div className="stats-ticker-item"><strong>200M+</strong><span>Financial documents processed</span></div>
+              <div className="stats-ticker-item"><strong>99.1%</strong><span>Document extraction accuracy</span></div>
+              <div className="stats-ticker-item"><strong>40+</strong><span>Languages supported</span></div>
+              <div className="stats-ticker-item"><strong>SOC2</strong><span>Compliant data handling</span></div>
+              <div className="stats-ticker-item"><strong>200M+</strong><span>Financial documents processed</span></div>
+              <div className="stats-ticker-item"><strong>99.1%</strong><span>Document extraction accuracy</span></div>
+              <div className="stats-ticker-item"><strong>40+</strong><span>Languages supported</span></div>
+              <div className="stats-ticker-item"><strong>SOC2</strong><span>Compliant data handling</span></div>
+
+              {/* Set 2 (Duplicate for seamless continuous loop) */}
+              <div className="stats-ticker-item"><strong>200M+</strong><span>Financial documents processed</span></div>
+              <div className="stats-ticker-item"><strong>99.1%</strong><span>Document extraction accuracy</span></div>
+              <div className="stats-ticker-item"><strong>40+</strong><span>Languages supported</span></div>
+              <div className="stats-ticker-item"><strong>SOC2</strong><span>Compliant data handling</span></div>
+              <div className="stats-ticker-item"><strong>200M+</strong><span>Financial documents processed</span></div>
+              <div className="stats-ticker-item"><strong>99.1%</strong><span>Document extraction accuracy</span></div>
+              <div className="stats-ticker-item"><strong>40+</strong><span>Languages supported</span></div>
+              <div className="stats-ticker-item"><strong>SOC2</strong><span>Compliant data handling</span></div>
+            </div>
           </div>
         </div>
       </section>
