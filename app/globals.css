@@ -1723,15 +1723,17 @@ table.ds td:first-child {
   max-width: 70ch
 }
 
-/* ---------- Home solution cards ---------- */
-.sol-grid {
+/* ---------- Home solution & industry cards ---------- */
+.sol-grid,
+.industry-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 22px;
-  align-items: stretch
+  align-items: stretch;
 }
 
-.sol {
+.sol,
+.industry-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1743,15 +1745,19 @@ table.ds td:first-child {
   padding: 30px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(17, 54, 87, .04);
-  transition: transform .25s, box-shadow .25s
+  transition: transform .25s, box-shadow .25s;
+  text-decoration: none;
 }
 
-.sol:hover {
+.sol:hover,
+.industry-card:hover {
   transform: translateY(-6px);
-  box-shadow: var(--shadow2)
+  box-shadow: var(--shadow2);
+  border-color: var(--line);
 }
 
-.sol::after {
+.sol::after,
+.industry-card::after {
   content: "";
   position: absolute;
   width: 180px;
@@ -1759,52 +1765,64 @@ table.ds td:first-child {
   border-radius: 50%;
   right: -70px;
   top: -65px;
-  background: radial-gradient(circle, rgba(43, 197, 158, .14), transparent 68%)
+  background: radial-gradient(circle, rgba(43, 197, 158, .14), transparent 68%);
 }
 
-.sol-ico {
+.sol-ico,
+.ind-ico {
   width: 58px;
   height: 58px;
   border-radius: 16px;
   display: grid;
   place-items: center;
   background: linear-gradient(145deg, #EFF6FB, #EAF8F5);
-  color: var(--navy2)
+  color: var(--navy2);
 }
 
-.sol h3 {
+.sol-ico .icon,
+.ind-ico .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.sol h3,
+.industry-card h3 {
   font-size: 1.4rem;
   color: var(--navy);
   margin: 26px 0 10px;
   font-weight: 800;
-  letter-spacing: -.02em
+  letter-spacing: -.02em;
 }
 
-.sol p {
+.sol p,
+.industry-card p {
   color: var(--muted);
   line-height: 1.65;
   font-size: .94rem;
-  flex: 1
+  flex: 1;
 }
 
-.sol .go {
+.sol .go,
+.industry-card .go {
   margin-top: 22px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   color: var(--teal);
   font-weight: 800;
-  font-size: .9rem
+  font-size: .9rem;
 }
 
-.sol:hover .go .icon {
-  transform: translateX(4px)
+.sol:hover .go .icon,
+.industry-card:hover .go .icon {
+  transform: translateX(4px);
 }
 
-.sol .go .icon {
+.sol .go .icon,
+.industry-card .go .icon {
   transition: .2s;
   width: 18px;
-  height: 18px
+  height: 18px;
 }
 
 /* stub */
@@ -1872,7 +1890,8 @@ table.ds td:first-child {
     grid-template-columns: repeat(2, 1fr)
   }
 
-  .sol-grid {
+  .sol-grid,
+  .industry-grid {
     grid-template-columns: repeat(2, 1fr)
   }
 
@@ -2377,112 +2396,6 @@ table.ds td:first-child {
   }
 }
 
-.industry-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 40px;
-  align-items: stretch;
-}
-
-.industry-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 32px;
-  border-radius: 20px;
-  background: #ffffff;
-  border: 1px solid var(--line);
-  box-shadow: 0 4px 12px rgba(18, 60, 100, 0.04);
-  transition: all 0.3s ease;
-  text-decoration: none;
-  color: var(--ink);
-  position: relative;
-  overflow: hidden;
-}
-
-.industry-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 150px;
-  height: 150px;
-  background: radial-gradient(circle at top right, rgba(43, 197, 158, 0.15), transparent 70%);
-  pointer-events: none;
-}
-
-.industry-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow2);
-  border-color: var(--cyan);
-}
-
-.ind-ico {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 14px;
-  background: linear-gradient(145deg, #EFF6FB, #EAF8F5);
-  color: var(--navy2);
-  margin-bottom: 24px;
-  position: relative;
-  z-index: 1;
-}
-
-.ind-ico .icon {
-  width: 24px;
-  height: 24px;
-}
-
-.industry-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 12px;
-  font-weight: 700;
-  color: var(--navy);
-  position: relative;
-  z-index: 1;
-}
-
-.industry-card p {
-  color: var(--muted);
-  line-height: 1.6;
-  margin-bottom: 24px;
-  flex: 1;
-  font-size: 0.95rem;
-  position: relative;
-  z-index: 1;
-}
-
-.industry-card .go {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--teal);
-  font-weight: 700;
-  font-size: 0.95rem;
-  transition: gap 0.2s;
-  position: relative;
-  z-index: 1;
-}
-
-.industry-card:hover .go {
-  gap: 12px;
-}
-
-@media (max-width: 960px) {
-  .industry-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .industry-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* ---------- CTA Section (Ready to Build AI You Can Trust?) ---------- */
 .cta-section {
@@ -3158,44 +3071,6 @@ table.ds td:first-child {
   box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.4);
 }
 
-.industry-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
-}
-
-.industry-card {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 24px;
-  padding: 32px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-}
-
-.industry-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(to right, #3b82f6, #8b5cf6);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.industry-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-.industry-card:hover::before {
-  opacity: 1;
-}
 
 .industry-header {
   display: flex;
@@ -3249,9 +3124,6 @@ table.ds td:first-child {
   }
   .use-cases-hero {
     padding: 60px 20px;
-  }
-  .industry-card {
-    padding: 24px;
   }
   .hero-cta-group {
     flex-direction: column;
