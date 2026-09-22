@@ -1,5 +1,6 @@
 export default function Page() {
   return (
-    <main className="page" data-route="/use-cases"><section className="stub"><div className="container"><h1>Use Cases</h1><p>This page is not part of the current build. The four solution pages are ready to explore.</p><div className="hero-actions" style={{justifyContent: 'center'}}><a className="btn secondary" href="#/solutions/ai-ml">AI/ML</a><a className="btn secondary" href="#/solutions/nlp">NLP</a><a className="btn secondary" href="#/solutions/generative-ai">Generative AI</a><a className="btn secondary" href="#/solutions/computer-vision">Computer Vision</a></div></div></section></main>
+    <main className="page" data-route="/use-cases">
+    </main>
   );
 }

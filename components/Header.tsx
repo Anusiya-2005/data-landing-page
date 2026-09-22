@@ -106,6 +106,7 @@ export default function Header() {
           </div>
           <Link href="/use-cases" className={pathname === '/use-cases' ? 'active' : ''}>Use Cases</Link>
           <Link href="/company" className={pathname === '/company' ? 'active' : ''}>Company</Link>
+          <Link href="/contact-us" className={pathname === '/contact-us' || pathname === '/contact' ? 'active' : ''}>Contact Us</Link>
         </nav>
         <div className="nav-actions">
           <button
@@ -114,7 +115,7 @@ export default function Header() {
             onClick={openDatasetModal}
           >
             <svg className="icon" aria-hidden="true" style={{ width: 14, height: 14 }}><use href="#i-arrow" /></svg>
-            <span>Talk to Our AI Team</span>
+            <span>Talk to Our Team</span>
           </button>
         </div>
       </div>
