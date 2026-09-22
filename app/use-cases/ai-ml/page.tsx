@@ -78,7 +78,7 @@ export default function AiMlUseCases() {
         <div className="container">
           <div className="domain-hero-content">
             <span className="domain-badge">AI / ML</span>
-            <h1 className="hero-title">Artificial Intelligence & Machine Learning</h1>
+            <h1 className="hero-title">Artificial Intelligence &amp; <span className="gradient-text">Machine Learning</span></h1>
             <p className="hero-description">
               Harness the power of AI to unlock data-driven insights. High-quality training datasets tailored for predictive modeling and automation.
             </p>
@@ -91,7 +91,16 @@ export default function AiMlUseCases() {
           {useCases.map((section, index) => (
             <div key={section.industry} className="domain-industry-section-block" style={{ marginBottom: '100px' }}>
               <div className="industry-visual" style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: '#0f172a' }}>{section.industry}</h2>
+                <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: '#0f172a' }}>
+                  {section.industry.split(' ').length > 1 ? (
+                    <>
+                      {section.industry.split(' ').slice(0, -1).join(' ')}{' '}
+                      <span className="gradient-text">{section.industry.split(' ').slice(-1)[0]}</span>
+                    </>
+                  ) : (
+                    <span className="gradient-text">{section.industry}</span>
+                  )}
+                </h2>
               </div>
 
               {/* Featured Case Study Layout */}

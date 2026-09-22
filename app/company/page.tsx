@@ -207,7 +207,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Bottom CTA — now ABOVE the offices */}
+      {/* Bottom CTA: now above the offices */}
       <section className="section alt" style={{ textAlign: 'center' }}>
         <div className="container" style={{ maxWidth: '820px' }}>
           <h2>
@@ -231,7 +231,7 @@ export default function Page() {
       <section className="offices-section">
         <div className="container">
           <h2 className="offices-heading">
-            Global Offices
+            Global <span className="gradient-text">Offices</span>
           </h2>
 
           <div className="offices-grid">
@@ -266,7 +266,7 @@ export default function Page() {
           </div>
 
           <h2 className="offices-heading" style={{ marginTop: '64px' }}>
-            India Offices
+            India <span className="gradient-text">Offices</span>
           </h2>
 
           <div className="offices-grid offices-grid-3">

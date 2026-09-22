@@ -5,7 +5,7 @@ export default function RelationExtractionPage() {
     <main>
       <section style={{ padding: "60px 0 40px", textAlign: "center", position: "relative" }}>
         <div className="container">
-          <h1 style={{ fontSize: "clamp(2.5rem, 4.5vw, 3.5rem)", color: "var(--navy)", fontWeight: 800, letterSpacing: "-0.04em", maxWidth: "900px", margin: "0 auto" }}><span className="gradient-text">Relation Extraction</span></h1>
+          <h1 style={{ fontSize: "clamp(2.5rem, 4.5vw, 3.5rem)", color: "var(--navy)", fontWeight: 800, letterSpacing: "-0.04em", maxWidth: "900px", margin: "0 auto" }}>Relation <span className="gradient-text">Extraction</span></h1>
           <div className="premium-image-wrapper" style={{ marginTop: '2rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(18,60,100,0.12)' }}>
             <video src="/relation extraction.mp4" style={{ width: '100%', height: 'auto', display: 'block' }} controls autoPlay muted loop title="Relation Extraction Overview Video"></video>
           </div>
@@ -28,7 +28,7 @@ export default function RelationExtractionPage() {
             <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/text_categorization.jpg" alt="Text Annotation" width={600} height={338} /></div>
               <h3>Text Annotation</h3>
-              <p>We apply structured labels to raw text to mark entity mentions, coreferences, and contextual clues — the foundational layer that makes relation extraction possible at scale.</p>
+              <p>We apply structured labels to raw text to mark entity mentions, coreferences, and contextual clues: the foundational layer that makes relation extraction possible at scale.</p>
             </div>
             <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/semantic_annotation.jpg" alt="Open Relationship Extraction" width={600} height={338} /></div>

@@ -1,4 +1,4 @@
-/* PI-BI Technologies — solution pages
+/* PI-BI Technologies: solution pages
    Colors are taken from the supplied preview.html theme. No other colors are used. */
 :root {
   --navy: #123C64;
@@ -18,6 +18,15 @@
   --radius: 22px;
   --max: 1240px;
   --font: var(--font-inter), Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Dual-Color / Gradient Text Utility */
+.gradient-text {
+  background: linear-gradient(135deg, #1d6fe9 0%, #00b4d8 50%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline;
 }
 
 * {
@@ -2894,7 +2903,14 @@ table.ds td:first-child {
 .step.in-view,
 .feature-item.in-view,
 .stat-item.in-view,
-.team-card.in-view {
+.team-card.in-view,
+.leader-card.in-view,
+.office-item.in-view,
+.premium-card.in-view,
+.cards article.in-view,
+.svc.in-view,
+.contact-form-card.in-view,
+.contact-info-col.in-view {
   animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -3434,4 +3450,395 @@ table.ds td:first-child {
   .case-study-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ==========================================================================
+   Leadership Team Section
+   ========================================================================== */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.leader-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leader-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.12);
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+.leader-avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #ffffff;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.2);
+  position: relative;
+  background: #e2e8f0;
+}
+
+.leader-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.leader-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 6px 0;
+}
+
+.leader-role {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0 0 18px 0;
+  font-weight: 500;
+}
+
+.leader-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #0077b5;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 24px;
+  background: rgba(0, 119, 181, 0.08);
+  transition: all 0.25s ease;
+  margin-top: auto;
+}
+
+.leader-linkedin:hover {
+  background: #0077b5;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 119, 181, 0.25);
+}
+
+.leader-linkedin svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ==========================================================================
+   Global & India Offices Section
+   Distinguished rich navy gradient distinctly different from the dark footer
+   ========================================================================== */
+.offices-section {
+  background: linear-gradient(145deg, #102e52 0%, #164376 50%, #1e5797 100%);
+  color: #ffffff;
+  padding: 90px 20px 100px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(6, 16, 30, 0.8);
+  position: relative;
+}
+
+.offices-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.offices-heading {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 48px;
+  letter-spacing: -0.02em;
+}
+
+.offices-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.offices-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.office-item {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  padding: 32px 20px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.office-item:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(94, 234, 212, 0.5);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+}
+
+.office-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.office-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.office-country {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.office-address {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Contact Page Styles
+   ========================================================================== */
+.contact-page-wrapper {
+  padding-top: 100px;
+  background: #f8fafc;
+}
+
+.contact-top-section {
+  padding: 60px 0 100px;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-info-col h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #0f172a;
+  margin-bottom: 20px;
+  letter-spacing: -0.03em;
+}
+
+.contact-lead {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 36px;
+}
+
+.contact-direct-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-direct-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  color: #1e293b;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  width: fit-content;
+}
+
+.contact-direct-item:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+  transform: translateX(4px);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.1);
+}
+
+.contact-direct-item svg {
+  width: 20px;
+  height: 20px;
+  stroke: #2563eb;
+  fill: none;
+}
+
+.contact-form-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.contact-form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact-field-group {
+  margin-bottom: 20px;
+}
+
+.contact-field-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.contact-field-group .req {
+  color: #ef4444;
+}
+
+.contact-input,
+.contact-select,
+.contact-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+  color: #0f172a;
+  background: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.contact-input:focus,
+.contact-select:focus,
+.contact-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.contact-submit-btn {
+  width: 100%;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #06b6d4 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 10px;
+}
+
+.contact-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.35);
+}
+
+.contact-success-msg {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-success-msg h4 {
+  font-size: 1.5rem;
+  color: #10b981;
+  margin-bottom: 12px;
+}
+
+.contact-success-msg p {
+  color: #475569;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 900px) {
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .offices-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .offices-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+  .offices-grid {
+    grid-template-columns: 1fr;
+  }
+  .offices-grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .contact-form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Smooth Scroll Target Highlight Effect
+   ========================================================================== */
+@keyframes sectionGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(61, 114, 242, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 35px 8px rgba(61, 114, 242, 0.25);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(61, 114, 242, 0);
+  }
+}
+
+.section-highlight {
+  animation: sectionGlow 1.6s ease-out;
+  border-radius: 16px;
 }

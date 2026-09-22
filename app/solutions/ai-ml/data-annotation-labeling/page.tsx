@@ -4,7 +4,7 @@ export default function Page() {
       <section style={{ padding: "60px 0 40px", textAlign: "center", position: "relative" }}>
         <div className="container">
           <h1 style={{ fontSize: "clamp(2.5rem, 4.5vw, 3.5rem)", color: "var(--navy)", fontWeight: 800, letterSpacing: "-0.04em", maxWidth: "900px", margin: "0 auto" }}>
-            <span className="gradient-text">Data Annotation &amp; Labeling</span>
+            Data Annotation &amp; <span className="gradient-text">Labeling</span>
           </h1>
           <p style={{ fontSize: "1.2rem", color: "var(--muted)", maxWidth: "720px", margin: "1rem auto 2.5rem", lineHeight: 1.6 }}>
             Apply accurate, consistent annotations across text, vision, audio, and multi-modal datasets using domain-specific guidelines.
@@ -30,7 +30,7 @@ export default function Page() {
               What is <span className="gradient-text">Data Annotation &amp; Labeling?</span>
             </h2>
             <p style={{ color: 'var(--muted)', fontSize: '1.08rem', lineHeight: 1.9, fontFamily: 'var(--font)' }}>
-              Data Annotation &amp; Labeling is the process of attaching ground-truth metadata—such as bounding boxes, polygon masks, semantic tags, and intent spans—to raw unstructured data. Supervised machine learning algorithms learn by recognizing patterns between inputs and their corresponding human-verified labels. At PIBI Solutions, we combine trained domain annotators with active QA workflows to label complex image, video, audio, and text assets at scale, maintaining high accuracy across complex edge cases.
+              Data Annotation &amp; Labeling is the process of attaching ground-truth metadata-such as bounding boxes, polygon masks, semantic tags, and intent spans-to raw unstructured data. Supervised machine learning algorithms learn by recognizing patterns between inputs and their corresponding human-verified labels. At PIBI Solutions, we combine trained domain annotators with active QA workflows to label complex image, video, audio, and text assets at scale, maintaining high accuracy across complex edge cases.
             </p>
           </div>
         </div>

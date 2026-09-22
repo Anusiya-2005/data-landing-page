@@ -12,7 +12,7 @@ export default function UseCasesDirectory() {
           </div>
           <h1 className="hero-title">
             Real-World Deployments<br />
-            Powered by <span>Precision Data</span>
+            Powered by <span className="gradient-text">Precision Data</span>
           </h1>
           <p className="hero-description">
             Discover how leading engineering teams rely on PI-BI Technologies to accelerate foundation models, train autonomous systems, and validate enterprise-grade intelligence with uncompromised accuracy.
@@ -28,7 +28,7 @@ export default function UseCasesDirectory() {
       <section className="section alt" data-anchor="overview">
         <div className="container overview">
           <div>
-            <h2>Data Solutions Across Every Domain</h2>
+            <h2>Data Solutions Across <span className="gradient-text">Every Domain</span></h2>
             <p>
               Whether you are training LLMs, fine-tuning computer vision algorithms, or deploying predictive machine learning models, your success depends on high-quality, domain-specific data.
               Our specialized teams provide targeted annotation, extraction, and validation services tailored to your exact industry requirements.
@@ -50,7 +50,7 @@ export default function UseCasesDirectory() {
       <section className="section" data-anchor="domain-rows">
         <div className="container">
           <div className="section-head">
-            <h2>Explore by Technology</h2>
+            <h2>Explore by <span className="gradient-text">Technology</span></h2>
             <p>Deep dive into industry-specific applications across our four core technology domains.</p>
           </div>
 

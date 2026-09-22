@@ -5,7 +5,7 @@ export default function ChatbotTrainingPage() {
     <main>
       <section style={{ padding: "60px 0 40px", textAlign: "center", position: "relative" }}>
         <div className="container">
-          <h1 style={{ fontSize: "clamp(2.5rem, 4.5vw, 3.5rem)", color: "var(--navy)", fontWeight: 800, letterSpacing: "-0.04em", maxWidth: "900px", margin: "0 auto" }}><span className="gradient-text">Chatbot Training</span></h1>
+          <h1 style={{ fontSize: "clamp(2.5rem, 4.5vw, 3.5rem)", color: "var(--navy)", fontWeight: 800, letterSpacing: "-0.04em", maxWidth: "900px", margin: "0 auto" }}>Chatbot <span className="gradient-text">Training</span></h1>
           <div className="premium-image-wrapper" style={{ marginTop: '2rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(18,60,100,0.12)' }}>
             <video src="/chatbot training.mp4" style={{ width: '100%', height: 'auto', display: 'block' }} controls autoPlay muted loop title="Chatbot Training Overview Video"></video>
           </div>
@@ -38,7 +38,7 @@ export default function ChatbotTrainingPage() {
             <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/semantic_annotation.jpg" alt="Chatbot Training for Conversational Protocols" width={600} height={338} /></div>
               <h3>Chatbot Training for Conversational Protocols</h3>
-              <p>Label greetings, escalations, clarifying questions, and agent hand-offs so your assistant follows the exact conversational flow your business requires — professionally and consistently across every interaction.</p>
+              <p>Label greetings, escalations, clarifying questions, and agent hand-offs so your assistant follows the exact conversational flow your business requires, professionally and consistently across every interaction.</p>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ export default function Page() {
       <section className="hero">
         <div className="container hero-grid">
           <div>
-            <h1>Human expertise behind every generative AI model</h1>
+            <h1>Human expertise behind every <span className="gradient-text">generative AI model</span></h1>
             <p className="hero-lead">We provide the feedback, training data, and testing that help large language models become accurate, safe, and consistent.</p>
             <div className="hero-actions">
               <button className="btn primary" data-scroll="services">Explore services <svg className="icon" aria-hidden="true"><use href="#i-arrow" /></svg></button>
@@ -20,7 +20,7 @@ export default function Page() {
       <section className="section alt">
         <div className="container overview">
           <div>
-            <h2>Data and feedback for generative AI</h2>
+            <h2>Data and feedback for <span className="gradient-text">Generative AI</span></h2>
             <p>Generative AI models need more than large volumes of text. They need well-designed prompts, high-quality responses, human feedback on what is helpful, and thorough testing for risks. Our generative AI services support each stage, from training data through to evaluation.</p>
           </div>
           <div className="jump">
@@ -37,10 +37,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="section" data-anchor="services">
+      <section className="section" id="services" data-anchor="services">
         <div className="container">
           <div className="section-head">
-            <h2>Generative AI services</h2>
+            <h2>Generative AI <span className="gradient-text">services</span></h2>
             <p>Six service areas for building, aligning, and testing large language models.</p>
           </div>
           <div className="cards">
@@ -198,10 +198,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="section" data-anchor="faq">
+      <section className="section" id="faq" data-anchor="faq">
         <div className="container faq-wrap">
           <div className="section-head">
-            <h2>Generative AI FAQ</h2>
+            <h2>Generative AI <span className="gradient-text">FAQ</span></h2>
             <p>Short answers to common questions about Generative AI data services.</p>
           </div>
           <div className="faq-list">

@@ -5,7 +5,7 @@ export default function NamedEntityRecognitionPage() {
     <main>
       <section style={{ padding: "60px 0 40px", textAlign: "center", position: "relative" }}>
         <div className="container">
-          <h1 style={{ fontSize: "clamp(2.5rem, 4.5vw, 3.5rem)", color: "var(--navy)", fontWeight: 800, letterSpacing: "-0.04em", maxWidth: "900px", margin: "0 auto" }}><span className="gradient-text">Named Entity Recognition</span></h1>
+          <h1 style={{ fontSize: "clamp(2.5rem, 4.5vw, 3.5rem)", color: "var(--navy)", fontWeight: 800, letterSpacing: "-0.04em", maxWidth: "900px", margin: "0 auto" }}>Named Entity <span className="gradient-text">Recognition</span></h1>
           <div className="premium-image-wrapper" style={{ marginTop: '2rem', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 30px rgba(18,60,100,0.12)' }}>
             <video src="/named entity.mp4" style={{ width: '100%', height: 'auto', display: 'block' }} controls autoPlay muted loop title="Named Entity Recognition Overview Video"></video>
           </div>
@@ -28,12 +28,12 @@ export default function NamedEntityRecognitionPage() {
             <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/text_categorization.jpg" alt="NER Annotation" width={600} height={338} /></div>
               <h3>NER Annotation</h3>
-              <p>Our expert annotators label standard entity types — person, organization, location, date, product — across diverse text domains with strict consistency protocols and inter-annotator agreement checks.</p>
+              <p>Our expert annotators label standard entity types including person, organization, location, date, and product across diverse text domains with strict consistency protocols and inter-annotator agreement checks.</p>
             </div>
             <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/semantic_annotation.jpg" alt="Open Named Entity Recognition" width={600} height={338} /></div>
               <h3>Open Named Entity Recognition</h3>
-              <p>Discover and label entities across a broad, open taxonomy without a fixed entity type list — ideal for exploratory projects where you want to understand what kinds of named items appear in your corpus before defining a formal schema.</p>
+              <p>Discover and label entities across a broad, open taxonomy without a fixed entity type list, ideal for exploratory projects where you want to understand what kinds of named items appear in your corpus before defining a formal schema.</p>
             </div>
             <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/phrase_chunking.jpg" alt="Supervised Named Entity Recognition" width={600} height={338} /></div>
@@ -43,12 +43,12 @@ export default function NamedEntityRecognitionPage() {
             <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/entity_linking.jpg" alt="Targeted Named Entity Recognition" width={600} height={338} /></div>
               <h3>Targeted Named Entity Recognition</h3>
-              <p>Identify highly specific entities like medical terms, product serial numbers, legal jargon, or financial instruments — annotation customized precisely for the entity categories your industry or use case demands.</p>
+              <p>Identify highly specific entities like medical terms, product serial numbers, legal jargon, or financial instruments, with annotation customized precisely for the entity categories your industry or use case demands.</p>
             </div>
             <div className="premium-card">
               <div className="premium-card-img"><Image src="/images/theme_detection.jpg" alt="NER for NLP Pipelines" width={600} height={338} /></div>
               <h3>NER for NLP Pipelines</h3>
-              <p>End-to-end NER data delivery designed for direct pipeline ingestion — formatted in CoNLL, JSON, BRAT, or your custom schema, with full lineage documentation and quality reports included.</p>
+              <p>End-to-end NER data delivery designed for direct pipeline ingestion, formatted in CoNLL, JSON, BRAT, or your custom schema, with full lineage documentation and quality reports included.</p>
             </div>
           </div>
         </div>

@@ -78,7 +78,7 @@ export default function ComputerVisionUseCases() {
         <div className="container">
           <div className="domain-hero-content">
             <span className="domain-badge">Computer Vision</span>
-            <h1 className="hero-title">Computer Vision</h1>
+            <h1 className="hero-title">Computer <span className="gradient-text">Vision</span></h1>
             <p className="hero-description">
               Enable your systems to derive meaningful information from digital images, videos, and LiDAR inputs. High-quality data annotation for the visual world.
             </p>
@@ -91,7 +91,16 @@ export default function ComputerVisionUseCases() {
           {useCases.map((section, index) => (
             <div key={section.industry} className="domain-industry-section-block" style={{ marginBottom: '100px' }}>
               <div className="industry-visual" style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: '#0f172a' }}>{section.industry}</h2>
+                <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: '#0f172a' }}>
+                  {section.industry.split(' ').length > 1 ? (
+                    <>
+                      {section.industry.split(' ').slice(0, -1).join(' ')}{' '}
+                      <span className="gradient-text">{section.industry.split(' ').slice(-1)[0]}</span>
+                    </>
+                  ) : (
+                    <span className="gradient-text">{section.industry}</span>
+                  )}
+                </h2>
               </div>
 
               {/* Featured Case Study Layout */}

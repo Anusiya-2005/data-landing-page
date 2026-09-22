@@ -4,7 +4,7 @@ export default function Page() {
       <section style={{ padding: "60px 0 40px", textAlign: "center", position: "relative" }}>
         <div className="container">
           <h1 style={{ fontSize: "clamp(2.5rem, 4.5vw, 3.5rem)", color: "var(--navy)", fontWeight: 800, letterSpacing: "-0.04em", maxWidth: "900px", margin: "0 auto" }}>
-            <span className="gradient-text">Production Monitoring &amp; Feedback</span>
+            Production Monitoring &amp; <span className="gradient-text">Feedback</span>
           </h1>
           <p style={{ fontSize: "1.2rem", color: "var(--muted)", maxWidth: "720px", margin: "1rem auto 2.5rem", lineHeight: 1.6 }}>
             Keep models accurate post-launch with real-time drift detection, human feedback loops, and continuous retraining.
