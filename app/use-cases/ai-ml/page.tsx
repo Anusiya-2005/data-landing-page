@@ -3,7 +3,7 @@ import React from 'react';
 const useCases = [
   {
     industry: 'Healthcare',
-    icon: '🏥',
+
     featuredCase: {
       title: 'Predicting Patient Readmission with Machine Learning',
       image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80',
@@ -20,7 +20,7 @@ const useCases = [
   },
   {
     industry: 'Finance',
-    icon: '💰',
+
     featuredCase: {
       title: 'Real-Time Fraud Detection Using Behavioral Analytics',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80',
@@ -37,7 +37,7 @@ const useCases = [
   },
   {
     industry: 'Retail & E-commerce',
-    icon: '🛍️',
+
     featuredCase: {
       title: 'Dynamic Pricing Optimization in Highly Volatile Markets',
       image: 'https://images.unsplash.com/photo-1556740749-887f6717def1?w=400&q=80',
@@ -54,7 +54,7 @@ const useCases = [
   },
   {
     industry: 'Autonomous Vehicles',
-    icon: '🚗',
+
     featuredCase: {
       title: 'Sensor Data Fusion for Advanced Environmental Awareness',
       image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&q=80',
@@ -91,10 +91,9 @@ export default function AiMlUseCases() {
           {useCases.map((section, index) => (
             <div key={section.industry} className="domain-industry-section-block" style={{ marginBottom: '100px' }}>
               <div className="industry-visual" style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '40px' }}>
-                <div className="industry-icon-large" style={{ fontSize: '4rem', marginBottom: 0 }}>{section.icon}</div>
                 <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: '#0f172a' }}>{section.industry}</h2>
               </div>
-              
+
               {/* Featured Case Study Layout */}
               <div className="featured-case-study">
                 <h3 className="case-study-title">{section.featuredCase.title}</h3>
