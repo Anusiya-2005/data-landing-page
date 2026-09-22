@@ -3,7 +3,7 @@ import React from 'react';
 const useCases = [
   {
     industry: 'Healthcare',
-    icon: '🏥',
+
     featuredCase: {
       title: 'Automated Clinical Documentation and Discharge Summaries',
       image: 'https://images.unsplash.com/photo-1551076805-e1869033e561?w=400&q=80',
@@ -20,7 +20,7 @@ const useCases = [
   },
   {
     industry: 'Finance',
-    icon: '💰',
+
     featuredCase: {
       title: 'Generating Synthetic Fraud Data to Train Detection Systems',
       image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&q=80',
@@ -37,7 +37,7 @@ const useCases = [
   },
   {
     industry: 'Retail & E-commerce',
-    icon: '🛍️',
+
     featuredCase: {
       title: 'Virtual Photoshoots and Dynamic Lifestyle Imagery',
       image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80',
@@ -54,7 +54,7 @@ const useCases = [
   },
   {
     industry: 'Autonomous Vehicles',
-    icon: '🚗',
+
     featuredCase: {
       title: 'Synthesizing Edge-Case Environments for Safe Navigation',
       image: 'https://images.unsplash.com/photo-1513687289569-808603ef3110?w=400&q=80',
@@ -91,10 +91,9 @@ export default function GenAiUseCases() {
           {useCases.map((section, index) => (
             <div key={section.industry} className="domain-industry-section-block" style={{ marginBottom: '100px' }}>
               <div className="industry-visual" style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '40px' }}>
-                <div className="industry-icon-large" style={{ fontSize: '4rem', marginBottom: 0 }}>{section.icon}</div>
                 <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: '#0f172a' }}>{section.industry}</h2>
               </div>
-              
+
               {/* Featured Case Study Layout */}
               <div className="featured-case-study">
                 <h3 className="case-study-title">{section.featuredCase.title}</h3>

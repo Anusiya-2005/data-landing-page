@@ -3,7 +3,7 @@ import React from 'react';
 const useCases = [
   {
     industry: 'Healthcare',
-    icon: '🏥',
+
     featuredCase: {
       title: 'Automating Clinical Coding from Unstructured EHR Data',
       image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&q=80',
@@ -20,7 +20,7 @@ const useCases = [
   },
   {
     industry: 'Finance',
-    icon: '💰',
+
     featuredCase: {
       title: 'Intelligent Document Processing for Loan Origination',
       image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=80',
@@ -37,7 +37,7 @@ const useCases = [
   },
   {
     industry: 'Retail & E-commerce',
-    icon: '🛍️',
+
     featuredCase: {
       title: 'Voice-Activated Shopping and Search Understanding',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80',
@@ -54,7 +54,7 @@ const useCases = [
   },
   {
     industry: 'Autonomous Vehicles',
-    icon: '🚗',
+
     featuredCase: {
       title: 'Multilingual In-Cabin Voice Assistants',
       image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&q=80',
@@ -91,10 +91,9 @@ export default function NlpUseCases() {
           {useCases.map((section, index) => (
             <div key={section.industry} className="domain-industry-section-block" style={{ marginBottom: '100px' }}>
               <div className="industry-visual" style={{ display: 'flex', alignItems: 'center', gap: '24px', marginBottom: '40px' }}>
-                <div className="industry-icon-large" style={{ fontSize: '4rem', marginBottom: 0 }}>{section.icon}</div>
                 <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: '#0f172a' }}>{section.industry}</h2>
               </div>
-              
+
               {/* Featured Case Study Layout */}
               <div className="featured-case-study">
                 <h3 className="case-study-title">{section.featuredCase.title}</h3>
