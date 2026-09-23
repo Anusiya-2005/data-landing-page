@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function GenerativeAIResearchOpsPage() {
   return (
     <main>
@@ -31,30 +32,22 @@ export default function GenerativeAIResearchOpsPage() {
           </div>
           <div className="premium-grid">
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#3D72F2,#1E5B88)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/text_classification_bg.jpg" alt="High-Context Prompting" width={600} height={338} /></div>
               <h3>High-Context Prompting</h3>
               <p>Standard prompts yield generic outputs. Our prompting specialists design context-rich instructions that include relevant background, constraints, output format requirements, and examples, so the model produces outputs that are specific, grounded, and immediately usable in your research workflow.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#2BC59E,#27ae60)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/production_monitoring.jpg" alt="Domain Expert Oversight" width={600} height={338} /></div>
               <h3>Domain Expert Oversight</h3>
               <p>Every research output is reviewed by a subject-matter expert in the relevant field (life sciences, legal, finance, engineering, or social research). Experts verify factual accuracy, flag unsupported claims, correct misattributions, and ensure that conclusions are warranted by the source material.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#e67e22,#8e44ad)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/data_qa.jpg" alt="Quality Anchoring" width={600} height={338} /></div>
               <h3>Quality Anchoring</h3>
               <p>We establish quality benchmarks before large-scale synthesis begins: a set of known-good outputs reviewed and approved by your team. All subsequent AI outputs are measured against those anchors for consistency, depth, and accuracy, catching drift before it reaches your final deliverable.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#1E5B88,#37AFE5)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/theme_detection.jpg" alt="Mass Literature Synthesis" width={600} height={338} /></div>
               <h3>Mass Literature Synthesis</h3>
               <p>We process hundreds or thousands of papers, reports, and documents at scale, extracting key findings, methodologies, outcomes, and evidence quality ratings into structured formats. The synthesized output gives your research team a navigable map of the field rather than an unprocessed pile of PDFs.</p>
             </div>

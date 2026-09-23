@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function PromptAndResponseGenerationPage() {
   return (
     <main>
@@ -31,44 +32,32 @@ export default function PromptAndResponseGenerationPage() {
           </div>
           <div className="premium-grid">
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#3D72F2,#2BC59E)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/text_annotation_bg.jpg" alt="AI Prompt Design & Generation" width={600} height={338} /></div>
               <h3>AI Prompt Design &amp; Generation</h3>
               <p>We write diverse, coverage-maximizing prompt sets for your specific task (customer service, summarization, Q&amp;A, creative writing, or instruction-following). Each batch includes simple, medium, and complex difficulty tiers with varied phrasing to prevent overfitting to narrow prompt styles.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#1E5B88,#37AFE5)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/phrase_chunking.jpg" alt="Prompts and Responses for LLMs" width={600} height={338} /></div>
               <h3>Prompts and Responses for LLMs</h3>
               <p>Expert writers produce the ideal prompt-response pairs that teach your model how to behave. Every response is reviewed for factual accuracy, completeness, appropriate length, formatting, and tone alignment with your product voice. Multiple reviewers validate high-stakes or domain-specific pairs.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#e67e22,#d35400)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/model_evaluation.jpg" alt="Prompt Optimization" width={600} height={338} /></div>
               <h3>Prompt Optimization</h3>
               <p>We analyze prompt performance metrics and iteratively rewrite prompts that underperform, including those that produce inconsistent model outputs, generate refusals, or fail to elicit the target behavior. Optimization passes improve clarity, specificity, and contextual grounding.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#8e44ad,#6c3483)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/><line x1="9" y1="10" x2="15" y2="10"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/text_categorization.jpg" alt="NLP Prompt Engineering" width={600} height={338} /></div>
               <h3>NLP Prompt Engineering</h3>
               <p>We design prompts specifically optimized for NLP tasks (text classification, summarization, entity extraction, and question answering) with phrasing tuned to elicit the structured output your NLP pipeline expects from the model.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#27ae60,#2ecc71)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><rect x="7" y="7" width="3" height="9"/><rect x="14" y="7" width="3" height="5"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/semantic_annotation.jpg" alt="STEM Writing Prompt Design" width={600} height={338} /></div>
               <h3>STEM Writing Prompt Design</h3>
               <p>Subject-matter experts in science, technology, engineering, and mathematics write and verify prompts and reference answers, ensuring factual accuracy, appropriate technical depth, and clear explanations suitable for your model&apos;s target audience.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#e67e22,#d35400)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/synthetic_data.jpg" alt="Multimodal Prompt Engineering" width={600} height={338} /></div>
               <h3>Multimodal Prompt Engineering</h3>
               <p>For multimodal models, we pair text prompts with appropriately licensed images, charts, diagrams, or audio clips and write responses grounded precisely in the provided content, covering vision-language, audio-language, and document-understanding tasks.</p>
             </div>

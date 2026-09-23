@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function DataLabelingForLLMsPage() {
   return (
     <main>
@@ -31,37 +32,27 @@ export default function DataLabelingForLLMsPage() {
           </div>
           <div className="premium-grid">
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#3D72F2,#1E5B88)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/dataset_sourcing.jpg" alt="Pre-Training Data" width={600} height={338} /></div>
               <h3>Pre-Training Data</h3>
               <p>We source, filter, deduplicate, and quality-check large text corpora from web, books, code, and domain-specific sources. Every document passes toxicity screening, near-duplicate removal, and relevance scoring before being added to your pre-training pool.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#2BC59E,#1E5B88)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/data_annotation.jpg" alt="Supervised Fine-Tuning" width={600} height={338} /></div>
               <h3>Supervised Fine-Tuning</h3>
               <p>Domain experts and skilled writers produce prompt-response pairs for your specific use case (customer support, legal summarization, medical Q&amp;A, or coding assistance). Each pair is reviewed for factual accuracy, instruction adherence, and tone before final delivery.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#f39c12,#e67e22)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/synthetic_data.jpg" alt="Code Generation Data" width={600} height={338} /></div>
               <h3>Code Generation Data</h3>
               <p>We produce labeled datasets for code generation, completion, debugging, and explanation tasks across Python, JavaScript, SQL, and other languages. Human reviewers check correctness, efficiency, and documentation quality so your coding model learns from genuinely good examples.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#27ae60,#1e8449)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 014-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/training_prep.jpg" alt="Data Conversion" width={600} height={338} /></div>
               <h3>Data Conversion</h3>
               <p>We transform content from PDFs, scanned documents, tables, audio transcripts, and legacy formats into clean, structured training-ready datasets, with full provenance tracking, schema mapping, and quality validation at every conversion step.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#8e44ad,#6c3483)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/language_id.jpg" alt="Translation" width={600} height={338} /></div>
               <h3>Translation</h3>
               <p>Our multilingual teams produce high-quality translated training pairs that preserve meaning, register, tone, and cultural nuance across languages, giving your multilingual model the accurate parallel data it needs to learn genuine cross-language understanding.</p>
             </div>

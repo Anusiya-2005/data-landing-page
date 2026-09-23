@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function Page() {
   return (
     <main className="page" data-route="/solutions/ai-ml/data-augmentation-synthetic-data">
@@ -44,47 +45,25 @@ export default function Page() {
           </div>
           <div className="premium-grid">
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #1E5B88, #37AFE5)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/synthetic_data.jpg" alt="Text, Image, and Audio Augmentation" width={600} height={338} /></div>
               <h3>Text, Image, and Audio Augmentation</h3>
               <p>Apply back-translation, synonym swap, random cropping, rotation, color jitter, noise injection, and pitch scaling to diversify your existing training corpus.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #02AAB0, #00CDAC)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                  <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                  <line x1="12" y1="22.08" x2="12" y2="12" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/phrase_chunking.jpg" alt="Synthetic Sample Generation" width={600} height={338} /></div>
               <h3>Synthetic Sample Generation</h3>
               <p>Generate high-fidelity synthetic text scenarios, realistic tabular records, or 3D rendered sensor assets matching true underlying statistical distributions.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #FF512F, #DD2476)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/data_sampling.jpg" alt="Class Imbalance Handling" width={600} height={338} /></div>
               <h3>Class Imbalance Handling</h3>
               <p>Overcome severe class imbalances using SMOTE, generative oversampling, and controlled synthetic insertion for underrepresented target categories.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #614385, #516395)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10" />
-                  <line x1="12" y1="8" x2="12" y2="12" />
-                  <line x1="12" y1="16" x2="12.01" y2="16" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/data_annotation.jpg" alt="Edge-Case Coverage" width={600} height={338} /></div>
               <h3>Edge-Case Coverage</h3>
               <p>Synthesize rare out-of-distribution events, extreme weather conditions, and unusual fault states to harden model performance against unexpected inputs.</p>
             </div>

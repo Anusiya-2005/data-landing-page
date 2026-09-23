@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function Page() {
   return (
     <main className="page" data-route="/solutions/ai-ml/production-monitoring-feedback">
@@ -44,43 +45,25 @@ export default function Page() {
           </div>
           <div className="premium-grid">
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #1E5B88, #37AFE5)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/production_monitoring.jpg" alt="Drift Review" width={600} height={338} /></div>
               <h3>Drift Review</h3>
               <p>Monitor live model inference data using Kolmogorov-Smirnov statistical tests and Wasserstein distances to detect feature and concept drift before model accuracy drops.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #02AAB0, #00CDAC)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/semantic_annotation.jpg" alt="Feedback Labeling" width={600} height={338} /></div>
               <h3>Feedback Labeling</h3>
               <p>Capture user interactions, explicit corrections, and flag misclassifications to rapidly annotate edge cases for target model retraining datasets.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #FF512F, #DD2476)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M23 4v6h-6" />
-                  <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/training_prep.jpg" alt="Retraining Data Pipelines" width={600} height={338} /></div>
               <h3>Retraining Data Pipelines</h3>
               <p>Automate continuous data sampling, curation, and validation workflows that feed verified production samples directly into continuous model retraining loops.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #614385, #516395)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/product_categorization.jpg" alt="Human-in-the-Loop Review" width={600} height={338} /></div>
               <h3>Human-in-the-Loop Review</h3>
               <p>Establish real-time fallback queues routing low-confidence predictions, high-stakes decisions, and outlier samples to human specialists for verification.</p>
             </div>

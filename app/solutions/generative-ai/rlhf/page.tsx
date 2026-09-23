@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function RLHFPage() {
   return (
     <main>
@@ -31,23 +32,17 @@ export default function RLHFPage() {
           </div>
           <div className="premium-grid">
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#3D72F2,#2BC59E)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/training_prep.jpg" alt="Pre-Training Model" width={600} height={338} /></div>
               <h3>Pre-Training Model</h3>
               <p>We source, clean, and structure diverse pre-training corpora that give your model a broad foundation in language, facts, and reasoning before any fine-tuning begins. High-quality pre-training data is the bedrock of every strong LLM.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#1E5B88,#37AFE5)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/semantic_annotation.jpg" alt="Supervised Fine-Tuning" width={600} height={338} /></div>
               <h3>Supervised Fine-Tuning</h3>
               <p>Our experts write and curate high-quality prompt-response pairs tailored to your target domain including legal, medical, customer support, or general-purpose. Each pair is reviewed for accuracy, tone, and instruction-following quality before being added to your SFT dataset.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg,#2BC59E,#3D72F2)', borderRadius: '14px', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.2rem' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/model_evaluation.jpg" alt="Reward Model Training" width={600} height={338} /></div>
               <h3>Reward Model Training</h3>
               <p>Annotators compare pairs of model outputs and select which is more helpful, harmless, and honest. We maintain strict inter-rater reliability, run calibration sessions, and produce preference datasets that train reward models with low noise and high signal, so your RL loop improves the right behaviors.</p>
             </div>

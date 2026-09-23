@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function Page() {
   return (
     <main className="page" data-route="/solutions/ai-ml/model-evaluation-validation">
@@ -44,47 +45,25 @@ export default function Page() {
           </div>
           <div className="premium-grid">
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #1E5B88, #37AFE5)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="18" y1="20" x2="18" y2="10" />
-                  <line x1="12" y1="20" x2="12" y2="4" />
-                  <line x1="6" y1="20" x2="6" y2="14" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/model_evaluation.jpg" alt="Benchmark Dataset Creation" width={600} height={338} /></div>
               <h3>Benchmark Dataset Creation</h3>
               <p>Construct gold-standard evaluation benchmarks representing diverse real-world distributions, noisy scenarios, and challenging adversarial samples.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #02AAB0, #00CDAC)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                  <polyline points="14 2 14 8 20 8" />
-                  <line x1="16" y1="13" x2="8" y2="13" />
-                  <line x1="16" y1="17" x2="8" y2="17" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/data_qa.jpg" alt="Metric Review and Reporting" width={600} height={338} /></div>
               <h3>Metric Review and Reporting</h3>
               <p>Generate detailed evaluation dashboards analyzing Precision, Recall, F1 score, Confusion Matrices, ROC-AUC curves, and task-specific KPIs.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #FF512F, #DD2476)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polygon points="12 2 2 7 12 12 22 7 12 2" />
-                  <polyline points="2 17 12 22 22 17" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/theme_detection.jpg" alt="Error Slicing by Category" width={600} height={338} /></div>
               <h3>Error Slicing by Category</h3>
               <p>Break down prediction errors across metadata slices, input lengths, lighting conditions, or region demographics to pinpoint exact failure vectors.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #614385, #516395)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/entity_linking.jpg" alt="Bias and Fairness Checks" width={600} height={338} /></div>
               <h3>Bias and Fairness Checks</h3>
               <p>Audit model predictions across demographic sub-groups, measuring disparate impact, equalized odds, and calibration fairness to eliminate bias.</p>
             </div>

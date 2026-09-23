@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function Page() {
   return (
     <main className="page" data-route="/solutions/ai-ml/data-annotation-labeling">
@@ -44,50 +45,25 @@ export default function Page() {
           </div>
           <div className="premium-grid">
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #1E5B88, #37AFE5)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
-                  <line x1="7" y1="7" x2="7.01" y2="7" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/text_categorization.jpg" alt="Classification and Tagging" width={600} height={338} /></div>
               <h3>Classification and Tagging</h3>
               <p>Categorize documents, queries, images, and audio clips into multi-class, hierarchical, or multi-label taxonomies with high precision and strict adherence to project schemas.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #02AAB0, #00CDAC)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M4 7V4h3" />
-                  <path d="M20 7V4h-3" />
-                  <path d="M4 17v3h3" />
-                  <path d="M20 17v3h-3" />
-                  <rect x="7" y="7" width="10" height="10" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/data_annotation.jpg" alt="Segmentation and Span Labeling" width={600} height={338} /></div>
               <h3>Segmentation and Span Labeling</h3>
               <p>Execute token-level text tagging, named entity span extraction, pixel-wise semantic image segmentation, polyline lane tracking, and 3D bounding box annotations for computer vision and NLP models.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #FF512F, #DD2476)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/semantic_annotation.jpg" alt="Multi-Annotator Labeling" width={600} height={338} /></div>
               <h3>Multi-Annotator Labeling</h3>
               <p>Deploy redundant annotator assignments per data sample combined with majority voting and agreement algorithms to neutralize individual bias and maximize label confidence.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #614385, #516395)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/data_qa.jpg" alt="Guideline Design and Updates" width={600} height={338} /></div>
               <h3>Guideline Design and Updates</h3>
               <p>Draft comprehensive annotation guidelines, edge-case decision trees, and visual benchmark dictionaries that evolve iteratively alongside incoming edge cases.</p>
             </div>

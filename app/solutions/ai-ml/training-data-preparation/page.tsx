@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function Page() {
   return (
     <main className="page" data-route="/solutions/ai-ml/training-data-preparation">
@@ -44,48 +45,25 @@ export default function Page() {
           </div>
           <div className="premium-grid">
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #1E5B88, #37AFE5)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polygon points="12 2 2 7 12 12 22 7 12 2" />
-                  <polyline points="2 17 12 22 22 17" />
-                  <polyline points="2 12 12 17 22 12" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/training_prep.jpg" alt="Format Conversion and Export" width={600} height={338} /></div>
               <h3>Format Conversion and Export</h3>
               <p>Export labeled datasets into PyTorch, TensorFlow, TFRecord, COCO, YOLO, Hugging Face Datasets, or custom JSON/Parquet binary formats seamlessly.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #02AAB0, #00CDAC)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="3" width="7" height="7" />
-                  <rect x="14" y="3" width="7" height="7" />
-                  <rect x="14" y="14" width="7" height="7" />
-                  <rect x="3" y="14" width="7" height="7" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/data_sampling.jpg" alt="Train, Validation, and Test Splits" width={600} height={338} /></div>
               <h3>Train, Validation, and Test Splits</h3>
               <p>Construct leakage-free, stratified train, validation, and test splits to guarantee reliable generalization metrics and prevent data contamination.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #FF512F, #DD2476)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21.5 2v6h-6" />
-                  <path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/metadata_schema.jpg" alt="Versioned Datasets" width={600} height={338} /></div>
               <h3>Versioned Datasets</h3>
               <p>Implement dataset versioning (using DVC, LakeFS, or MLflow) so every training run, hyperparameter sweep, and model checkpoint is 100% reproducible and auditable.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #614385, #516395)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="11" cy="11" r="8" />
-                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/dataset_sourcing.jpg" alt="Active Learning Sample Selection" width={600} height={338} /></div>
               <h3>Active Learning Sample Selection</h3>
               <p>Leverage model entropy and uncertainty sampling to prioritize high-value unlabelled instances for annotation, reducing data preparation costs significantly.</p>
             </div>

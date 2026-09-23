@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function Page() {
   return (
     <main className="page" data-route="/solutions/ai-ml/responsible-ai-data-governance">
@@ -44,44 +45,25 @@ export default function Page() {
           </div>
           <div className="premium-grid">
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #1E5B88, #37AFE5)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/data_qa.jpg" alt="PII Redaction and Anonymization" width={600} height={338} /></div>
               <h3>PII Redaction and Anonymization</h3>
               <p>Automate entity masking, token hashing, face blurring, license plate blurring, and sensitive attribute redaction across text, audio, and visual datasets to preserve privacy.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #02AAB0, #00CDAC)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/model_evaluation.jpg" alt="Bias Auditing" width={600} height={338} /></div>
               <h3>Bias Auditing</h3>
               <p>Execute quantitative fairness audits across protected demographic attributes to measure disparate impact, equal opportunity, and representation balance.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #FF512F, #DD2476)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/metadata_schema.jpg" alt="Dataset Documentation" width={600} height={338} /></div>
               <h3>Dataset Documentation</h3>
               <p>Generate standardized Datasheets for Datasets detailing data origin, copyright consent rights, curation methods, and intended operational boundaries.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #614385, #516395)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  <circle cx="12" cy="12" r="3" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/dataset_sourcing.jpg" alt="Access and Compliance Controls" width={600} height={338} /></div>
               <h3>Access and Compliance Controls</h3>
               <p>Enforce strict role-based access controls (RBAC), end-to-end encryption, data retention policies, and SOC2 / ISO 27001 / HIPAA audit standards across all data workflows.</p>
             </div>

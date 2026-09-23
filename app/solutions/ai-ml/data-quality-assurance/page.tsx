@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function Page() {
   return (
     <main className="page" data-route="/solutions/ai-ml/data-quality-assurance">
@@ -44,48 +45,25 @@ export default function Page() {
           </div>
           <div className="premium-grid">
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #1E5B88, #37AFE5)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  <path d="m9 12 2 2 4-4" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/data_qa.jpg" alt="Gold-Standard Test Sets" width={600} height={338} /></div>
               <h3>Gold-Standard Test Sets</h3>
               <p>Curate highly vetted reference evaluation sets created by senior domain leads to continuously benchmark annotator accuracy and detect drift early.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #02AAB0, #00CDAC)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M18 20V10" />
-                  <path d="M12 20V4" />
-                  <path d="M6 20v-6" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/sentiment_analysis.jpg" alt="Inter-Annotator Agreement" width={600} height={338} /></div>
               <h3>Inter-Annotator Agreement</h3>
               <p>Calculate statistical metrics (Cohen&apos;s Kappa, Fleiss&apos; Kappa, Intersection over Union) across team members to surface ambiguous guidelines and clarify definitions.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #FF512F, #DD2476)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="9 11 12 14 22 4" />
-                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/data_sampling.jpg" alt="Sampling Audits" width={600} height={338} /></div>
               <h3>Sampling Audits</h3>
               <p>Perform random and stratified sample audits on completed dataset batches to verify adherence to target quality thresholds prior to pipeline export.</p>
             </div>
 
             <div className="premium-card">
-              <div className="premium-card-icon" style={{ background: 'linear-gradient(135deg, #614385, #516395)' }}>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                  <polyline points="14 2 14 8 20 8" />
-                  <line x1="16" y1="13" x2="8" y2="13" />
-                  <line x1="16" y1="17" x2="8" y2="17" />
-                </svg>
-              </div>
+              <div className="premium-card-img"><Image src="/images/model_evaluation.jpg" alt="Error Analysis Reports" width={600} height={338} /></div>
               <h3>Error Analysis Reports</h3>
               <p>Receive detailed metric breakdowns categorizing mislabeling trends, edge-case bottlenecks, and actionable feedback loops for continuous annotation improvement.</p>
             </div>
