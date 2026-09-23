@@ -94,18 +94,7 @@ PAGE_CARD_IMAGES = {
     ],
 }
 
-file_paths = []
-for root in [r"app\solutions\ai-ml", r"app\solutions\generative-ai"]:
-    for folder in os.listdir(root):
-        page_file = os.path.join(root, folder, "page.tsx")
-        if os.path.exists(page_file):
-            file_paths.append((folder, page_file))
-
-for folder, file_path in file_paths:
-    if folder not in PAGE_CARD_IMAGES:
-        print(f"Skipping unknown folder: {folder}")
-        continue
-
+def process_file(folder, file_path):
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -114,16 +103,13 @@ for folder, file_path in file_paths:
         content = "import Image from 'next/image';\n" + content
 
     cards_info = PAGE_CARD_IMAGES[folder]
+    card_idx = [0]
 
-    # Pattern to find each premium-card and replace its icon with premium-card-img
-    # Find all <div className="premium-card"> ... <h3>{title}</h3>
-    card_idx = 0
     def replace_card_icon(match):
-        nonlocal card_idx
-        full_match = match.group(0)
-        if card_idx < len(cards_info):
-            title, img_src = cards_info[card_idx]
-            card_idx += 1
+        idx = card_idx[0]
+        if idx < len(cards_info):
+            title, img_src = cards_info[idx]
+            card_idx[0] += 1
             alt_clean = title.replace("&amp;", "&").replace('"', '&quot;')
             replacement = (
                 f'<div className="premium-card">\n'
@@ -131,9 +117,8 @@ for folder, file_path in file_paths:
                 f'              <h3>'
             )
             return replacement
-        return full_match
+        return match.group(0)
 
-    # Regex matching from <div className="premium-card"> up to and including <h3>
     pattern = re.compile(
         r'<div className="premium-card"[^>]*>[\s\S]*?<div className="premium-card-icon"[^>]*>[\s\S]*?</div>\s*<h3>',
         re.DOTALL
@@ -148,5 +133,11 @@ for folder, file_path in file_paths:
 
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(new_content)
+
+for root in [r"app\solutions\ai-ml", r"app\solutions\generative-ai"]:
+    for folder in sorted(os.listdir(root)):
+        page_file = os.path.join(root, folder, "page.tsx")
+        if os.path.exists(page_file) and folder in PAGE_CARD_IMAGES:
+            process_file(folder, page_file)
 
 print("\nDone updating all solution pages!")
