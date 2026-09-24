@@ -241,62 +241,48 @@ export default function Page() {
             Global Offices
           </h2>
 
-          <div className="offices-grid">
+          <div className="offices-grid-3">
             <div className="office-item">
               <div className="office-icon">
-                <Image src="/images/office_usa.png" alt="USA" width={68} height={68} />
+                <Image src="/images/office_usa.png" alt="USA" width={80} height={80} />
               </div>
               <h4 className="office-country">USA</h4>
               <p className="office-address">Pflugerville, Travis, Texas 78660</p>
             </div>
             <div className="office-item">
               <div className="office-icon">
-                <Image src="/images/office_canada.png" alt="Canada" width={68} height={68} />
-              </div>
-              <h4 className="office-country">Canada</h4>
-              <p className="office-address">Whitby, Durham Region, Ontario L1N 4W2</p>
-            </div>
-            <div className="office-item">
-              <div className="office-icon">
-                <Image src="/images/office_germany.png" alt="Germany" width={68} height={68} />
+                <Image src="/images/office_germany.png" alt="Germany" width={80} height={80} />
               </div>
               <h4 className="office-country">Germany</h4>
-              <p className="office-address">Erkelenz, Konigsbergerstr. 19, 41812</p>
+              <p className="office-address">Erkelenz, Königsbergerstr. 19, 41812</p>
             </div>
             <div className="office-item">
               <div className="office-icon">
-                <Image src="/images/office_uae.png" alt="United Arab Emirates" width={68} height={68} />
+                <Image src="/images/office_uae.png" alt="United Arab Emirates" width={80} height={80} />
               </div>
               <h4 className="office-country">United Arab Emirates</h4>
               <p className="office-address">Abu Dhabi, Khalifa City, St. 00971</p>
             </div>
           </div>
 
-          <h2 className="offices-heading" style={{ marginTop: '64px' }}>
+          <h2 className="offices-heading" style={{ marginTop: '72px' }}>
             India Offices
           </h2>
 
-          <div className="offices-grid offices-grid-3">
+          <div className="offices-grid-2">
             <div className="office-item">
               <div className="office-icon">
-                <Image src="/images/office_chennai.png" alt="Chennai" width={68} height={68} />
+                <Image src="/images/office_chennai.png" alt="Chennai" width={80} height={80} />
               </div>
               <h4 className="office-country">Chennai</h4>
-              <p className="office-address">Tharamani, Chennai 600 113</p>
+              <p className="office-address">Tharamani, Chennai - 600 113</p>
             </div>
             <div className="office-item">
               <div className="office-icon">
-                <Image src="/images/office_coimbatore.png" alt="Coimbatore" width={68} height={68} />
-              </div>
-              <h4 className="office-country">Coimbatore</h4>
-              <p className="office-address">Peelamedu, Coimbatore 641004</p>
-            </div>
-            <div className="office-item">
-              <div className="office-icon">
-                <Image src="/images/office_madurai.png" alt="Madurai" width={68} height={68} />
+                <Image src="/images/office_madurai.png" alt="Madurai" width={80} height={80} />
               </div>
               <h4 className="office-country">Madurai</h4>
-              <p className="office-address">Thiruppalai, Madurai 625014</p>
+              <p className="office-address">Thiruppalai, Madurai - 625014</p>
             </div>
           </div>
         </div>
