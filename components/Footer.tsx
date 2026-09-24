@@ -12,11 +12,6 @@ export default function Footer() {
             <p className="footer-desc">
               Empowering enterprise AI with precision data annotation, multimodal labeling, and high-fidelity model evaluation.
             </p>
-            <div className="footer-socials">
-              <a href="#" aria-label="LinkedIn">in</a>
-              <a href="#" aria-label="Twitter">X</a>
-              <a href="#" aria-label="GitHub">gh</a>
-            </div>
           </div>
           
           <div className="footer-col">
