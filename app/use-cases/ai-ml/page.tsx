@@ -8,7 +8,7 @@ const useCases = [
       title: 'Predicting Patient Readmission with Machine Learning',
       image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80',
       challenge: 'A regional health system faced high penalty fees from Medicare due to 30-day patient readmission rates exceeding the national average.',
-      solution: 'Cogito Tech curated and cleansed 10 years of historical EHR data to train a predictive model that flags high-risk patients before discharge.',
+      solution: 'PI-BI Tech curated and cleansed 10 years of historical EHR data to train a predictive model that flags high-risk patients before discharge.',
       outcome: 'The health system reduced 30-day readmissions by 22%, saving over $4 million in penalties and significantly improving post-care patient outcomes.'
     },
     cases: [
@@ -40,9 +40,9 @@ const useCases = [
 
     featuredCase: {
       title: 'Dynamic Pricing Optimization in Highly Volatile Markets',
-      image: 'https://images.unsplash.com/photo-1556740749-887f6717def1?w=400&q=80',
+      image: '/images/use_case_retail_aiml.jpg',
       challenge: 'A leading e-commerce platform was losing market share because manual pricing updates could not keep pace with competitors and supply chain fluctuations.',
-      solution: 'Cogito Tech built a high-quality dataset of competitor pricing, seasonal trends, and inventory levels to train an automated dynamic pricing engine.',
+      solution: 'PI-BI Tech built a high-quality dataset of competitor pricing, seasonal trends, and inventory levels to train an automated dynamic pricing engine.',
       outcome: 'The platform increased overall revenue by 14% and profit margins by 8% by reacting instantly to market demand and competitor actions.'
     },
     cases: [
@@ -59,7 +59,7 @@ const useCases = [
       title: 'Sensor Data Fusion for Advanced Environmental Awareness',
       image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&q=80',
       challenge: 'An ADAS developer struggled with sensor discrepancies, where LiDAR and camera inputs would occasionally conflict in low-visibility conditions (e.g., fog, heavy rain).',
-      solution: 'Cogito Tech provided synchronized, multi-modal sensor annotation, accurately labeling overlapping data points from LiDAR, radar, and cameras.',
+      solution: 'PI-BI Tech provided synchronized, multi-modal sensor annotation, accurately labeling overlapping data points from LiDAR, radar, and cameras.',
       outcome: 'The sensor fusion algorithm\'s reliability increased by 40% in low-visibility scenarios, ensuring a safer autonomous navigation stack.'
     },
     cases: [
@@ -137,9 +137,6 @@ export default function AiMlUseCases() {
                     <h4>Outcome</h4>
                     <p>{section.featuredCase.outcome}</p>
                   </div>
-                </div>
-                <div className="case-study-footer">
-                  <a href="#" className="case-study-btn">Read more</a>
                 </div>
               </div>
 

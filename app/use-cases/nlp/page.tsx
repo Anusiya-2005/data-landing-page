@@ -8,7 +8,7 @@ const useCases = [
       title: 'Automating Clinical Coding from Unstructured EHR Data',
       image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&q=80',
       challenge: 'A major hospital network struggled with the manual, time-consuming process of mapping doctor notes to specific ICD-10 codes, leading to billing delays and revenue leakage.',
-      solution: 'Cogito Tech implemented a custom NLP pipeline to extract clinical entities, diagnoses, and treatments, mapping them automatically to standardized medical codes.',
+      solution: 'PI-BI Tech implemented a custom NLP pipeline to extract clinical entities, diagnoses, and treatments, mapping them automatically to standardized medical codes.',
       outcome: 'The automated system reduced coding time by 75%, minimized human error, and accelerated the revenue cycle management process significantly.'
     },
     cases: [
@@ -42,7 +42,7 @@ const useCases = [
       title: 'Voice-Activated Shopping and Search Understanding',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80',
       challenge: 'An e-commerce giant noted high cart abandonment rates on mobile due to clunky text search and a lack of conversational search capabilities.',
-      solution: 'Cogito Tech trained custom acoustic and language models for a voice assistant capable of understanding nuanced, multi-turn product queries and intents.',
+      solution: 'PI-BI Tech trained custom acoustic and language models for a voice assistant capable of understanding nuanced, multi-turn product queries and intents.',
       outcome: 'Mobile conversion rates increased by 22%, and the new voice search feature saw a 300% adoption rate within the first month of launch.'
     },
     cases: [
@@ -57,7 +57,7 @@ const useCases = [
 
     featuredCase: {
       title: 'Multilingual In-Cabin Voice Assistants',
-      image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&q=80',
+      image: '/images/use_case_av_cabin.jpg',
       challenge: 'An automotive manufacturer needed their in-cabin voice assistant to understand heavy regional accents and colloquialisms for a global vehicle launch.',
       solution: 'We provided highly diverse, localized audio transcription and intent annotation across 15 different languages and regional dialects.',
       outcome: 'The in-cabin assistant achieved a 95% intent recognition accuracy globally, vastly improving the hands-free driver experience.'
@@ -137,9 +137,6 @@ export default function NlpUseCases() {
                     <h4>Outcome</h4>
                     <p>{section.featuredCase.outcome}</p>
                   </div>
-                </div>
-                <div className="case-study-footer">
-                  <a href="#" className="case-study-btn">Read more</a>
                 </div>
               </div>
 

@@ -25,7 +25,7 @@ const useCases = [
       title: 'Generating Synthetic Fraud Data to Train Detection Systems',
       image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&q=80',
       challenge: 'A digital bank could not effectively train its fraud detection algorithms because real-world fraud examples were too sparse and heavily imbalanced.',
-      solution: 'Cogito Tech leveraged Generative Adversarial Networks (GANs) to synthesize millions of highly realistic, evolving fraudulent transaction patterns and synthetic identities.',
+      solution: 'PI-BI Tech leveraged Generative Adversarial Networks (GANs) to synthesize millions of highly realistic, evolving fraudulent transaction patterns and synthetic identities.',
       outcome: 'The bank’s fraud detection model improved its True Positive rate by 42% without increasing the false positive rate, saving millions in potential losses.'
     },
     cases: [
@@ -57,9 +57,9 @@ const useCases = [
 
     featuredCase: {
       title: 'Synthesizing Edge-Case Environments for Safe Navigation',
-      image: 'https://images.unsplash.com/photo-1513687289569-808603ef3110?w=400&q=80',
+      image: '/images/use_case_av_genai.jpg',
       challenge: 'An autonomous vehicle company needed to test their navigation algorithms in extreme blizzards and chaotic urban environments, but real-world data collection was too dangerous.',
-      solution: 'Cogito Tech utilized generative neural rendering to create highly detailed, photorealistic virtual worlds simulating rare edge-cases and severe weather conditions.',
+      solution: 'PI-BI Tech utilized generative neural rendering to create highly detailed, photorealistic virtual worlds simulating rare edge-cases and severe weather conditions.',
       outcome: 'The client successfully validated their self-driving stack against 10,000+ synthetic edge-cases, accelerating their path to regulatory approval.'
     },
     cases: [
@@ -137,9 +137,6 @@ export default function GenAiUseCases() {
                     <h4>Outcome</h4>
                     <p>{section.featuredCase.outcome}</p>
                   </div>
-                </div>
-                <div className="case-study-footer">
-                  <a href="#" className="case-study-btn">Read more</a>
                 </div>
               </div>
 

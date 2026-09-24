@@ -8,7 +8,7 @@ const useCases = [
       title: 'Accelerating Tumor Detection with 3D MRI Segmentation',
       image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&q=80',
       challenge: 'A medical AI startup needed to train a highly accurate diagnostic model but struggled to find reliable, pixel-perfect 3D segmentation data for MRI scans.',
-      solution: 'Cogito Tech provided a dedicated team of medical annotators to meticulously segment thousands of MRI slices using polygon and 3D voxel annotation techniques.',
+      solution: 'PI-BI Tech provided a dedicated team of medical annotators to meticulously segment thousands of MRI slices using polygon and 3D voxel annotation techniques.',
       outcome: 'The client’s AI model achieved a 94% accuracy rate in early-stage tumor detection, securing FDA clearance for their diagnostic software.'
     },
     cases: [
@@ -42,7 +42,7 @@ const useCases = [
       title: 'Powering Cashierless Checkout in Smart Stores',
       image: 'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?w=400&q=80',
       challenge: 'A major retail chain wanted to launch "grab-and-go" automated convenience stores but their computer vision models struggled with occlusions and visually similar items.',
-      solution: 'Cogito Tech labeled thousands of hours of high-density store footage, applying bounding boxes and object tracking to accurately monitor customer behavior and item picking.',
+      solution: 'PI-BI Tech labeled thousands of hours of high-density store footage, applying bounding boxes and object tracking to accurately monitor customer behavior and item picking.',
       outcome: 'The computer vision system achieved 99.5% accuracy in cart tracking, allowing the retailer to successfully launch 15 automated stores nationwide.'
     },
     cases: [
@@ -59,7 +59,7 @@ const useCases = [
       title: 'Managing Autonomous Surveillance Robots in Real-World Edge Cases',
       image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=400&q=80',
       challenge: 'A robotics company was ready to move its autonomous surveillance robots from pilot testing into live, complex real-world environments but faced navigation issues.',
-      solution: 'For uninterrupted patrol operations, Cogito Tech delivered a remote monitoring and teleoperation framework, along with extensive LiDAR point cloud annotation.',
+      solution: 'For uninterrupted patrol operations, PI-BI Tech delivered a remote monitoring and teleoperation framework, along with extensive LiDAR point cloud annotation.',
       outcome: 'During active shifts, our team attained 98% robot uptime. We resolved more than 85% of edge-case navigation issues remotely in a matter of seconds.'
     },
     cases: [
@@ -137,9 +137,6 @@ export default function ComputerVisionUseCases() {
                     <h4>Outcome</h4>
                     <p>{section.featuredCase.outcome}</p>
                   </div>
-                </div>
-                <div className="case-study-footer">
-                  <a href="#" className="case-study-btn">Read more</a>
                 </div>
               </div>
 

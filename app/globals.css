@@ -3418,10 +3418,10 @@ table.ds td:first-child {
 }
 
 .case-study-title {
-  color: #1e1b4b;
+  color: #0f2942;
   font-size: 1.75rem;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .case-study-grid {
@@ -3446,7 +3446,7 @@ table.ds td:first-child {
 }
 
 .case-study-col h4 {
-  color: #312e81;
+  color: #0284c7;
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 12px;
