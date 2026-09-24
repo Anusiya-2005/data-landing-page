@@ -74,11 +74,23 @@ const useCases = [
 export default function ComputerVisionUseCases() {
   return (
     <main className="domain-page">
-      <section className="domain-hero" style={{ background: 'linear-gradient(135deg, #4c1d95 0%, #db2777 100%)' }}>
+      <section
+        className="domain-hero"
+        style={{
+          backgroundImage: 'linear-gradient(180deg, rgba(22, 10, 36, 0.74) 0%, rgba(28, 12, 46, 0.86) 100%), url("/images/use_case_cv_bg.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="container">
           <div className="domain-hero-content">
-            <span className="domain-badge">Computer Vision</span>
-            <h1 className="hero-title">Computer <span className="gradient-text">Vision</span></h1>
+            <span className="domain-badge" style={{ borderColor: 'rgba(192, 132, 252, 0.45)' }}>Computer Vision</span>
+            <h1 className="hero-title">
+              Computer{' '}
+              <span className="gradient-text" style={{ background: 'linear-gradient(135deg, #c084fc 0%, #f472b6 50%, #38bdf8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+                Vision
+              </span>
+            </h1>
             <p className="hero-description">
               Enable your systems to derive meaningful information from digital images, videos, and LiDAR inputs. High-quality data annotation for the visual world.
             </p>

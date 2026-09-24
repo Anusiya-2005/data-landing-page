@@ -74,11 +74,23 @@ const useCases = [
 export default function AiMlUseCases() {
   return (
     <main className="domain-page">
-      <section className="domain-hero" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)' }}>
+      <section
+        className="domain-hero"
+        style={{
+          backgroundImage: 'linear-gradient(180deg, rgba(8, 20, 44, 0.74) 0%, rgba(9, 27, 58, 0.86) 100%), url("/images/use_case_aiml_bg.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="container">
           <div className="domain-hero-content">
-            <span className="domain-badge">AI / ML</span>
-            <h1 className="hero-title">Artificial Intelligence &amp; <span className="gradient-text">Machine Learning</span></h1>
+            <span className="domain-badge" style={{ borderColor: 'rgba(56, 189, 248, 0.45)' }}>AI / ML</span>
+            <h1 className="hero-title">
+              Artificial Intelligence &amp;{' '}
+              <span className="gradient-text" style={{ background: 'linear-gradient(135deg, #38bdf8 0%, #60a5fa 50%, #34d399 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+                Machine Learning
+              </span>
+            </h1>
             <p className="hero-description">
               Harness the power of AI to unlock data-driven insights. High-quality training datasets tailored for predictive modeling and automation.
             </p>

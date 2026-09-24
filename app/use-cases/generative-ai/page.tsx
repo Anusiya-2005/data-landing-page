@@ -74,11 +74,23 @@ const useCases = [
 export default function GenAiUseCases() {
   return (
     <main className="domain-page">
-      <section className="domain-hero" style={{ background: 'linear-gradient(135deg, #7c2d12 0%, #ea580c 100%)' }}>
+      <section
+        className="domain-hero"
+        style={{
+          backgroundImage: 'linear-gradient(180deg, rgba(24, 12, 6, 0.74) 0%, rgba(32, 16, 8, 0.86) 100%), url("/images/use_case_genai_bg.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="container">
           <div className="domain-hero-content">
-            <span className="domain-badge">Generative AI</span>
-            <h1 className="hero-title">Generative <span className="gradient-text">AI</span></h1>
+            <span className="domain-badge" style={{ borderColor: 'rgba(251, 146, 60, 0.45)' }}>Generative AI</span>
+            <h1 className="hero-title">
+              Generative{' '}
+              <span className="gradient-text" style={{ background: 'linear-gradient(135deg, #fb923c 0%, #f59e0b 50%, #fde047 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+                AI
+              </span>
+            </h1>
             <p className="hero-description">
               Push the boundaries of creativity and automation. Leverage RLHF, Fine-Tuning, and Agentic AI to produce text, images, and complex data structures.
             </p>

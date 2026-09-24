@@ -74,11 +74,23 @@ const useCases = [
 export default function NlpUseCases() {
   return (
     <main className="domain-page">
-      <section className="domain-hero" style={{ background: 'linear-gradient(135deg, #065f46 0%, #10b981 100%)' }}>
+      <section
+        className="domain-hero"
+        style={{
+          backgroundImage: 'linear-gradient(180deg, rgba(5, 24, 20, 0.74) 0%, rgba(6, 32, 26, 0.86) 100%), url("/images/use_case_nlp_bg.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="container">
           <div className="domain-hero-content">
-            <span className="domain-badge">NLP</span>
-            <h1 className="hero-title">Natural Language <span className="gradient-text">Processing</span></h1>
+            <span className="domain-badge" style={{ borderColor: 'rgba(52, 211, 153, 0.45)' }}>NLP</span>
+            <h1 className="hero-title">
+              Natural Language{' '}
+              <span className="gradient-text" style={{ background: 'linear-gradient(135deg, #34d399 0%, #2dd4bf 50%, #38bdf8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+                Processing
+              </span>
+            </h1>
             <p className="hero-description">
               Empower your systems to understand, interpret, and generate human language in ways that bring instant value to your users.
             </p>
