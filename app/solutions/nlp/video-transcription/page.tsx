@@ -29,22 +29,22 @@ export default function VideoTranscriptionPage() {
           </div>
           <div className="premium-grid">
             <div className="premium-card">
-              <div className="premium-card-img"><Image src="/images/video_transcription_bg.jpg" alt="Video-to-Text Transcription" width={600} height={338} /></div>
+              <div className="premium-card-img"><Image src="/images/vt_video_to_text.jpg" alt="Video-to-Text Transcription" width={600} height={338} /></div>
               <h3>Video-to-Text Transcription</h3>
               <p>Pristine text data synced with video timestamps, handling multiple speakers, background noise, and technical jargon with high accuracy.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-img"><Image src="/images/video_transcription_bg.jpg" alt="Cross-lingual Translation" width={600} height={338} /></div>
+              <div className="premium-card-img"><Image src="/images/vt_cross_lingual.jpg" alt="Cross-lingual Translation" width={600} height={338} /></div>
               <h3>Cross-lingual Translation</h3>
               <p>Translate transcribed text into multiple target languages while preserving context and timing for global training datasets.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-img"><Image src="/images/video_transcription_bg.jpg" alt="Transcripts Formatting" width={600} height={338} /></div>
+              <div className="premium-card-img"><Image src="/images/vt_transcripts_formatting.jpg" alt="Transcripts Formatting" width={600} height={338} /></div>
               <h3>Transcripts Formatting</h3>
               <p>Structure and format transcripts to meet the exact intake schemas required by your ML pipelines, with speaker diarization and custom metadata tags.</p>
             </div>
             <div className="premium-card">
-              <div className="premium-card-img"><Image src="/images/video_transcription_bg.jpg" alt="Time-series Synchronization" width={600} height={338} /></div>
+              <div className="premium-card-img"><Image src="/images/vt_timeseries_sync.jpg" alt="Time-series Synchronization" width={600} height={338} /></div>
               <h3>Time-series Synchronization</h3>
               <p>Align textual transcripts with precise video frames and audio waveforms to train advanced multimodal models that understand both auditory and visual context.</p>
             </div>

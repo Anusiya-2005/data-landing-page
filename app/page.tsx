@@ -31,6 +31,36 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Powering AI with High-Quality Data Section */}
+      <section className="section" style={{ padding: '64px 0 24px' }}>
+        <div className="container">
+          <div
+            style={{
+              maxWidth: '920px',
+              margin: '0 auto',
+              padding: '48px 40px',
+              borderRadius: '24px',
+              border: '1px solid var(--line)',
+              background: 'linear-gradient(180deg, #ffffff 0%, var(--soft) 100%)',
+              boxShadow: 'var(--shadow)',
+              textAlign: 'center',
+            }}
+          >
+            <h2 style={{ color: 'var(--navy)', fontSize: 'clamp(1.8rem, 3.2vw, 2.5rem)', fontWeight: 800, letterSpacing: '-0.035em', lineHeight: 1.2 }}>
+              Powering AI with <span className="gradient-text">High-Quality Data</span>
+            </h2>
+            <p style={{ margin: '20px auto 0', maxWidth: '780px', color: '#475569', fontSize: '1.06rem', lineHeight: 1.75 }}>
+              PiBi Tech delivers intelligent data labeling and curation solutions designed to help businesses build accurate, reliable, and AI-ready datasets. Our domain-focused approach combines human expertise, automation, and quality validation to transform raw data into high-quality training data for AI and machine learning applications.
+            </p>
+            <div style={{ marginTop: '32px', display: 'flex', justifyContent: 'center' }}>
+              <Link className="btn primary" href="/data-labeling-services">
+                Continue Exploring <svg className="icon" aria-hidden="true"><use href="#i-arrow" /></svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Solutions Section */}
       <section className="section alt" id="solutions" data-anchor="solutions">
         <div className="container">
