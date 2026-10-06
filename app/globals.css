@@ -1755,15 +1755,25 @@ table.ds td:first-child {
   padding: 30px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(17, 54, 87, .04);
-  transition: transform .25s, box-shadow .25s;
+  transition: transform .32s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow .32s cubic-bezier(0.2, 0.8, 0.2, 1), border-color .32s ease, background .32s ease;
   text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .sol:hover,
-.industry-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow2);
-  border-color: var(--line);
+.industry-card:hover,
+.sol:focus-visible,
+.industry-card:focus-visible {
+  transform: translateY(-9px);
+  box-shadow: 0 24px 50px rgba(18, 60, 100, 0.12), 0 8px 18px rgba(34, 184, 176, 0.08);
+  border-color: rgba(55, 175, 229, 0.45);
+}
+
+.sol:active,
+.industry-card:active {
+  transform: translateY(-4px) scale(0.985);
+  box-shadow: 0 14px 28px rgba(18, 60, 100, 0.1);
 }
 
 .sol::after,
@@ -1775,7 +1785,14 @@ table.ds td:first-child {
   border-radius: 50%;
   right: -70px;
   top: -65px;
-  background: radial-gradient(circle, rgba(43, 197, 158, .14), transparent 68%);
+  background: radial-gradient(circle, rgba(43, 197, 158, .16), transparent 68%);
+  transition: transform .4s ease, opacity .4s ease;
+}
+
+.sol:hover::after,
+.industry-card:hover::after {
+  transform: scale(1.25);
+  opacity: 1;
 }
 
 .sol-ico,
@@ -1787,12 +1804,27 @@ table.ds td:first-child {
   place-items: center;
   background: linear-gradient(145deg, #EFF6FB, #EAF8F5);
   color: var(--navy2);
+  transition: transform .3s cubic-bezier(0.2, 0.8, 0.2, 1), background .3s ease, color .3s ease, box-shadow .3s ease;
+}
+
+.sol:hover .sol-ico,
+.industry-card:hover .ind-ico {
+  transform: scale(1.08) translateY(-2px);
+  background: linear-gradient(135deg, var(--navy2), var(--teal));
+  color: #ffffff;
+  box-shadow: 0 8px 22px rgba(34, 184, 176, 0.28);
 }
 
 .sol-ico .icon,
 .ind-ico .icon {
   width: 24px;
   height: 24px;
+  transition: transform .3s ease;
+}
+
+.sol:hover .sol-ico .icon,
+.industry-card:hover .ind-ico .icon {
+  transform: scale(1.05);
 }
 
 .sol h3,
@@ -1802,6 +1834,12 @@ table.ds td:first-child {
   margin: 26px 0 10px;
   font-weight: 800;
   letter-spacing: -.02em;
+  transition: color .25s ease;
+}
+
+.sol:hover h3,
+.industry-card:hover h3 {
+  color: var(--blue);
 }
 
 .sol p,
@@ -1821,16 +1859,23 @@ table.ds td:first-child {
   color: var(--teal);
   font-weight: 800;
   font-size: .9rem;
+  transition: color .25s ease, gap .25s ease;
+}
+
+.sol:hover .go,
+.industry-card:hover .go {
+  color: var(--navy2);
+  gap: 12px;
 }
 
 .sol:hover .go .icon,
 .industry-card:hover .go .icon {
-  transform: translateX(4px);
+  transform: translateX(6px);
 }
 
 .sol .go .icon,
 .industry-card .go .icon {
-  transition: .2s;
+  transition: transform .25s ease;
   width: 18px;
   height: 18px;
 }
